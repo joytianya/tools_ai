@@ -49,6 +49,9 @@ export function generateSEO({
     authors: authors ? authors.map(name => ({ name })) : [{ name: SITE_CONFIG.creator }],
     creator: SITE_CONFIG.creator,
     publisher: SITE_CONFIG.name,
+    other: {
+      'google-adsense-account': 'ca-pub-4134603910866620',
+    },
     robots: {
       index: true,
       follow: true,
