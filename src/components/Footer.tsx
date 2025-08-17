@@ -12,7 +12,7 @@ export function Footer() {
           <div className="col-span-1">
             <Link href="/" className="flex items-center space-x-2 mb-4">
               <span className="text-2xl">🛠️</span>
-              <span className="text-xl font-bold">工具分享站</span>
+              <span className="text-xl font-bold">MatrixTools</span>
             </Link>
             <p className="text-gray-400 text-sm">
               为新手提供最实用的工具推荐和详细教程，快速提升工作效率

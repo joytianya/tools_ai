@@ -31,7 +31,7 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <span className="text-2xl">🛠️</span>
-            <span className="text-xl font-bold text-gray-900">工具分享站</span>
+            <span className="text-xl font-bold text-gray-900">MatrixTools</span>
           </Link>
 
           {/* Desktop Navigation */}

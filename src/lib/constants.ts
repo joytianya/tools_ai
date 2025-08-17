@@ -1,10 +1,10 @@
 export const SITE_CONFIG = {
-  name: '工具分享站',
-  title: '工具分享站 - 发现最好用的工具和教程',
+  name: 'MatrixTools',
+  title: 'MatrixTools - 发现最好用的工具和教程',
   description: '为新手提供最实用的工具推荐和详细教程，快速提升工作效率',
-  url: 'https://tools.example.com',
+  url: 'https://matrixtools.me',
   ogImage: '/og-image.jpg',
-  creator: 'Tools Share Team',
+  creator: 'MatrixTools Team',
 };
 
 export const CATEGORIES = [
