@@ -183,21 +183,32 @@ export default async function ToolDetailPage({ params }: ToolDetailPageProps) {
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">
                   工具信息
                 </h3>
-                <div className="space-y-3">
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">分类</span>
-                    <span className="font-medium">{category?.name}</span>
+                <div className="space-y-4">
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-700 font-medium">分类</span>
+                    <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">
+                      {category?.icon} {category?.name}
+                    </span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">价格</span>
-                    <span className="font-medium">
-                      {tool.isFree ? '免费' : '付费'}
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-700 font-medium">价格</span>
+                    <span className={`px-3 py-1 rounded-full text-sm font-semibold ${
+                      tool.isFree 
+                        ? 'bg-green-100 text-green-800' 
+                        : 'bg-orange-100 text-orange-800'
+                    }`}>
+                      {tool.isFree ? '💰 免费' : '💳 付费'}
                     </span>
                   </div>
                   {tool.rating && (
-                    <div className="flex justify-between">
-                      <span className="text-gray-600">评分</span>
-                      <span className="font-medium">{tool.rating}/5.0</span>
+                    <div className="flex justify-between items-center">
+                      <span className="text-gray-700 font-medium">评分</span>
+                      <div className="flex items-center space-x-1">
+                        <Star className="w-4 h-4 text-yellow-500 fill-current" />
+                        <span className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-semibold">
+                          {tool.rating}/5.0
+                        </span>
+                      </div>
                     </div>
                   )}
                 </div>

@@ -267,6 +267,130 @@ networks:
           description: '完整的多服务Docker Compose配置，包含Web应用、数据库和缓存。'
         }
       ]
+    },
+    'google-adsense-guide-for-beginners': {
+      type: 'business',
+      estimatedTime: 30,
+      difficulty: 'beginner' as const,
+      skills: ['网站变现', 'AdSense申请', '内容优化', '审核通过'],
+      hero: {
+        title: '新手如何快速申请Google AdSense',
+        subtitle: '详细介绍从零开始申请Google AdSense的完整流程，包括网站准备、内容要求和审核技巧',
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=600&fit=crop&auto=format',
+        gradient: 'from-green-500 to-emerald-600'
+      },
+      todoItems: [
+        { id: '1', text: '了解AdSense基本要求和优势' },
+        { id: '2', text: '准备符合要求的网站内容' },
+        { id: '3', text: '创建必备页面：隐私政策、使用条款等' },
+        { id: '4', text: '注册Google账号并访问AdSense官网' },
+        { id: '5', text: '添加网站并完成基本信息' },
+        { id: '6', text: '在网站中添加AdSense代码和meta标签' },
+        { id: '7', text: '提交申请并等待审核' },
+        { id: '8', text: '优化网站以提高审核通过率' }
+      ],
+      codeExamples: [
+        {
+          id: 'meta-tag',
+          title: 'AdSense Meta标签',
+          language: 'html',
+          code: `<!-- 在网站每个页面的 <head> 标签中添加 -->
+<meta name="google-adsense-account" content="ca-pub-xxxxxxxxxx">
+
+<!-- 同时添加AdSense脚本 -->
+<script async 
+  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxxxx"
+  crossorigin="anonymous">
+</script>`,
+          description: '这两个代码片段都需要添加到网站的每个页面中，用于AdSense审核和后续广告显示。'
+        },
+        {
+          id: 'privacy-policy',
+          title: '隐私政策模板',
+          language: 'text',
+          code: `隐私政策
+
+最后更新日期：[日期]
+
+1. 信息收集
+我们的网站使用Google AdSense投放广告。Google及其合作伙伴可能会：
+- 使用Cookie收集用户信息
+- 根据用户的浏览历史投放个性化广告
+- 收集设备信息和位置数据
+
+2. 信息使用
+收集的信息用于：
+- 提供个性化广告体验
+- 改善网站服务质量
+- 进行网站分析和统计
+
+3. 用户权利
+用户可以通过Google广告设置页面：
+- 选择退出个性化广告
+- 管理广告偏好设置
+- 了解更多关于Google隐私政策
+
+4. 联系我们
+如有隐私相关问题，请联系：[邮箱地址]`,
+          description: '隐私政策是AdSense申请的必要页面，需要详细说明数据收集和使用方式。'
+        },
+        {
+          id: 'site-structure',
+          title: '网站结构检查清单',
+          language: 'text',
+          code: `网站审核前检查清单：
+
+✅ 基本要求
+- [ ] 拥有独立域名（非免费子域名）
+- [ ] 至少包含20-30篇原创文章
+- [ ] 每篇文章字数300-500字以上
+- [ ] 网站导航清晰易用
+
+✅ 必备页面
+- [ ] 隐私政策页面
+- [ ] 使用条款页面  
+- [ ] 关于我们页面
+- [ ] 联系方式页面
+
+✅ 内容质量
+- [ ] 所有内容均为原创
+- [ ] 内容对用户有价值
+- [ ] 定期更新内容
+- [ ] 无违法违规内容
+
+✅ 技术要求
+- [ ] 网站加载速度快
+- [ ] 移动端友好
+- [ ] 无404错误链接
+- [ ] SSL证书已配置`,
+          description: '申请前请逐项检查，确保网站完全符合AdSense要求。'
+        }
+      ],
+      quiz: {
+        questions: [
+          {
+            id: '1',
+            question: 'AdSense申请最重要的网站要求是什么？',
+            options: ['高流量', '原创优质内容', '华丽设计', '多种语言'],
+            correctAnswer: 1,
+            explanation: '原创优质内容是AdSense最看重的，它能为用户提供价值，也能吸引高质量广告主。'
+          },
+          {
+            id: '2',
+            question: '以下哪个页面是AdSense申请必须的？',
+            options: ['产品页面', '隐私政策', '购物车', '用户注册'],
+            correctAnswer: 1,
+            explanation: '隐私政策是法律要求的页面，说明网站如何收集和使用用户数据，是AdSense审核的必要条件。'
+          },
+          {
+            id: '3',
+            question: 'AdSense审核通常需要多长时间？',
+            options: ['24小时', '1-14天', '1个月', '3个月'],
+            correctAnswer: 1,
+            explanation: 'Google AdSense的审核时间通常在1-14天，具体时间取决于网站质量和当时的审核量。'
+          }
+        ]
+      }
     }
   };
 

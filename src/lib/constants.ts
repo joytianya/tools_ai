@@ -71,11 +71,12 @@ export const NAVIGATION = [
     name: '教程中心', 
     href: '/tutorials',
     dropdowns: [
-      { name: '🔰 新手教程', href: '/tutorials?filter=beginner' },
-      { name: '📈 进阶教程', href: '/tutorials?filter=advanced' },
-      { name: '💰 AdSense教程', href: '/tutorials?category=marketing' },
       { name: '💻 开发教程', href: '/tutorials?category=development' },
       { name: '🎨 设计教程', href: '/tutorials?category=design' },
+      { name: '⚡ 效率教程', href: '/tutorials?category=productivity' },
+      { name: '📈 营销教程', href: '/tutorials?category=marketing' },
+      { name: '🤖 AI教程', href: '/tutorials?category=ai' },
+      { name: '📊 数据分析教程', href: '/tutorials?category=analytics' },
     ]
   },
   { name: '关于我们', href: '/about' },
