@@ -82,58 +82,48 @@ function ToolsContent() {
   return (
     <Layout>
       <div className="bg-gray-50 min-h-screen">
-        <div className="container mx-auto px-4 py-8">
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 py-8">
           {/* 页面标题 */}
           <div className="text-center mb-8">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
               🛠️ 工具分享
             </h1>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto px-2">
               发现最实用的工具，提升你的工作效率
             </p>
           </div>
 
           {/* 搜索栏 */}
-          <div className="max-w-md mx-auto mb-8">
+          <div className="max-w-md mx-auto mb-8 px-2">
             <input
               type="text"
               placeholder="搜索工具..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white text-black focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:outline-none placeholder:text-gray-500 placeholder:font-medium shadow-sm hover:border-gray-400 transition-colors search-input"
+              className="w-full px-3 sm:px-4 py-3 rounded-lg border border-gray-300 bg-white text-black focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:outline-none placeholder:text-gray-500 placeholder:font-medium shadow-sm hover:border-gray-400 transition-colors search-input"
               style={{ color: '#000000 !important', backgroundColor: '#ffffff !important' }}
             />
           </div>
 
-          <div className="grid lg:grid-cols-4 gap-8">
-            {/* 筛选侧边栏 */}
-            <div className="lg:col-span-1">
-              <ToolFilter
-                selectedCategory={selectedCategory}
-                selectedTags={selectedTags}
-                onCategoryChange={setSelectedCategory}
-                onTagChange={setSelectedTags}
-                onPriceFilter={setPriceFilter}
-                priceFilter={priceFilter}
-              />
-            </div>
-
-            {/* 工具列表 */}
-            <div className="lg:col-span-3">
+          <div className="flex flex-col lg:grid lg:grid-cols-4 gap-4 lg:gap-8">
+            {/* 工具列表 - 移动端优先 */}
+            <div className="lg:col-span-3 lg:order-2 min-w-0">
               <div className="flex items-center justify-between mb-6">
-                <h2 className="text-xl font-semibold text-gray-900">
+                <h2 className="text-lg sm:text-xl font-semibold text-gray-900">
                   找到 {filteredTools.length} 个工具
                   {totalPages > 1 && (
-                    <span className="text-sm font-normal text-gray-500 ml-2">
+                    <span className="text-sm font-normal text-gray-500 ml-2 hidden sm:inline">
                       （第 {currentPage} / {totalPages} 页）
                     </span>
                   )}
                 </h2>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                 {currentTools.map((tool) => (
-                  <ToolCard key={tool.id} tool={tool} />
+                  <div key={tool.id} className="w-full">
+                    <ToolCard tool={tool} />
+                  </div>
                 ))}
               </div>
               
@@ -158,6 +148,18 @@ function ToolsContent() {
                 </div>
               )}
             </div>
+
+            {/* 筛选侧边栏 - 移动端在下方 */}
+            <div className="lg:col-span-1 lg:order-1">
+              <ToolFilter
+                selectedCategory={selectedCategory}
+                selectedTags={selectedTags}
+                onCategoryChange={setSelectedCategory}
+                onTagChange={setSelectedTags}
+                onPriceFilter={setPriceFilter}
+                priceFilter={priceFilter}
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -170,7 +172,7 @@ export default function ToolsPage() {
     <Suspense fallback={
       <Layout>
         <div className="bg-gray-50 min-h-screen">
-          <div className="container mx-auto px-4 py-8">
+          <div className="max-w-7xl mx-auto px-3 sm:px-4 py-8">
             <div className="text-center">
               <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto"></div>
               <p className="mt-4 text-gray-600">正在加载工具页面...</p>

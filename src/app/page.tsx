@@ -33,7 +33,7 @@ export default function Home() {
       <Layout>
       {/* Hero Section */}
       <div className="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
-        <div className="container mx-auto px-4 py-20">
+        <div className="max-w-7xl mx-auto px-4 py-20">
           <div className="text-center max-w-4xl mx-auto">
             <div className="mb-6">
               <span className="inline-block text-6xl mb-4">🛠️</span>
@@ -89,7 +89,7 @@ export default function Home() {
 
       {/* Featured Tools */}
       <div className="bg-white py-16">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
               🌟 精选工具推荐
@@ -118,7 +118,7 @@ export default function Home() {
 
       {/* Featured Tutorials */}
       <div className="bg-gray-50 py-16">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
               📖 热门教程
@@ -147,7 +147,7 @@ export default function Home() {
 
       {/* Features */}
       <div className="bg-white py-16">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
               🎯 为什么选择我们？
@@ -203,7 +203,7 @@ export default function Home() {
 
       {/* CTA Section */}
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 py-16">
-        <div className="container mx-auto px-4 text-center">
+        <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
             准备开始探索了吗？
           </h2>

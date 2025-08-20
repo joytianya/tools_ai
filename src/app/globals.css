@@ -14,9 +14,22 @@
   }
 }
 
-html {
+html, body {
   overflow-x: hidden;
   max-width: 100vw;
+}
+
+body {
+  position: relative;
+}
+
+/* 确保所有容器不会超出视口 */
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 100%;
 }
 
 /* 强制目录文本换行 */

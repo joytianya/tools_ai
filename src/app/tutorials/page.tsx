@@ -60,7 +60,7 @@ function TutorialsContent() {
   return (
     <Layout>
       <div className="bg-gray-50 min-h-screen">
-        <div className="container mx-auto px-4 py-12">
+        <div className="max-w-7xl mx-auto px-4 py-12">
           {/* 页面标题 */}
           <div className="text-center mb-12">
             <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl mb-6 shadow-lg">
@@ -246,7 +246,7 @@ export default function TutorialsPage() {
     <Suspense fallback={
       <Layout>
         <div className="bg-gray-50 min-h-screen">
-          <div className="container mx-auto px-4 py-8">
+          <div className="max-w-7xl mx-auto px-4 py-8">
             <div className="text-center">
               <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto"></div>
               <p className="mt-4 text-gray-600">正在加载教程页面...</p>
