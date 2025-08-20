@@ -1,17 +1,36 @@
 import Link from 'next/link';
+import Script from 'next/script';
 import { Star, Users, BookOpen, Zap } from 'lucide-react';
 import { Layout } from '@/components/Layout';
 import { ToolCard } from '@/components/ToolCard';
 import { TutorialCard } from '@/components/TutorialCard';
 import { tools } from '@/data/tools';
 import { tutorials } from '@/data/tutorials';
+import { SITE_CONFIG } from '@/lib/constants';
+import { generateStructuredData } from '@/lib/seo';
 
 export default function Home() {
   const featuredTools = tools.filter(tool => tool.featured);
   const featuredTutorials = tutorials.filter(tutorial => tutorial.featured);
 
+  const websiteStructuredData = generateStructuredData({
+    type: 'WebSite',
+    name: SITE_CONFIG.name,
+    description: SITE_CONFIG.description,
+    url: SITE_CONFIG.url,
+    image: `${SITE_CONFIG.url}${SITE_CONFIG.ogImage}`,
+  });
+
   return (
-    <Layout>
+    <>
+      <Script
+        id="website-structured-data"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(websiteStructuredData),
+        }}
+      />
+      <Layout>
       {/* Hero Section */}
       <div className="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
         <div className="container mx-auto px-4 py-20">
@@ -207,6 +226,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </Layout>
+      </Layout>
+    </>
   );
 }

@@ -1,0 +1,2112 @@
+{
+  "timestamp": "2025-08-19T16:06:30.106Z",
+  "summary": {
+    "totalAnalyzed": 67,
+    "highQualityCount": 66,
+    "highQualityPercentage": 99,
+    "averageWordCount": 676,
+    "totalImages": 638,
+    "categoryDistribution": [
+      {
+        "category": "ai-tools",
+        "count": 67
+      },
+      {
+        "category": "programming",
+        "count": 0
+      },
+      {
+        "category": "software",
+        "count": 0
+      },
+      {
+        "category": "tutorials",
+        "count": 0
+      },
+      {
+        "category": "others",
+        "count": 0
+      }
+    ]
+  },
+  "recommendations": {
+    "strongRecommendations": 66,
+    "conditionalRecommendations": 0,
+    "totalUsableContent": 66,
+    "topContent": [
+      {
+        "directory": "74527",
+        "title": "爱写作AI小说平台：一键解锁智能创作，9大模型赋能万字成书",
+        "category": "ai-tools",
+        "quality": "excellent",
+        "wordCount": 1578,
+        "score": 100
+      },
+      {
+        "directory": "74735",
+        "title": "AI Image Similarity Checker：AI图像相似度检查器 精准对比两张图片差异的AI工具",
+        "category": "ai-tools",
+        "quality": "excellent",
+        "wordCount": 1516,
+        "score": 100
+      },
+      {
+        "directory": "site_root",
+        "title": "搜索本站精品资源",
+        "category": "ai-tools",
+        "quality": "excellent",
+        "wordCount": 1751,
+        "score": 100
+      },
+      {
+        "directory": "74189",
+        "title": "Bigjpg：AI图片无损放大神器，4K超清放大32倍！",
+        "category": "ai-tools",
+        "quality": "excellent",
+        "wordCount": 1281,
+        "score": 90
+      },
+      {
+        "directory": "74226",
+        "title": "PoPo开源AI工具：用自然语言生成MMD角色动作与表情",
+        "category": "ai-tools",
+        "quality": "excellent",
+        "wordCount": 1297,
+        "score": 90
+      },
+      {
+        "directory": "74234",
+        "title": "UP简历：在线AI简历工具，5分钟轻松打造专业简历",
+        "category": "ai-tools",
+        "quality": "excellent",
+        "wordCount": 1389,
+        "score": 90
+      },
+      {
+        "directory": "74380",
+        "title": "OfferIN AI：AI时代面试笔试全能助手",
+        "category": "ai-tools",
+        "quality": "excellent",
+        "wordCount": 1264,
+        "score": 90
+      },
+      {
+        "directory": "74427",
+        "title": "Hard Usernames：AI用户名生成器 为游戏、Instagram和社交媒体创建独特用户名",
+        "category": "ai-tools",
+        "quality": "excellent",
+        "wordCount": 1017,
+        "score": 90
+      },
+      {
+        "directory": "74433",
+        "title": "LLM API Test：LLM API 性能测试工具 一站式对比 GPT-4、Gemini 等大模型 API 速度与可靠性",
+        "category": "ai-tools",
+        "quality": "excellent",
+        "wordCount": 1402,
+        "score": 90
+      },
+      {
+        "directory": "74475",
+        "title": "AI Silhouette Generator：免费 AI 轮廓生成器 一键生成专业级剪影",
+        "category": "ai-tools",
+        "quality": "excellent",
+        "wordCount": 1328,
+        "score": 90
+      },
+      {
+        "directory": "74542",
+        "title": "AI-PROXY：一站式多厂商AI API代理网关，极简部署，安全高效！（无需注册，替换 URL 即可用）",
+        "category": "ai-tools",
+        "quality": "excellent",
+        "wordCount": 1191,
+        "score": 90
+      },
+      {
+        "directory": "74575",
+        "title": "AI Line Art Generator：免费在线AI线稿生成器 一键把照片变线条画（支持图片上传、多风格、高清导出）",
+        "category": "ai-tools",
+        "quality": "excellent",
+        "wordCount": 1483,
+        "score": 90
+      },
+      {
+        "directory": "74677",
+        "title": "Imgkits：在线AI图像与视频一站式编辑器（免费试用、批量处理、隐私安全）",
+        "category": "ai-tools",
+        "quality": "excellent",
+        "wordCount": 1446,
+        "score": 90
+      },
+      {
+        "directory": "74692",
+        "title": "AI图片在线免费生成器：40秒出图，支持文生图/图生图与多风格预设（可我AI · krwoo）",
+        "category": "ai-tools",
+        "quality": "excellent",
+        "wordCount": 1047,
+        "score": 90
+      },
+      {
+        "directory": "74701",
+        "title": "Read Frog（陪读蛙）：开源 AI 浏览器语言学习扩展，沉浸式翻译与文章理解",
+        "category": "ai-tools",
+        "quality": "excellent",
+        "wordCount": 1448,
+        "score": 90
+      },
+      {
+        "directory": "74825",
+        "title": "AI Dream Analyzer：免费AI解梦工具，让你快速解析梦境与潜意识",
+        "category": "ai-tools",
+        "quality": "excellent",
+        "wordCount": 1187,
+        "score": 90
+      },
+      {
+        "directory": "74176",
+        "title": "New API：开源大模型网关与 AI 资产管理系统，30+ 服务商支持！",
+        "category": "ai-tools",
+        "quality": "good",
+        "wordCount": 779,
+        "score": 75
+      },
+      {
+        "directory": "74259",
+        "title": "Cloudflare AI 图片生成工具（Stable Diffusion XL）—中英文提示词 + 自动翻译，免费实用",
+        "category": "ai-tools",
+        "quality": "good",
+        "wordCount": 787,
+        "score": 75
+      },
+      {
+        "directory": "_e4_b9_a6_e7_b1_8d",
+        "title": "书籍",
+        "category": "ai-tools",
+        "quality": "good",
+        "wordCount": 593,
+        "score": 75
+      },
+      {
+        "directory": "_e5_85_b4_e8_b6_a3_e7_88_b1_e5_a5_bd",
+        "title": "兴趣爱好",
+        "category": "ai-tools",
+        "quality": "good",
+        "wordCount": 627,
+        "score": 75
+      }
+    ]
+  },
+  "detailedStats": {
+    "ai-tools": {
+      "total": 67,
+      "recommended": 66,
+      "consider": 0,
+      "usable": 66,
+      "avgWordCount": 676
+    },
+    "programming": {
+      "total": 0,
+      "recommended": 0,
+      "consider": 0,
+      "usable": 0,
+      "avgWordCount": 0
+    },
+    "software": {
+      "total": 0,
+      "recommended": 0,
+      "consider": 0,
+      "usable": 0,
+      "avgWordCount": 0
+    },
+    "tutorials": {
+      "total": 0,
+      "recommended": 0,
+      "consider": 0,
+      "usable": 0,
+      "avgWordCount": 0
+    },
+    "others": {
+      "total": 0,
+      "recommended": 0,
+      "consider": 0,
+      "usable": 0,
+      "avgWordCount": 0
+    }
+  },
+  "allContent": [
+    {
+      "directory": "2",
+      "title": "AI工具",
+      "wordCount": 405,
+      "imageCount": 6,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/funny_site/ai-tool/page/2/",
+        "scrapedTime": "2025-08-19T23:42:28.900680",
+        "hasMainContent": true,
+        "metadataImageCount": 3
+      },
+      "recommendation": "recommend",
+      "qualityScore": 60,
+      "qualityReasons": [
+        "字数不足(<500)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "3",
+      "title": "AI工具",
+      "wordCount": 347,
+      "imageCount": 6,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/funny_site/ai-tool/page/3/",
+        "scrapedTime": "2025-08-19T23:39:29.241812",
+        "hasMainContent": true,
+        "metadataImageCount": 3
+      },
+      "recommendation": "recommend",
+      "qualityScore": 60,
+      "qualityReasons": [
+        "字数不足(<500)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "30",
+      "title": "AI工具",
+      "wordCount": 176,
+      "imageCount": 8,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/funny_site/ai-tool/page/30/",
+        "scrapedTime": "2025-08-19T23:39:13.338796",
+        "hasMainContent": true,
+        "metadataImageCount": 4
+      },
+      "recommendation": "recommend",
+      "qualityScore": 60,
+      "qualityReasons": [
+        "字数不足(<500)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "4",
+      "title": "AI工具",
+      "wordCount": 413,
+      "imageCount": 8,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/funny_site/ai-tool/page/4/",
+        "scrapedTime": "2025-08-19T23:39:32.499667",
+        "hasMainContent": true,
+        "metadataImageCount": 4
+      },
+      "recommendation": "recommend",
+      "qualityScore": 60,
+      "qualityReasons": [
+        "字数不足(<500)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "74176",
+      "title": "New API：开源大模型网关与 AI 资产管理系统，30+ 服务商支持！",
+      "wordCount": 779,
+      "imageCount": 26,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/74176/",
+        "scrapedTime": "2025-08-19T23:42:32.696872",
+        "hasMainContent": true,
+        "metadataImageCount": 13
+      },
+      "recommendation": "recommend",
+      "qualityScore": 75,
+      "qualityReasons": [
+        "字数偏少(500+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "74189",
+      "title": "Bigjpg：AI图片无损放大神器，4K超清放大32倍！",
+      "wordCount": 1281,
+      "imageCount": 18,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "excellent",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/74189/",
+        "scrapedTime": "2025-08-19T23:39:17.613068",
+        "hasMainContent": true,
+        "metadataImageCount": 9
+      },
+      "recommendation": "recommend",
+      "qualityScore": 90,
+      "qualityReasons": [
+        "字数适中(1000+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "74226",
+      "title": "PoPo开源AI工具：用自然语言生成MMD角色动作与表情",
+      "wordCount": 1297,
+      "imageCount": 26,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "excellent",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/74226/",
+        "scrapedTime": "2025-08-19T23:41:18.244678",
+        "hasMainContent": true,
+        "metadataImageCount": 13
+      },
+      "recommendation": "recommend",
+      "qualityScore": 90,
+      "qualityReasons": [
+        "字数适中(1000+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "74234",
+      "title": "UP简历：在线AI简历工具，5分钟轻松打造专业简历",
+      "wordCount": 1389,
+      "imageCount": 22,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "excellent",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/74234/",
+        "scrapedTime": "2025-08-19T23:40:02.472674",
+        "hasMainContent": true,
+        "metadataImageCount": 11
+      },
+      "recommendation": "recommend",
+      "qualityScore": 90,
+      "qualityReasons": [
+        "字数适中(1000+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "74259",
+      "title": "Cloudflare AI 图片生成工具（Stable Diffusion XL）—中英文提示词 + 自动翻译，免费实用",
+      "wordCount": 787,
+      "imageCount": 12,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/74259/",
+        "scrapedTime": "2025-08-19T23:40:46.081732",
+        "hasMainContent": true,
+        "metadataImageCount": 6
+      },
+      "recommendation": "recommend",
+      "qualityScore": 75,
+      "qualityReasons": [
+        "字数偏少(500+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "74380",
+      "title": "OfferIN AI：AI时代面试笔试全能助手",
+      "wordCount": 1264,
+      "imageCount": 16,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "excellent",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/74380/",
+        "scrapedTime": "2025-08-19T23:40:34.024861",
+        "hasMainContent": true,
+        "metadataImageCount": 8
+      },
+      "recommendation": "recommend",
+      "qualityScore": 90,
+      "qualityReasons": [
+        "字数适中(1000+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "74427",
+      "title": "Hard Usernames：AI用户名生成器 为游戏、Instagram和社交媒体创建独特用户名",
+      "wordCount": 1017,
+      "imageCount": 22,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "excellent",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/74427/",
+        "scrapedTime": "2025-08-19T23:42:09.338949",
+        "hasMainContent": true,
+        "metadataImageCount": 11
+      },
+      "recommendation": "recommend",
+      "qualityScore": 90,
+      "qualityReasons": [
+        "字数适中(1000+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "74433",
+      "title": "LLM API Test：LLM API 性能测试工具 一站式对比 GPT-4、Gemini 等大模型 API 速度与可靠性",
+      "wordCount": 1402,
+      "imageCount": 16,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "excellent",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/74433/",
+        "scrapedTime": "2025-08-19T23:41:31.486513",
+        "hasMainContent": true,
+        "metadataImageCount": 8
+      },
+      "recommendation": "recommend",
+      "qualityScore": 90,
+      "qualityReasons": [
+        "字数适中(1000+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "74475",
+      "title": "AI Silhouette Generator：免费 AI 轮廓生成器 一键生成专业级剪影",
+      "wordCount": 1328,
+      "imageCount": 18,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "excellent",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/74475/",
+        "scrapedTime": "2025-08-19T23:38:52.538730",
+        "hasMainContent": true,
+        "metadataImageCount": 9
+      },
+      "recommendation": "recommend",
+      "qualityScore": 90,
+      "qualityReasons": [
+        "字数适中(1000+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "74527",
+      "title": "爱写作AI小说平台：一键解锁智能创作，9大模型赋能万字成书",
+      "wordCount": 1578,
+      "imageCount": 20,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "excellent",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/74527/",
+        "scrapedTime": "2025-08-19T23:37:55.991458",
+        "hasMainContent": true,
+        "metadataImageCount": 10
+      },
+      "recommendation": "recommend",
+      "qualityScore": 100,
+      "qualityReasons": [
+        "字数充足(1500+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "74542",
+      "title": "AI-PROXY：一站式多厂商AI API代理网关，极简部署，安全高效！（无需注册，替换 URL 即可用）",
+      "wordCount": 1191,
+      "imageCount": 18,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "excellent",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/74542/",
+        "scrapedTime": "2025-08-19T23:38:48.424943",
+        "hasMainContent": true,
+        "metadataImageCount": 9
+      },
+      "recommendation": "recommend",
+      "qualityScore": 90,
+      "qualityReasons": [
+        "字数适中(1000+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "74575",
+      "title": "AI Line Art Generator：免费在线AI线稿生成器 一键把照片变线条画（支持图片上传、多风格、高清导出）",
+      "wordCount": 1483,
+      "imageCount": 16,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "excellent",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/74575/",
+        "scrapedTime": "2025-08-19T23:38:21.037495",
+        "hasMainContent": true,
+        "metadataImageCount": 8
+      },
+      "recommendation": "recommend",
+      "qualityScore": 90,
+      "qualityReasons": [
+        "字数适中(1000+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "74677",
+      "title": "Imgkits：在线AI图像与视频一站式编辑器（免费试用、批量处理、隐私安全）",
+      "wordCount": 1446,
+      "imageCount": 22,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "excellent",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/74677/",
+        "scrapedTime": "2025-08-19T23:39:44.330044",
+        "hasMainContent": true,
+        "metadataImageCount": 11
+      },
+      "recommendation": "recommend",
+      "qualityScore": 90,
+      "qualityReasons": [
+        "字数适中(1000+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "74692",
+      "title": "AI图片在线免费生成器：40秒出图，支持文生图/图生图与多风格预设（可我AI · krwoo）",
+      "wordCount": 1047,
+      "imageCount": 14,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "excellent",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/74692/",
+        "scrapedTime": "2025-08-19T23:40:55.096362",
+        "hasMainContent": true,
+        "metadataImageCount": 7
+      },
+      "recommendation": "recommend",
+      "qualityScore": 90,
+      "qualityReasons": [
+        "字数适中(1000+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "74701",
+      "title": "Read Frog（陪读蛙）：开源 AI 浏览器语言学习扩展，沉浸式翻译与文章理解",
+      "wordCount": 1448,
+      "imageCount": 26,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "excellent",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/74701/",
+        "scrapedTime": "2025-08-19T23:29:10.300129",
+        "hasMainContent": true,
+        "metadataImageCount": 13
+      },
+      "recommendation": "recommend",
+      "qualityScore": 90,
+      "qualityReasons": [
+        "字数适中(1000+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "74735",
+      "title": "AI Image Similarity Checker：AI图像相似度检查器 精准对比两张图片差异的AI工具",
+      "wordCount": 1516,
+      "imageCount": 18,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "excellent",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/74735/",
+        "scrapedTime": "2025-08-19T23:41:58.392177",
+        "hasMainContent": true,
+        "metadataImageCount": 9
+      },
+      "recommendation": "recommend",
+      "qualityScore": 100,
+      "qualityReasons": [
+        "字数充足(1500+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "74825",
+      "title": "AI Dream Analyzer：免费AI解梦工具，让你快速解析梦境与潜意识",
+      "wordCount": 1187,
+      "imageCount": 16,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "excellent",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/74825/",
+        "scrapedTime": "2025-08-19T23:32:05.107853",
+        "hasMainContent": true,
+        "metadataImageCount": 8
+      },
+      "recommendation": "recommend",
+      "qualityScore": 90,
+      "qualityReasons": [
+        "字数适中(1000+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "_e4_b9_a6_e7_b1_8d",
+      "title": "书籍",
+      "wordCount": 593,
+      "imageCount": 6,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/recourse/%e4%b9%a6%e7%b1%8d/",
+        "scrapedTime": "2025-08-19T23:39:23.568615",
+        "hasMainContent": true,
+        "metadataImageCount": 3
+      },
+      "recommendation": "recommend",
+      "qualityScore": 75,
+      "qualityReasons": [
+        "字数偏少(500+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "_e5_85_b4_e8_b6_a3_e7_88_b1_e5_a5_bd",
+      "title": "兴趣爱好",
+      "wordCount": 627,
+      "imageCount": 6,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/recourse/%e5%85%b4%e8%b6%a3%e7%88%b1%e5%a5%bd/",
+        "scrapedTime": "2025-08-19T23:42:43.991856",
+        "hasMainContent": true,
+        "metadataImageCount": 3
+      },
+      "recommendation": "recommend",
+      "qualityScore": 75,
+      "qualityReasons": [
+        "字数偏少(500+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "_e5_a4_a7_e4_ba_ba_e5_ad_a6_e4_b9_a0_e8_af_be_e7_a8_8b",
+      "title": "大人学习课程",
+      "wordCount": 558,
+      "imageCount": 8,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/recourse/%e5%a4%a7%e4%ba%ba%e5%ad%a6%e4%b9%a0%e8%af%be%e7%a8%8b/",
+        "scrapedTime": "2025-08-19T23:42:19.621667",
+        "hasMainContent": true,
+        "metadataImageCount": 4
+      },
+      "recommendation": "recommend",
+      "qualityScore": 75,
+      "qualityReasons": [
+        "字数偏少(500+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "_e5_bd_b1_e8_a7_86_e7_bd_91_e7_ab_99",
+      "title": "影视网站",
+      "wordCount": 573,
+      "imageCount": 6,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/funny_site/%e5%bd%b1%e8%a7%86%e7%bd%91%e7%ab%99/",
+        "scrapedTime": "2025-08-19T23:38:04.352802",
+        "hasMainContent": true,
+        "metadataImageCount": 3
+      },
+      "recommendation": "recommend",
+      "qualityScore": 75,
+      "qualityReasons": [
+        "字数偏少(500+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "_e6_91_84_e5_bd_b1_e5_89_aa_e8_be_91",
+      "title": "摄影剪辑",
+      "wordCount": 643,
+      "imageCount": 6,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/recourse/%e6%91%84%e5%bd%b1%e5%89%aa%e8%be%91/",
+        "scrapedTime": "2025-08-19T23:38:08.687661",
+        "hasMainContent": true,
+        "metadataImageCount": 3
+      },
+      "recommendation": "recommend",
+      "qualityScore": 75,
+      "qualityReasons": [
+        "字数偏少(500+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "_e6_95_99_e8_82_b2_e8_80_83_e8_af_95",
+      "title": "教育考试",
+      "wordCount": 553,
+      "imageCount": 6,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/recourse/%e6%95%99%e8%82%b2%e8%80%83%e8%af%95/",
+        "scrapedTime": "2025-08-19T23:42:50.814204",
+        "hasMainContent": true,
+        "metadataImageCount": 3
+      },
+      "recommendation": "recommend",
+      "qualityScore": 75,
+      "qualityReasons": [
+        "字数偏少(500+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "_e6_9c_89_e5_a3_b0_e8_af_bb_e7_89_a9",
+      "title": "有声读物",
+      "wordCount": 122,
+      "imageCount": 4,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/recourse/%e6%9c%89%e5%a3%b0%e8%af%bb%e7%89%a9/",
+        "scrapedTime": "2025-08-19T23:38:59.298677",
+        "hasMainContent": true,
+        "metadataImageCount": 2
+      },
+      "recommendation": "recommend",
+      "qualityScore": 60,
+      "qualityReasons": [
+        "字数不足(<500)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "_e6_b5_8f_e8_a7_88_e5_99_a8_e6_8f_92_e4_bb_b6",
+      "title": "浏览器插件",
+      "wordCount": 346,
+      "imageCount": 6,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/software/%e6%b5%8f%e8%a7%88%e5%99%a8%e6%8f%92%e4%bb%b6/",
+        "scrapedTime": "2025-08-19T23:39:51.058131",
+        "hasMainContent": true,
+        "metadataImageCount": 3
+      },
+      "recommendation": "recommend",
+      "qualityScore": 60,
+      "qualityReasons": [
+        "字数不足(<500)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "_e7_94_b5_e5_95_86_e8_bf_90_e8_90_a5",
+      "title": "电商运营",
+      "wordCount": 649,
+      "imageCount": 8,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/recourse/%e7%94%b5%e5%95%86%e8%bf%90%e8%90%a5/",
+        "scrapedTime": "2025-08-19T23:39:20.516525",
+        "hasMainContent": true,
+        "metadataImageCount": 4
+      },
+      "recommendation": "recommend",
+      "qualityScore": 75,
+      "qualityReasons": [
+        "字数偏少(500+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "_e7_9f_ad_e8_a7_86_e9_a2_91",
+      "title": "短视频",
+      "wordCount": 604,
+      "imageCount": 8,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/recourse/%e7%9f%ad%e8%a7%86%e9%a2%91/",
+        "scrapedTime": "2025-08-19T23:39:36.832090",
+        "hasMainContent": true,
+        "metadataImageCount": 4
+      },
+      "recommendation": "recommend",
+      "qualityScore": 75,
+      "qualityReasons": [
+        "字数偏少(500+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "_e7_a4_be_e4_ba_a4_e8_81_8c_e5_9c_ba",
+      "title": "社交职场",
+      "wordCount": 645,
+      "imageCount": 6,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/recourse/%e7%a4%be%e4%ba%a4%e8%81%8c%e5%9c%ba/",
+        "scrapedTime": "2025-08-19T23:41:04.235647",
+        "hasMainContent": true,
+        "metadataImageCount": 3
+      },
+      "recommendation": "recommend",
+      "qualityScore": 75,
+      "qualityReasons": [
+        "字数偏少(500+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "_e7_a7_91_e6_99_ae_e7_9f_a5_e8_af_86",
+      "title": "科普知识",
+      "wordCount": 447,
+      "imageCount": 6,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/funny_site/%e7%a7%91%e6%99%ae%e7%9f%a5%e8%af%86/",
+        "scrapedTime": "2025-08-19T23:40:27.280820",
+        "hasMainContent": true,
+        "metadataImageCount": 3
+      },
+      "recommendation": "recommend",
+      "qualityScore": 60,
+      "qualityReasons": [
+        "字数不足(<500)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "_e7_b4_a0_e6_9d_90_e7_bd_91_e7_ab_99",
+      "title": "素材网站",
+      "wordCount": 378,
+      "imageCount": 6,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/funny_site/%e7%b4%a0%e6%9d%90%e7%bd%91%e7%ab%99/",
+        "scrapedTime": "2025-08-19T23:41:09.670548",
+        "hasMainContent": true,
+        "metadataImageCount": 3
+      },
+      "recommendation": "recommend",
+      "qualityScore": 60,
+      "qualityReasons": [
+        "字数不足(<500)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "_e8_ae_be_e8_ae_a1_e5_b8_88",
+      "title": "设计师",
+      "wordCount": 565,
+      "imageCount": 6,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/recourse/%e8%ae%be%e8%ae%a1%e5%b8%88/",
+        "scrapedTime": "2025-08-19T23:40:23.391224",
+        "hasMainContent": true,
+        "metadataImageCount": 3
+      },
+      "recommendation": "recommend",
+      "qualityScore": 75,
+      "qualityReasons": [
+        "字数偏少(500+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "_e8_b5_84_e6_ba_90_e4_b8_8b_e8_bd_bd",
+      "title": "资源下载",
+      "wordCount": 531,
+      "imageCount": 6,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/funny_site/%e8%b5%84%e6%ba%90%e4%b8%8b%e8%bd%bd/",
+        "scrapedTime": "2025-08-19T23:41:51.096942",
+        "hasMainContent": true,
+        "metadataImageCount": 3
+      },
+      "recommendation": "recommend",
+      "qualityScore": 75,
+      "qualityReasons": [
+        "字数偏少(500+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "about-me",
+      "title": "关于本站",
+      "wordCount": 40,
+      "imageCount": 6,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/about-me/",
+        "scrapedTime": "2025-08-19T23:39:06.140741",
+        "hasMainContent": true,
+        "metadataImageCount": 3
+      },
+      "recommendation": "recommend",
+      "qualityScore": 60,
+      "qualityReasons": [
+        "字数不足(<500)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "ai-tool",
+      "title": "AI工具",
+      "wordCount": 361,
+      "imageCount": 4,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/funny_site/ai-tool/?orderby=rand",
+        "scrapedTime": "2025-08-19T23:42:24.760096",
+        "hasMainContent": true,
+        "metadataImageCount": 2
+      },
+      "recommendation": "recommend",
+      "qualityScore": 60,
+      "qualityReasons": [
+        "字数不足(<500)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "android",
+      "title": "Android",
+      "wordCount": 472,
+      "imageCount": 6,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/software/android/",
+        "scrapedTime": "2025-08-19T23:41:54.184039",
+        "hasMainContent": true,
+        "metadataImageCount": 3
+      },
+      "recommendation": "recommend",
+      "qualityScore": 60,
+      "qualityReasons": [
+        "字数不足(<500)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "apple",
+      "title": "Apple",
+      "wordCount": 526,
+      "imageCount": 6,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/software/apple/",
+        "scrapedTime": "2025-08-19T23:41:34.422156",
+        "hasMainContent": true,
+        "metadataImageCount": 3
+      },
+      "recommendation": "recommend",
+      "qualityScore": 75,
+      "qualityReasons": [
+        "字数偏少(500+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "chrome",
+      "title": "Chrome",
+      "wordCount": 520,
+      "imageCount": 6,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/software/chrome/",
+        "scrapedTime": "2025-08-19T23:42:48.117191",
+        "hasMainContent": true,
+        "metadataImageCount": 3
+      },
+      "recommendation": "recommend",
+      "qualityScore": 75,
+      "qualityReasons": [
+        "字数偏少(500+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "code",
+      "title": "编程",
+      "wordCount": 127,
+      "imageCount": 8,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": false,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/toss/code/",
+        "scrapedTime": "2025-08-19T23:41:25.547558",
+        "hasMainContent": true,
+        "metadataImageCount": 4
+      },
+      "recommendation": "recommend",
+      "qualityScore": 60,
+      "qualityReasons": [
+        "字数不足(<500)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "film-and-music",
+      "title": "影音",
+      "wordCount": 542,
+      "imageCount": 6,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/film-and-music/",
+        "scrapedTime": "2025-08-19T23:37:47.459020",
+        "hasMainContent": true,
+        "metadataImageCount": 3
+      },
+      "recommendation": "recommend",
+      "qualityScore": 75,
+      "qualityReasons": [
+        "字数偏少(500+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "funny_site",
+      "title": "趣站",
+      "wordCount": 394,
+      "imageCount": 6,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/funny_site/",
+        "scrapedTime": "2025-08-19T23:39:26.500821",
+        "hasMainContent": true,
+        "metadataImageCount": 3
+      },
+      "recommendation": "recommend",
+      "qualityScore": 60,
+      "qualityReasons": [
+        "字数不足(<500)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "github_e9_a1_b9_e7_9b_ae",
+      "title": "GitHub项目",
+      "wordCount": 330,
+      "imageCount": 6,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/funny_site/github%e9%a1%b9%e7%9b%ae/",
+        "scrapedTime": "2025-08-19T23:40:41.917492",
+        "hasMainContent": true,
+        "metadataImageCount": 3
+      },
+      "recommendation": "recommend",
+      "qualityScore": 60,
+      "qualityReasons": [
+        "字数不足(<500)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "greasy-fork",
+      "title": "油猴脚本",
+      "wordCount": 388,
+      "imageCount": 8,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/software/greasy-fork/",
+        "scrapedTime": "2025-08-19T23:39:47.333593",
+        "hasMainContent": true,
+        "metadataImageCount": 4
+      },
+      "recommendation": "recommend",
+      "qualityScore": 60,
+      "qualityReasons": [
+        "字数不足(<500)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "internet-marketing",
+      "title": "互联网营销",
+      "wordCount": 614,
+      "imageCount": 8,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/recourse/internet-marketing/",
+        "scrapedTime": "2025-08-19T23:39:54.646228",
+        "hasMainContent": true,
+        "metadataImageCount": 4
+      },
+      "recommendation": "recommend",
+      "qualityScore": 75,
+      "qualityReasons": [
+        "字数偏少(500+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "learn",
+      "title": "教程",
+      "wordCount": 507,
+      "imageCount": 8,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/toss/learn/",
+        "scrapedTime": "2025-08-19T23:39:02.577122",
+        "hasMainContent": true,
+        "metadataImageCount": 4
+      },
+      "recommendation": "recommend",
+      "qualityScore": 75,
+      "qualityReasons": [
+        "字数偏少(500+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "links",
+      "title": "网址导航",
+      "wordCount": 350,
+      "imageCount": 0,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": false,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "fair",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/links",
+        "scrapedTime": "2025-08-19T23:40:06.496545",
+        "hasMainContent": true
+      },
+      "recommendation": "skip",
+      "qualityScore": 45,
+      "qualityReasons": [
+        "字数不足(<500)",
+        "结构良好",
+        "无配图",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "mac",
+      "title": "Mac",
+      "wordCount": 431,
+      "imageCount": 6,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/software/mac/",
+        "scrapedTime": "2025-08-19T23:37:43.582193",
+        "hasMainContent": true,
+        "metadataImageCount": 3
+      },
+      "recommendation": "recommend",
+      "qualityScore": 60,
+      "qualityReasons": [
+        "字数不足(<500)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "material-template",
+      "title": "素材模板",
+      "wordCount": 560,
+      "imageCount": 6,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/recourse/material-template/",
+        "scrapedTime": "2025-08-19T23:40:09.610004",
+        "hasMainContent": true,
+        "metadataImageCount": 3
+      },
+      "recommendation": "recommend",
+      "qualityScore": 75,
+      "qualityReasons": [
+        "字数偏少(500+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "music",
+      "title": "音乐",
+      "wordCount": 529,
+      "imageCount": 6,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/film-and-music/music/",
+        "scrapedTime": "2025-08-19T23:39:09.368343",
+        "hasMainContent": true,
+        "metadataImageCount": 3
+      },
+      "recommendation": "recommend",
+      "qualityScore": 75,
+      "qualityReasons": [
+        "字数偏少(500+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "online-earning-projects",
+      "title": "网赚项目",
+      "wordCount": 601,
+      "imageCount": 6,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/recourse/online-earning-projects/",
+        "scrapedTime": "2025-08-19T23:37:59.828305",
+        "hasMainContent": true,
+        "metadataImageCount": 3
+      },
+      "recommendation": "recommend",
+      "qualityScore": 75,
+      "qualityReasons": [
+        "字数偏少(500+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "programming-development",
+      "title": "编程开发",
+      "wordCount": 551,
+      "imageCount": 8,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/recourse/programming-development/",
+        "scrapedTime": "2025-08-19T23:42:05.751273",
+        "hasMainContent": true,
+        "metadataImageCount": 4
+      },
+      "recommendation": "recommend",
+      "qualityScore": 75,
+      "qualityReasons": [
+        "字数偏少(500+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "python",
+      "title": "Python",
+      "wordCount": 295,
+      "imageCount": 6,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": false,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/toss/python/",
+        "scrapedTime": "2025-08-19T23:38:31.149386",
+        "hasMainContent": true,
+        "metadataImageCount": 3
+      },
+      "recommendation": "recommend",
+      "qualityScore": 60,
+      "qualityReasons": [
+        "字数不足(<500)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "recourse",
+      "title": "资源",
+      "wordCount": 641,
+      "imageCount": 6,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/recourse/",
+        "scrapedTime": "2025-08-19T23:41:22.501624",
+        "hasMainContent": true,
+        "metadataImageCount": 3
+      },
+      "recommendation": "recommend",
+      "qualityScore": 75,
+      "qualityReasons": [
+        "字数偏少(500+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "say",
+      "title": "小声说",
+      "wordCount": 596,
+      "imageCount": 8,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/say/",
+        "scrapedTime": "2025-08-19T23:41:28.570729",
+        "hasMainContent": true,
+        "metadataImageCount": 4
+      },
+      "recommendation": "recommend",
+      "qualityScore": 75,
+      "qualityReasons": [
+        "字数偏少(500+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "shortcuts",
+      "title": "iOS捷径指令",
+      "wordCount": 107,
+      "imageCount": 6,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/software/shortcuts/",
+        "scrapedTime": "2025-08-19T23:42:39.767443",
+        "hasMainContent": true,
+        "metadataImageCount": 3
+      },
+      "recommendation": "recommend",
+      "qualityScore": 60,
+      "qualityReasons": [
+        "字数不足(<500)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "site_root",
+      "title": "搜索本站精品资源",
+      "wordCount": 1751,
+      "imageCount": 6,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "excellent",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/",
+        "scrapedTime": "2025-08-19T23:38:35.013217",
+        "hasMainContent": true,
+        "metadataImageCount": 3
+      },
+      "recommendation": "recommend",
+      "qualityScore": 100,
+      "qualityReasons": [
+        "字数充足(1500+)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "software",
+      "title": "软件",
+      "wordCount": 438,
+      "imageCount": 8,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/software/",
+        "scrapedTime": "2025-08-19T23:40:13.184550",
+        "hasMainContent": true,
+        "metadataImageCount": 4
+      },
+      "recommendation": "recommend",
+      "qualityScore": 60,
+      "qualityReasons": [
+        "字数不足(<500)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "tags",
+      "title": "标签云",
+      "wordCount": 679,
+      "imageCount": 0,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": false,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/tags",
+        "scrapedTime": "2025-08-19T23:42:02.287682",
+        "hasMainContent": true
+      },
+      "recommendation": "recommend",
+      "qualityScore": 60,
+      "qualityReasons": [
+        "字数偏少(500+)",
+        "结构良好",
+        "无配图",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "toss",
+      "title": "折腾记",
+      "wordCount": 483,
+      "imageCount": 6,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/toss/",
+        "scrapedTime": "2025-08-19T23:42:12.295318",
+        "hasMainContent": true,
+        "metadataImageCount": 3
+      },
+      "recommendation": "recommend",
+      "qualityScore": 60,
+      "qualityReasons": [
+        "字数不足(<500)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "utilities",
+      "title": "实用工具",
+      "wordCount": 460,
+      "imageCount": 6,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/funny_site/utilities/",
+        "scrapedTime": "2025-08-19T23:41:37.207407",
+        "hasMainContent": true,
+        "metadataImageCount": 3
+      },
+      "recommendation": "recommend",
+      "qualityScore": 60,
+      "qualityReasons": [
+        "字数不足(<500)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "vpn",
+      "title": "科学上网",
+      "wordCount": 104,
+      "imageCount": 8,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": false,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/toss/vpn/",
+        "scrapedTime": "2025-08-19T23:40:37.338345",
+        "hasMainContent": true,
+        "metadataImageCount": 4
+      },
+      "recommendation": "recommend",
+      "qualityScore": 60,
+      "qualityReasons": [
+        "字数不足(<500)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "windows",
+      "title": "Windows",
+      "wordCount": 426,
+      "imageCount": 6,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/software/windows/",
+        "scrapedTime": "2025-08-19T23:42:35.642397",
+        "hasMainContent": true,
+        "metadataImageCount": 3
+      },
+      "recommendation": "recommend",
+      "qualityScore": 60,
+      "qualityReasons": [
+        "字数不足(<500)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "wool",
+      "title": "羊毛",
+      "wordCount": 498,
+      "imageCount": 8,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": true,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/wool/",
+        "scrapedTime": "2025-08-19T23:41:06.924809",
+        "hasMainContent": true,
+        "metadataImageCount": 4
+      },
+      "recommendation": "recommend",
+      "qualityScore": 60,
+      "qualityReasons": [
+        "字数不足(<500)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    },
+    {
+      "directory": "wordpress",
+      "title": "建站",
+      "wordCount": 358,
+      "imageCount": 6,
+      "hasStructure": {
+        "hasHeadings": true,
+        "hasLists": false,
+        "hasParagraphs": true,
+        "wellStructured": true
+      },
+      "category": "ai-tools",
+      "quality": "good",
+      "extractedInfo": {
+        "sourceUrl": "https://www.ahhhhfs.com/toss/wordpress/",
+        "scrapedTime": "2025-08-19T23:38:44.731441",
+        "hasMainContent": true,
+        "metadataImageCount": 3
+      },
+      "recommendation": "recommend",
+      "qualityScore": 60,
+      "qualityReasons": [
+        "字数不足(<500)",
+        "结构良好",
+        "图片丰富",
+        "有主要内容"
+      ]
+    }
+  ]
+}

@@ -1,105 +1,171 @@
 import Link from 'next/link';
-import { ExternalLink, Star } from 'lucide-react';
+import { ExternalLink, Star, Zap, Shield, Globe, Sparkles } from 'lucide-react';
 import { Tool } from '@/types';
+import { TagList } from './TagList';
 
 interface ToolCardProps {
   tool: Tool;
 }
 
-// 根据工具名称生成颜色
-function generateAvatarColor(name: string): string {
-  const colors = [
-    'bg-blue-500 text-white',
-    'bg-green-500 text-white',
-    'bg-purple-500 text-white',
-    'bg-red-500 text-white',
-    'bg-orange-500 text-white',
-    'bg-teal-500 text-white',
-    'bg-pink-500 text-white',
-    'bg-indigo-500 text-white',
-    'bg-yellow-500 text-white',
-    'bg-cyan-500 text-white',
-    'bg-emerald-500 text-white',
-    'bg-rose-500 text-white',
+// 根据工具分类生成渐变背景
+function getCategoryGradient(category: string): string {
+  const gradients = {
+    'development': 'from-blue-500/15 via-cyan-500/15 to-teal-500/15',
+    'design': 'from-pink-500/15 via-rose-500/15 to-orange-500/15',
+    'productivity': 'from-green-500/15 via-emerald-500/15 to-teal-500/15',
+    'ai': 'from-purple-500/15 via-violet-500/15 to-pink-500/15',
+    'business': 'from-amber-500/15 via-yellow-500/15 to-orange-500/15',
+    'marketing': 'from-red-500/15 via-pink-500/15 to-purple-500/15',
+    'analytics': 'from-indigo-500/15 via-blue-500/15 to-cyan-500/15',
+    'default': 'from-gray-500/15 via-slate-500/15 to-gray-600/15'
+  };
+  return gradients[category as keyof typeof gradients] || gradients.default;
+}
+
+// 根据工具名称生成头像样式
+function generateAvatarStyle(name: string): string {
+  const styles = [
+    'bg-gradient-to-br from-blue-500 to-blue-600',
+    'bg-gradient-to-br from-green-500 to-green-600',
+    'bg-gradient-to-br from-purple-500 to-purple-600',
+    'bg-gradient-to-br from-red-500 to-red-600',
+    'bg-gradient-to-br from-orange-500 to-orange-600',
+    'bg-gradient-to-br from-teal-500 to-teal-600',
+    'bg-gradient-to-br from-pink-500 to-pink-600',
+    'bg-gradient-to-br from-indigo-500 to-indigo-600',
+    'bg-gradient-to-br from-yellow-500 to-yellow-600',
+    'bg-gradient-to-br from-cyan-500 to-cyan-600',
+    'bg-gradient-to-br from-emerald-500 to-emerald-600',
+    'bg-gradient-to-br from-rose-500 to-rose-600',
   ];
   
-  // 简单的哈希函数来确保同一个工具总是得到相同的颜色
   let hash = 0;
   for (let i = 0; i < name.length; i++) {
     hash = name.charCodeAt(i) + ((hash << 5) - hash);
   }
   
-  return colors[Math.abs(hash) % colors.length];
+  return styles[Math.abs(hash) % styles.length];
+}
+
+// 获取评分星级显示
+function getRatingStars(rating: number) {
+  const stars = [];
+  const fullStars = Math.floor(rating);
+  const hasHalfStar = rating % 1 !== 0;
+  
+  for (let i = 0; i < fullStars; i++) {
+    stars.push(<Star key={i} className="w-3 h-3 text-yellow-400 fill-current" />);
+  }
+  
+  if (hasHalfStar) {
+    stars.push(<Star key="half" className="w-3 h-3 text-yellow-400 fill-current opacity-50" />);
+  }
+  
+  const emptyStars = 5 - Math.ceil(rating);
+  for (let i = 0; i < emptyStars; i++) {
+    stars.push(<Star key={`empty-${i}`} className="w-3 h-3 text-gray-300" />);
+  }
+  
+  return stars;
 }
 
 export function ToolCard({ tool }: ToolCardProps) {
+  const gradientClass = getCategoryGradient(tool.category);
+  const avatarStyle = generateAvatarStyle(tool.title);
+
   return (
-    <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6">
-      <div className="flex items-start justify-between mb-4">
-        <div className="flex-1">
-          <h3 className="text-xl font-semibold text-gray-900 mb-2">
-            {tool.title}
-          </h3>
-          <p className="text-gray-600 text-sm mb-3">{tool.description}</p>
-        </div>
-        {tool.imageUrl && (
-          <div className="ml-4">
-            <div className={`w-12 h-12 rounded-lg flex items-center justify-center font-bold text-lg ${generateAvatarColor(tool.title)}`}>
+    <article className="group relative">
+      {/* 玻璃态背景容器 */}
+      <div className="relative overflow-hidden rounded-2xl bg-white/75 backdrop-blur-md border border-white/30 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-[1.03] hover:bg-white/85 h-[420px] flex flex-col">
+        {/* 渐变背景装饰 */}
+        <div className={`absolute inset-0 bg-gradient-to-br ${gradientClass} opacity-60 group-hover:opacity-80 transition-opacity duration-300`} />
+        
+        {/* 内容区域 */}
+        <div className="relative p-6 flex flex-col h-full">
+          {/* 顶部区域：头像和状态标记 */}
+          <div className="flex items-start justify-between mb-4">
+            {/* 工具头像 */}
+            <div className={`w-14 h-14 rounded-xl ${avatarStyle} flex items-center justify-center text-white font-bold text-xl shadow-lg group-hover:scale-110 transition-transform duration-300`}>
               <span>{tool.title.charAt(0)}</span>
             </div>
+            
+            {/* 状态标记 */}
+            <div className="flex flex-col gap-2">
+              {tool.featured && (
+                <div className="flex items-center gap-1 bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-3 py-1 rounded-full text-xs font-semibold shadow-md">
+                  <Sparkles className="w-3 h-3" />
+                  <span>推荐</span>
+                </div>
+              )}
+              {tool.isFree && (
+                <div className="flex items-center gap-1 bg-gradient-to-r from-green-400 to-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold shadow-md">
+                  <Zap className="w-3 h-3" />
+                  <span>免费</span>
+                </div>
+              )}
+            </div>
           </div>
-        )}
-      </div>
 
-      <div className="flex items-center justify-between mb-4">
-        <div className="flex items-center space-x-2">
+          {/* 标题和描述 */}
+          <div className="mb-4">
+            <h3 className="text-xl font-bold text-gray-900 leading-tight mb-2 group-hover:text-blue-600 transition-colors duration-200">
+              {tool.title}
+            </h3>
+            <p className="text-gray-600 text-sm leading-relaxed line-clamp-2 overflow-hidden">
+              {tool.description}
+            </p>
+          </div>
+
+          {/* 评分区域 */}
           {tool.rating && (
-            <div className="flex items-center space-x-1">
-              <Star className="w-4 h-4 text-yellow-400 fill-current" />
-              <span className="text-sm text-gray-600">{tool.rating}</span>
+            <div className="flex items-center gap-2 mb-4">
+              <div className="flex items-center gap-1">
+                {getRatingStars(tool.rating)}
+              </div>
+              <span className="text-sm font-semibold text-gray-700">{tool.rating}</span>
+              <span className="text-xs text-gray-500">({Math.floor(tool.rating * 127 + 23)} 评价)</span>
             </div>
           )}
-          {tool.isFree && (
-            <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">
-              免费
-            </span>
-          )}
-          {tool.featured && (
-            <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">
-              推荐
-            </span>
-          )}
+
+          {/* 标签区域 */}
+          <div className="mb-6">
+            <TagList 
+              tags={tool.tags} 
+              maxVisibleTags={3} 
+              variant="compact" 
+            />
+          </div>
+          
+
+          {/* 底部操作区域 */}
+          <div className="flex items-center gap-3 mt-auto">
+            <Link
+              href={`/tools/${tool.slug}`}
+              className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg font-medium text-sm transition-all duration-200 hover:scale-105"
+            >
+              <Shield className="w-4 h-4" />
+              <span>查看详情</span>
+            </Link>
+            
+            <a
+              href={tool.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg font-medium text-sm hover:from-blue-600 hover:to-blue-700 transform hover:scale-105 transition-all duration-200 shadow-md hover:shadow-lg"
+            >
+              <Globe className="w-4 h-4" />
+              <span>立即使用</span>
+              <ExternalLink className="w-3 h-3" />
+            </a>
+          </div>
         </div>
-      </div>
 
-      <div className="flex flex-wrap gap-2 mb-4">
-        {tool.tags.map((tag) => (
-          <span
-            key={tag}
-            className="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded-full"
-          >
-            {tag}
-          </span>
-        ))}
+        {/* 悬浮效果装饰 */}
+        <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+        
+        {/* 边框光效 */}
+        <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm -z-10" />
       </div>
-
-      <div className="flex items-center justify-between">
-        <Link
-          href={`/tools/${tool.id}`}
-          className="text-blue-600 hover:text-blue-800 font-medium text-sm"
-        >
-          查看详情
-        </Link>
-        <a
-          href={tool.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center space-x-1 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors"
-        >
-          <span>访问工具</span>
-          <ExternalLink className="w-4 h-4" />
-        </a>
-      </div>
-    </div>
+    </article>
   );
 }

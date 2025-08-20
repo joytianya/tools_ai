@@ -8,6 +8,7 @@ import { NAVIGATION } from '@/lib/constants';
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [dropdownPosition, setDropdownPosition] = useState({ top: 0, left: 0 });
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   // 关闭下拉菜单当点击外部时
@@ -25,7 +26,7 @@ export function Header() {
   }, []);
 
   return (
-    <header className="bg-white shadow-sm border-b">
+    <header className="bg-white shadow-sm border-b relative z-[99999]" style={{ isolation: 'isolate' }}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -43,8 +44,22 @@ export function Header() {
                   <div className="relative">
                     <button
                       className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 transition-colors py-2"
-                      onClick={() => setActiveDropdown(activeDropdown === item.name ? null : item.name)}
-                      onMouseEnter={() => setActiveDropdown(item.name)}
+                      onClick={(e) => {
+                        const rect = e.currentTarget.getBoundingClientRect();
+                        setDropdownPosition({ 
+                          top: rect.bottom + 4, 
+                          left: rect.left 
+                        });
+                        setActiveDropdown(activeDropdown === item.name ? null : item.name);
+                      }}
+                      onMouseEnter={(e) => {
+                        const rect = e.currentTarget.getBoundingClientRect();
+                        setDropdownPosition({ 
+                          top: rect.bottom + 4, 
+                          left: rect.left 
+                        });
+                        setActiveDropdown(item.name);
+                      }}
                     >
                       <span>{item.name}</span>
                       <ChevronDown className={`w-4 h-4 transition-transform ${
@@ -55,7 +70,14 @@ export function Header() {
                     {/* 下拉菜单 */}
                     {activeDropdown === item.name && (
                       <div 
-                        className="absolute top-full left-0 mt-1 w-48 bg-white border border-gray-200 rounded-lg shadow-lg z-50"
+                        className="fixed w-48 max-w-[calc(100vw-2rem)] bg-white border border-gray-200 rounded-lg shadow-lg"
+                        style={{ 
+                          zIndex: 999999,
+                          position: 'fixed',
+                          top: `${dropdownPosition.top}px`,
+                          left: `${dropdownPosition.left}px`,
+                          boxShadow: '0 10px 25px rgba(0,0,0,0.1)'
+                        }}
                         onMouseLeave={() => setActiveDropdown(null)}
                       >
                         <div className="py-2">

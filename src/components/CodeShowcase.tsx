@@ -36,21 +36,24 @@ export function CodeShowcase({ examples, className = "" }: CodeShowcaseProps) {
   const currentExample = examples[activeTab];
 
   return (
-    <div className={`bg-gray-900 rounded-xl overflow-hidden ${className}`}>
+    <div className={`bg-gray-900 rounded-xl overflow-hidden w-full ${className}`}>
       {/* 标签页 */}
-      <div className="bg-gray-800 px-4 py-2 border-b border-gray-700">
-        <div className="flex space-x-1 overflow-x-auto">
+      <div className="bg-gray-800 px-2 sm:px-4 py-2 border-b border-gray-700">
+        <div className="flex space-x-1 overflow-x-auto scrollbar-hide pb-1">
           {examples.map((example, index) => (
             <button
               key={example.id}
               onClick={() => setActiveTab(index)}
-              className={`px-3 py-1.5 text-sm rounded-md transition-colors whitespace-nowrap ${
+              className={`px-2 sm:px-3 py-1.5 text-xs sm:text-sm rounded-md transition-colors whitespace-nowrap flex-shrink-0 min-w-0 ${
                 activeTab === index
                   ? 'bg-blue-600 text-white'
                   : 'text-gray-300 hover:text-white hover:bg-gray-700'
               }`}
+              title={example.title}
             >
-              {example.title}
+              <span className="truncate max-w-[120px] sm:max-w-none">
+                {example.title}
+              </span>
             </button>
           ))}
         </div>
@@ -93,8 +96,16 @@ export function CodeShowcase({ examples, className = "" }: CodeShowcaseProps) {
         </div>
 
         {/* 代码内容 */}
-        <div className="p-4 overflow-x-auto">
-          <pre className="text-sm text-gray-300 font-mono leading-relaxed">
+        <div className="p-4 w-full overflow-x-auto">
+          <pre 
+            className="text-xs sm:text-sm text-gray-300 font-mono leading-relaxed whitespace-pre-wrap w-full"
+            style={{ 
+              wordBreak: 'break-all', 
+              overflowWrap: 'break-word',
+              width: '100%',
+              maxWidth: '100%'
+            }}
+          >
             <code>{currentExample.code}</code>
           </pre>
         </div>

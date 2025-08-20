@@ -19,7 +19,7 @@ export default function PrivacyPage() {
             
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-600 mb-6">
-                最后更新日期：2024年1月1日
+                最后更新日期：2025年1月1日
               </p>
 
               <h2 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
@@ -51,10 +51,10 @@ export default function PrivacyPage() {
                 3. Google AdSense
               </h2>
               <p className="text-gray-700 mb-4">
-                我们使用Google AdSense在我们的网站上显示广告。Google使用Cookie来根据您对本网站和其他网站的访问情况向您显示广告。
+                我们使用Google AdSense在我们的网站上显示广告。Google使用Cookie来根据您对本网站和其他网站的访问情况向您显示个性化广告。Google可能会收集和使用您的信息来改善广告相关性。
               </p>
               <p className="text-gray-700 mb-6">
-                您可以通过访问<a href="https://www.google.com/privacy/ads/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Google广告设置页面</a>来选择不使用个性化广告。
+                您可以通过以下方式管理广告偏好：<br/>• 访问<a href="https://www.google.com/privacy/ads/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Google广告设置页面</a>来选择不使用个性化广告<br/>• 访问<a href="https://optout.aboutads.info/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">DAA WebChoices工具</a>来退出基于兴趣的广告
               </p>
 
               <h2 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">

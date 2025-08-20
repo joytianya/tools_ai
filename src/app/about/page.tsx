@@ -3,7 +3,7 @@ import { generateSEO } from '@/lib/seo';
 
 export const metadata = generateSEO({
   title: '关于我们',
-  description: '了解工具分享站的使命、愿景和团队',
+  description: '了解MatrixTools的使命、愿景和团队 - 为新手提供最实用的工具推荐和详细教程',
   url: '/about',
 });
 
@@ -16,7 +16,7 @@ export default function AboutPage() {
             {/* 头部介绍 */}
             <div className="text-center mb-12">
               <h1 className="text-4xl font-bold text-gray-900 mb-4">
-                关于工具分享站
+                关于MatrixTools
               </h1>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                 我们致力于为新手用户提供最实用的工具推荐和详细教程，帮助大家快速提升工作效率

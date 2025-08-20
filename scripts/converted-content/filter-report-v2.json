@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-08-19T16:14:41.736Z",
+  "statistics": {
+    "totalOriginal": 67,
+    "inappropriateFiltered": 15,
+    "lowQualityFiltered": 22,
+    "kept": 30,
+    "categories": {
+      "ai": 16,
+      "development": 1,
+      "productivity": 13,
+      "design": 0,
+      "tools": 0
+    }
+  },
+  "summary": {
+    "totalProcessed": 67,
+    "kept": 30,
+    "inappropriateFiltered": 15,
+    "lowQualityFiltered": 22,
+    "keepRate": 45
+  },
+  "improvements": {
+    "urlExtraction": "Extract URLs from detailed content when original URL is invalid",
+    "descriptionGeneration": "Generate meaningful descriptions based on titles",
+    "categoryOptimization": "Improved category assignment based on content analysis",
+    "tagExtraction": "Enhanced tag extraction with functional keywords"
+  }
+}

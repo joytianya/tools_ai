@@ -51,12 +51,12 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/tools/1" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/tools/vs-code" className="text-gray-400 hover:text-white transition-colors">
                   VS Code
                 </Link>
               </li>
               <li>
-                <Link href="/tools/2" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/tools/figma" className="text-gray-400 hover:text-white transition-colors">
                   Figma
                 </Link>
               </li>
@@ -68,6 +68,16 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4">法律信息</h3>
             <ul className="space-y-2">
               <li>
+                <Link href="/about" className="text-gray-400 hover:text-white transition-colors">
+                  关于我们
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-gray-400 hover:text-white transition-colors">
+                  联系我们
+                </Link>
+              </li>
+              <li>
                 <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors">
                   隐私政策
                 </Link>
@@ -78,8 +88,13 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-gray-400 hover:text-white transition-colors">
-                  关于我们
+                <Link href="/disclaimer" className="text-gray-400 hover:text-white transition-colors">
+                  免责声明
+                </Link>
+              </li>
+              <li>
+                <Link href="/cookies" className="text-gray-400 hover:text-white transition-colors">
+                  Cookie政策
                 </Link>
               </li>
             </ul>

@@ -165,10 +165,10 @@ export function InteractiveQuiz({
             <button
               key={index}
               onClick={() => handleAnswerSelect(index)}
-              className={`w-full text-left p-4 rounded-lg border transition-all ${
+              className={`w-full text-left p-4 rounded-lg border transition-all quiz-option ${
                 selectedAnswers[currentQuestion] === index
-                  ? 'border-blue-500 bg-blue-50 text-blue-900'
-                  : 'border-gray-200 hover:border-gray-300 hover:bg-gray-50'
+                  ? 'border-blue-500 bg-blue-50 text-blue-900 font-medium selected'
+                  : 'border-gray-200 hover:border-blue-300 hover:bg-blue-50'
               }`}
             >
               <div className="flex items-center space-x-3">
@@ -181,7 +181,7 @@ export function InteractiveQuiz({
                     <div className="w-3 h-3 bg-white rounded-full" />
                   )}
                 </div>
-                <span className="flex-1">{option}</span>
+                <span className="flex-1 text-gray-900 font-medium">{option}</span>
               </div>
             </button>
           ))}

@@ -19,7 +19,7 @@ export default function TermsPage() {
             
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-600 mb-6">
-                最后更新日期：2024年1月1日
+                最后更新日期：2025年1月1日
               </p>
 
               <h2 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">

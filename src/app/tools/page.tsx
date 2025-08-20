@@ -5,6 +5,7 @@ import { useSearchParams } from 'next/navigation';
 import { Layout } from '@/components/Layout';
 import { ToolCard } from '@/components/ToolCard';
 import { ToolFilter } from '@/components/ToolFilter';
+import { Pagination } from '@/components/Pagination';
 import { tools } from '@/data/tools';
 
 function ToolsContent() {
@@ -13,6 +14,8 @@ function ToolsContent() {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [priceFilter, setPriceFilter] = useState<boolean | null>(null);
   const [searchTerm, setSearchTerm] = useState('');
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 12; // 每页显示12个工具
 
   // 从URL参数中获取初始值
   useEffect(() => {
@@ -57,7 +60,23 @@ function ToolsContent() {
       }
 
       return true;
+    }).sort((a, b) => {
+      // 按时间排序，最新的在前
+      const dateA = new Date(a.publishedAt || '1970-01-01');
+      const dateB = new Date(b.publishedAt || '1970-01-01');
+      return dateB.getTime() - dateA.getTime();
     });
+  }, [selectedCategory, selectedTags, priceFilter, searchTerm]);
+
+  // 分页数据计算
+  const totalPages = Math.ceil(filteredTools.length / itemsPerPage);
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const currentTools = filteredTools.slice(startIndex, endIndex);
+
+  // 当筛选条件变化时重置到第一页
+  useEffect(() => {
+    setCurrentPage(1);
   }, [selectedCategory, selectedTags, priceFilter, searchTerm]);
 
   return (
@@ -81,7 +100,8 @@ function ToolsContent() {
               placeholder="搜索工具..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder:text-gray-500 placeholder:font-medium"
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white text-black focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:outline-none placeholder:text-gray-500 placeholder:font-medium shadow-sm hover:border-gray-400 transition-colors search-input"
+              style={{ color: '#000000 !important', backgroundColor: '#ffffff !important' }}
             />
           </div>
 
@@ -103,14 +123,29 @@ function ToolsContent() {
               <div className="flex items-center justify-between mb-6">
                 <h2 className="text-xl font-semibold text-gray-900">
                   找到 {filteredTools.length} 个工具
+                  {totalPages > 1 && (
+                    <span className="text-sm font-normal text-gray-500 ml-2">
+                      （第 {currentPage} / {totalPages} 页）
+                    </span>
+                  )}
                 </h2>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-6">
-                {filteredTools.map((tool) => (
+              <div className="grid md:grid-cols-2 gap-6 mb-8">
+                {currentTools.map((tool) => (
                   <ToolCard key={tool.id} tool={tool} />
                 ))}
               </div>
+              
+              {/* 分页组件 */}
+              {totalPages > 1 && (
+                <Pagination
+                  currentPage={currentPage}
+                  totalPages={totalPages}
+                  onPageChange={setCurrentPage}
+                  className="mt-8"
+                />
+              )}
 
               {filteredTools.length === 0 && (
                 <div className="text-center py-12">

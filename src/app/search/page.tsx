@@ -29,21 +29,35 @@ function SearchContent() {
 
     const searchLower = searchTerm.toLowerCase();
 
-    const filteredTools = tools.filter((tool) => {
-      const matchesTitle = tool.title.toLowerCase().includes(searchLower);
-      const matchesDescription = tool.description.toLowerCase().includes(searchLower);
-      const matchesTags = tool.tags.some(tag => tag.toLowerCase().includes(searchLower));
-      
-      return matchesTitle || matchesDescription || matchesTags;
-    });
+    const filteredTools = tools
+      .filter((tool) => {
+        const matchesTitle = tool.title.toLowerCase().includes(searchLower);
+        const matchesDescription = tool.description.toLowerCase().includes(searchLower);
+        const matchesTags = tool.tags.some(tag => tag.toLowerCase().includes(searchLower));
+        
+        return matchesTitle || matchesDescription || matchesTags;
+      })
+      .sort((a, b) => {
+        // Sort by publishedAt date, newest first
+        const dateA = new Date(a.publishedAt).getTime();
+        const dateB = new Date(b.publishedAt).getTime();
+        return dateB - dateA;
+      });
 
-    const filteredTutorials = tutorials.filter((tutorial) => {
-      const matchesTitle = tutorial.title.toLowerCase().includes(searchLower);
-      const matchesDescription = tutorial.description.toLowerCase().includes(searchLower);
-      const matchesTags = tutorial.tags.some(tag => tag.toLowerCase().includes(searchLower));
-      
-      return matchesTitle || matchesDescription || matchesTags;
-    });
+    const filteredTutorials = tutorials
+      .filter((tutorial) => {
+        const matchesTitle = tutorial.title.toLowerCase().includes(searchLower);
+        const matchesDescription = tutorial.description.toLowerCase().includes(searchLower);
+        const matchesTags = tutorial.tags.some(tag => tag.toLowerCase().includes(searchLower));
+        
+        return matchesTitle || matchesDescription || matchesTags;
+      })
+      .sort((a, b) => {
+        // Sort by publishedAt date, newest first
+        const dateA = new Date(a.publishedAt).getTime();
+        const dateB = new Date(b.publishedAt).getTime();
+        return dateB - dateA;
+      });
 
     return {
       tools: filteredTools,
@@ -72,7 +86,8 @@ function SearchContent() {
                 placeholder="搜索工具和教程..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full px-12 py-4 text-lg rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder:text-gray-500 placeholder:font-medium text-gray-900 bg-white"
+                className="w-full px-12 py-4 text-lg rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:outline-none placeholder:text-gray-500 placeholder:font-medium text-black bg-white shadow-sm hover:border-gray-400 transition-colors search-input"
+                style={{ color: '#000000 !important', backgroundColor: '#ffffff !important' }}
               />
               <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-6 h-6" />
               <button

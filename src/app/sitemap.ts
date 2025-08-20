@@ -27,10 +27,40 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/categories`,
+      url: `${baseUrl}/about`,
       lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
+      changeFrequency: 'monthly' as const,
       priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/contact`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/privacy`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly' as const,
+      priority: 0.5,
+    },
+    {
+      url: `${baseUrl}/terms`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly' as const,
+      priority: 0.5,
+    },
+    {
+      url: `${baseUrl}/disclaimer`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly' as const,
+      priority: 0.5,
+    },
+    {
+      url: `${baseUrl}/cookies`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly' as const,
+      priority: 0.5,
     },
     {
       url: `${baseUrl}/search`,
@@ -40,9 +70,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  // 分类页面
+  // 分类页面 - 使用查询参数而不是单独的路由
   const categoryPages = CATEGORIES.map((category) => ({
-    url: `${baseUrl}/categories/${category.slug}`,
+    url: `${baseUrl}/tools?category=${category.slug}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
     priority: 0.7,
@@ -50,7 +80,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // 工具详情页面
   const toolPages = tools.map((tool) => ({
-    url: `${baseUrl}/tools/${tool.id}`,
+    url: `${baseUrl}/tools/${tool.slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.6,

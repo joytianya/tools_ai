@@ -24,8 +24,11 @@ export function ToolFilter({
   const [isOpen, setIsOpen] = useState(false);
 
   const availableTags = [
-    '编辑器', '开发', '免费', '设计', 'UI/UX', '协作', 
-    '笔记', '项目管理', '分析', '营销'
+    'AI', '免费', '图片处理', '开源', '生成器', '在线工具', 
+    '协作', '分析', '设计', '社交媒体', '项目管理', '部署',
+    '营销', '笔记', '数据可视化', '数据分析', '摄影', '报告',
+    '商业智能', '写作助手', 'AI绘画', 'UI/UX', '开发',
+    '编辑器', '任务管理', '知识管理'
   ];
 
   const toggleTag = (tag: string) => {

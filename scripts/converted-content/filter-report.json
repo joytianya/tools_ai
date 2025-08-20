@@ -1,0 +1,27 @@
+{
+  "timestamp": "2025-08-19T16:13:02.271Z",
+  "statistics": {
+    "totalOriginal": 67,
+    "filtered": 67,
+    "kept": 0,
+    "categories": {
+      "ai": 0,
+      "development": 0,
+      "productivity": 0,
+      "design": 0,
+      "tools": 0
+    }
+  },
+  "summary": {
+    "totalProcessed": 67,
+    "kept": 0,
+    "filtered": 67,
+    "keepRate": 0
+  },
+  "qualityChecks": {
+    "titleLength": "Cleaned titles to 5-80 characters",
+    "urlValidation": "Removed invalid internal URLs",
+    "contentCleaning": "Removed navigation and footer content",
+    "categoryOptimization": "Reassigned categories based on content"
+  }
+}
