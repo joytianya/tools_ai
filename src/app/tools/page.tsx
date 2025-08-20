@@ -82,48 +82,65 @@ function ToolsContent() {
   return (
     <Layout>
       <div className="bg-gray-50 min-h-screen">
-        <div className="max-w-7xl mx-auto px-3 sm:px-4 py-8">
+        <div className="max-w-7xl mx-auto px-4 py-8">
           {/* 页面标题 */}
           <div className="text-center mb-8">
-            <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">
               🛠️ 工具分享
             </h1>
-            <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto px-2">
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               发现最实用的工具，提升你的工作效率
             </p>
           </div>
 
           {/* 搜索栏 */}
-          <div className="max-w-md mx-auto mb-8 px-2">
-            <input
-              type="text"
-              placeholder="搜索工具..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full px-3 sm:px-4 py-3 rounded-lg border border-gray-300 bg-white text-black focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:outline-none placeholder:text-gray-500 placeholder:font-medium shadow-sm hover:border-gray-400 transition-colors search-input"
-              style={{ color: '#000000 !important', backgroundColor: '#ffffff !important' }}
-            />
+          <div className="max-w-lg mx-auto mb-8">
+            <div className="relative">
+              <input
+                type="text"
+                placeholder="搜索工具..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="w-full px-5 py-4 pr-12 rounded-xl border-2 border-gray-200 bg-white text-black focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:outline-none placeholder:text-gray-500 placeholder:font-medium shadow-sm hover:border-gray-300 transition-all duration-200 search-input text-base"
+                style={{ color: '#000000 !important', backgroundColor: '#ffffff !important' }}
+              />
+              <div className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+            </div>
           </div>
 
-          <div className="flex flex-col lg:grid lg:grid-cols-4 gap-4 lg:gap-8">
-            {/* 工具列表 - 移动端优先 */}
-            <div className="lg:col-span-3 lg:order-2 min-w-0">
+          <div className="grid lg:grid-cols-4 gap-8">
+            {/* 筛选侧边栏 */}
+            <div className="lg:col-span-1">
+              <ToolFilter
+                selectedCategory={selectedCategory}
+                selectedTags={selectedTags}
+                onCategoryChange={setSelectedCategory}
+                onTagChange={setSelectedTags}
+                onPriceFilter={setPriceFilter}
+                priceFilter={priceFilter}
+              />
+            </div>
+
+            {/* 工具列表 */}
+            <div className="lg:col-span-3">
               <div className="flex items-center justify-between mb-6">
-                <h2 className="text-lg sm:text-xl font-semibold text-gray-900">
+                <h2 className="text-xl font-semibold text-gray-900">
                   找到 {filteredTools.length} 个工具
                   {totalPages > 1 && (
-                    <span className="text-sm font-normal text-gray-500 ml-2 hidden sm:inline">
+                    <span className="text-sm font-normal text-gray-500 ml-2">
                       （第 {currentPage} / {totalPages} 页）
                     </span>
                   )}
                 </h2>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+              <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8 mb-8">
                 {currentTools.map((tool) => (
-                  <div key={tool.id} className="w-full">
-                    <ToolCard tool={tool} />
-                  </div>
+                  <ToolCard key={tool.id} tool={tool} />
                 ))}
               </div>
               
@@ -138,27 +155,20 @@ function ToolsContent() {
               )}
 
               {filteredTools.length === 0 && (
-                <div className="text-center py-12">
-                  <p className="text-gray-500 text-lg">
+                <div className="col-span-full text-center py-16">
+                  <div className="mx-auto w-24 h-24 mb-6 bg-gray-100 rounded-full flex items-center justify-center">
+                    <svg className="w-10 h-10 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                  </div>
+                  <p className="text-gray-600 text-lg font-medium mb-2">
                     没有找到符合条件的工具
                   </p>
-                  <p className="text-gray-400 text-sm mt-2">
+                  <p className="text-gray-400 text-sm">
                     试试调整筛选条件或搜索关键词
                   </p>
                 </div>
               )}
-            </div>
-
-            {/* 筛选侧边栏 - 移动端在下方 */}
-            <div className="lg:col-span-1 lg:order-1">
-              <ToolFilter
-                selectedCategory={selectedCategory}
-                selectedTags={selectedTags}
-                onCategoryChange={setSelectedCategory}
-                onTagChange={setSelectedTags}
-                onPriceFilter={setPriceFilter}
-                priceFilter={priceFilter}
-              />
             </div>
           </div>
         </div>
@@ -172,10 +182,15 @@ export default function ToolsPage() {
     <Suspense fallback={
       <Layout>
         <div className="bg-gray-50 min-h-screen">
-          <div className="max-w-7xl mx-auto px-3 sm:px-4 py-8">
-            <div className="text-center">
-              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto"></div>
-              <p className="mt-4 text-gray-600">正在加载工具页面...</p>
+          <div className="max-w-7xl mx-auto px-4 py-8">
+            <div className="text-center py-12">
+              <div className="flex flex-col items-center justify-center space-y-4">
+                <div className="animate-spin rounded-full h-12 w-12 border-4 border-blue-200 border-t-blue-600"></div>
+                <p className="text-gray-600 font-medium">正在加载工具页面...</p>
+                <div className="w-16 h-1 bg-gray-200 rounded-full overflow-hidden">
+                  <div className="w-full h-full bg-blue-600 animate-pulse"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -60,15 +60,16 @@ export function Pagination({
   const pageNumbers = getPageNumbers();
 
   return (
-    <nav className={`flex items-center justify-center space-x-1 ${className}`}>
+    <nav className={`flex items-center justify-center space-x-1 sm:space-x-2 px-4 ${className}`}>
       {/* 上一页按钮 */}
       <button
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
-        className="inline-flex items-center px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 hover:text-gray-700 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-white disabled:hover:text-gray-500 transition-colors"
+        className="inline-flex items-center px-3 py-2.5 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-xl hover:bg-gray-50 hover:text-gray-700 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-white disabled:hover:text-gray-500 transition-colors touch-manipulation min-h-[44px]"
       >
         <ChevronLeft className="w-4 h-4 mr-1" />
-        上一页
+        <span className="hidden xs:inline">上一页</span>
+        <span className="xs:hidden">上页</span>
       </button>
 
       {/* 页码按钮 */}
@@ -93,9 +94,9 @@ export function Pagination({
               key={pageNum}
               onClick={() => onPageChange(pageNum)}
               className={`
-                px-3 py-2 text-sm font-medium rounded-lg transition-colors
+                px-3 py-2.5 text-sm font-medium rounded-xl transition-colors touch-manipulation min-h-[44px] min-w-[44px]
                 ${isActive
-                  ? 'bg-blue-600 text-white border border-blue-600'
+                  ? 'bg-blue-600 text-white border border-blue-600 shadow-md'
                   : 'text-gray-700 bg-white border border-gray-300 hover:bg-gray-50 hover:text-gray-900'
                 }
               `}
@@ -110,9 +111,10 @@ export function Pagination({
       <button
         onClick={() => onPageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
-        className="inline-flex items-center px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 hover:text-gray-700 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-white disabled:hover:text-gray-500 transition-colors"
+        className="inline-flex items-center px-3 py-2.5 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-xl hover:bg-gray-50 hover:text-gray-700 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-white disabled:hover:text-gray-500 transition-colors touch-manipulation min-h-[44px]"
       >
-        下一页
+        <span className="hidden xs:inline">下一页</span>
+        <span className="xs:hidden">下页</span>
         <ChevronRight className="w-4 h-4 ml-1" />
       </button>
     </nav>

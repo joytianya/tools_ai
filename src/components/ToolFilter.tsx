@@ -127,9 +127,9 @@ export function ToolFilter({
               <button
                 key={tag}
                 onClick={() => toggleTag(tag)}
-                className={`px-3 py-1 rounded-full text-sm ${
+                className={`px-3 py-2 rounded-full text-sm font-medium transition-colors touch-manipulation min-h-[36px] ${
                   selectedTags.includes(tag)
-                    ? 'bg-blue-600 text-white'
+                    ? 'bg-blue-600 text-white shadow-sm'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >

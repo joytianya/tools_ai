@@ -77,16 +77,16 @@ export function ToolCard({ tool }: ToolCardProps) {
   return (
     <article className="group relative w-full max-w-full">
       {/* 玻璃态背景容器 */}
-      <div className="relative overflow-hidden rounded-2xl bg-white/75 backdrop-blur-md border border-white/30 shadow-lg hover:shadow-2xl transition-all duration-500 md:hover:scale-[1.03] hover:bg-white/85 h-[420px] flex flex-col w-full max-w-full">
+      <div className="relative overflow-hidden rounded-2xl bg-white/80 backdrop-blur-md border border-white/40 shadow-lg hover:shadow-2xl transition-all duration-300 md:hover:scale-[1.02] hover:bg-white/90 min-h-[400px] sm:h-[420px] flex flex-col w-full max-w-full">
         {/* 渐变背景装饰 */}
         <div className={`absolute inset-0 bg-gradient-to-br ${gradientClass} opacity-60 group-hover:opacity-80 transition-opacity duration-300`} />
         
         {/* 内容区域 */}
-        <div className="relative p-4 sm:p-6 flex flex-col h-full w-full overflow-hidden">
+        <div className="relative p-5 sm:p-6 flex flex-col h-full w-full overflow-hidden">
           {/* 顶部区域：头像和状态标记 */}
           <div className="flex items-start justify-between mb-4">
             {/* 工具头像 */}
-            <div className={`w-14 h-14 rounded-xl ${avatarStyle} flex items-center justify-center text-white font-bold text-xl shadow-lg md:group-hover:scale-110 transition-transform duration-300`}>
+            <div className={`w-12 h-12 sm:w-14 sm:h-14 rounded-xl ${avatarStyle} flex items-center justify-center text-white font-bold text-lg sm:text-xl shadow-lg md:group-hover:scale-110 transition-transform duration-300`}>
               <span>{tool.title.charAt(0)}</span>
             </div>
             
@@ -109,10 +109,10 @@ export function ToolCard({ tool }: ToolCardProps) {
 
           {/* 标题和描述 */}
           <div className="mb-4">
-            <h3 className="text-xl font-bold text-gray-900 leading-tight mb-2 group-hover:text-blue-600 transition-colors duration-200">
+            <h3 className="text-lg sm:text-xl font-bold text-gray-900 leading-tight mb-2 group-hover:text-blue-600 transition-colors duration-200">
               {tool.title}
             </h3>
-            <p className="text-gray-600 text-sm leading-relaxed line-clamp-2 overflow-hidden">
+            <p className="text-gray-600 text-sm sm:text-sm leading-relaxed line-clamp-3 sm:line-clamp-2 overflow-hidden">
               {tool.description}
             </p>
           </div>
@@ -144,12 +144,12 @@ export function ToolCard({ tool }: ToolCardProps) {
           </div>
 
           {/* 底部操作区域 */}
-          <div className="flex items-center gap-2 sm:gap-3 mt-auto w-full">
+          <div className="flex items-center gap-3 mt-auto w-full">
             <Link
               href={`/tools/${tool.slug}`}
-              className="flex-1 inline-flex items-center justify-center gap-1 sm:gap-2 px-2 sm:px-4 py-2.5 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg font-medium text-xs sm:text-sm transition-all duration-200 md:hover:scale-105"
+              className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-xl font-medium text-sm transition-all duration-200 md:hover:scale-105 touch-manipulation"
             >
-              <Shield className="w-3 h-3 sm:w-4 sm:h-4" />
+              <Shield className="w-4 h-4" />
               <span className="truncate">查看详情</span>
             </Link>
             
@@ -157,11 +157,11 @@ export function ToolCard({ tool }: ToolCardProps) {
               href={tool.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 inline-flex items-center justify-center gap-1 sm:gap-2 px-2 sm:px-4 py-2.5 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg font-medium text-xs sm:text-sm hover:from-blue-600 hover:to-blue-700 transform md:hover:scale-105 transition-all duration-200 shadow-md hover:shadow-lg"
+              className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl font-medium text-sm hover:from-blue-600 hover:to-blue-700 transform md:hover:scale-105 transition-all duration-200 shadow-md hover:shadow-lg touch-manipulation"
             >
-              <Globe className="w-3 h-3 sm:w-4 sm:h-4" />
+              <Globe className="w-4 h-4" />
               <span className="truncate">立即使用</span>
-              <ExternalLink className="w-2 h-2 sm:w-3 sm:h-3" />
+              <ExternalLink className="w-3 h-3" />
             </a>
           </div>
         </div>
