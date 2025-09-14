@@ -1,0 +1,1383 @@
+🔄 Starting metrics collection...
+📊 Performance Dashboard running at http://localhost:8080
+🚨 Alerts triggered: [
+  {
+    type: 'CPU',
+    severity: 'WARNING',
+    message: 'High CPU usage: 98%',
+    value: 98,
+    threshold: 80
+  },
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 85.6%',
+    value: 85.59962163792395,
+    threshold: 85
+  },
+  {
+    type: 'RESPONSE_TIME',
+    severity: 'WARNING',
+    message: 'Slow response time: 8571ms',
+    value: 8571,
+    threshold: 3000
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'CPU',
+    severity: 'WARNING',
+    message: 'High CPU usage: 100%',
+    value: 100,
+    threshold: 80
+  },
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 91.5%',
+    value: 91.50604556795437,
+    threshold: 85
+  },
+  {
+    type: 'RESPONSE_TIME',
+    severity: 'WARNING',
+    message: 'Slow response time: 4010.25ms',
+    value: 4010.25,
+    threshold: 3000
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 85.8%',
+    value: 85.80446984266248,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 87.7%',
+    value: 87.70832435735241,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 87.4%',
+    value: 87.39693941898312,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 87.6%',
+    value: 87.63889922486693,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 88.5%',
+    value: 88.52840261485012,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 89.6%',
+    value: 89.61619358351187,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 89.4%',
+    value: 89.35141846610605,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'CPU',
+    severity: 'WARNING',
+    message: 'High CPU usage: 85%',
+    value: 85,
+    threshold: 80
+  },
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 93.8%',
+    value: 93.79374566704921,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 91.5%',
+    value: 91.54462596597874,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 86.5%',
+    value: 86.51585713110677,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 85.1%',
+    value: 85.08338849481612,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 85.3%',
+    value: 85.3218231881901,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 86.6%',
+    value: 86.58988449381343,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 86.2%',
+    value: 86.18322359788651,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 85.5%',
+    value: 85.47839693550219,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 86.0%',
+    value: 85.96309990560532,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 86.7%',
+    value: 86.65568659399713,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 85.6%',
+    value: 85.60324467022572,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 85.7%',
+    value: 85.65328168390708,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 85.7%',
+    value: 85.70331869758843,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 85.5%',
+    value: 85.50444360015824,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 85.1%',
+    value: 85.07800290625941,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 85.1%',
+    value: 85.11531034698857,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 86.0%',
+    value: 86.04682132771404,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 85.2%',
+    value: 85.17533517944781,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 85.3%',
+    value: 85.29293684956778,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 85.4%',
+    value: 85.35648679453686,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 85.5%',
+    value: 85.47066127193894,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 89.4%',
+    value: 89.42799174340314,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 89.8%',
+    value: 89.75142081618105,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 91.2%',
+    value: 91.24910403390375,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 91.1%',
+    value: 91.14119642318585,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 89.0%',
+    value: 88.98324004841155,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 89.0%',
+    value: 88.99068195259898,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 89.2%',
+    value: 89.20914100841718,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 89.4%',
+    value: 89.44581314553622,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 90.1%',
+    value: 90.11352820677526,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 89.5%',
+    value: 89.46441790600484,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 89.5%',
+    value: 89.50035446964682,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 89.6%',
+    value: 89.57291303547437,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 89.7%',
+    value: 89.74260803490644,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 89.8%',
+    value: 89.75357505160373,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 90.2%',
+    value: 90.23915929983431,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 89.7%',
+    value: 89.664957639898,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 89.5%',
+    value: 89.45403840805919,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 89.5%',
+    value: 89.47665787999733,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 89.5%',
+    value: 89.48184762897016,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 89.4%',
+    value: 89.36943570782302,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 90.1%',
+    value: 90.10892597655409,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 90.1%',
+    value: 90.12811825577433,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 90.5%',
+    value: 90.49404451825421,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 90.5%',
+    value: 90.51852446623921,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 90.3%',
+    value: 90.28586704058971,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 90.3%',
+    value: 90.29683405728699,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 90.3%',
+    value: 90.34373763762626,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 90.7%',
+    value: 90.68978618234233,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 85.4%',
+    value: 85.40231325716479,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 86.3%',
+    value: 86.32217178264939,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 86.3%',
+    value: 86.3319637618434,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 86.5%',
+    value: 86.4949022956316,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 86.8%',
+    value: 86.80119540482,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 86.8%',
+    value: 86.75595646094372,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 86.9%',
+    value: 86.89000865610961,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 86.6%',
+    value: 86.62464601995214,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 87.5%',
+    value: 87.51346397139176,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 88.2%',
+    value: 88.24962496719687,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 87.4%',
+    value: 87.36110077513307,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 87.3%',
+    value: 87.26053714881067,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 87.1%',
+    value: 87.14205420056324,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 87.2%',
+    value: 87.15341289642828,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 87.2%',
+    value: 87.15928808394467,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 87.2%',
+    value: 87.15860264540109,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 87.2%',
+    value: 87.15086698183784,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 87.3%',
+    value: 87.29882378745921,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 87.3%',
+    value: 87.31243463853889,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 87.2%',
+    value: 87.15546921205902,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 87.2%',
+    value: 87.15478377351545,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 87.2%',
+    value: 87.15400041517992,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 87.4%',
+    value: 87.40722099713682,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 87.2%',
+    value: 87.15145450058948,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 86.7%',
+    value: 86.74107265256883,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 86.8%',
+    value: 86.78425528081438,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 86.9%',
+    value: 86.90871133637015,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 86.9%',
+    value: 86.91488028326238,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 86.9%',
+    value: 86.92614105933548,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 86.5%',
+    value: 86.53994539992401,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 86.5%',
+    value: 86.5352452499109,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 86.5%',
+    value: 86.54719146452757,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 86.8%',
+    value: 86.78239480476752,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 86.8%',
+    value: 86.77514874016396,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'CPU',
+    severity: 'WARNING',
+    message: 'High CPU usage: 93%',
+    value: 93,
+    threshold: 80
+  },
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 87.9%',
+    value: 87.91307464229901,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 87.6%',
+    value: 87.55380692567104,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'CPU',
+    severity: 'WARNING',
+    message: 'High CPU usage: 85%',
+    value: 85,
+    threshold: 80
+  },
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 94.9%',
+    value: 94.86058180023579,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 98.5%',
+    value: 98.53472823340945,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 86.1%',
+    value: 86.10772743830074,
+    threshold: 85
+  },
+  {
+    type: 'RESPONSE_TIME',
+    severity: 'WARNING',
+    message: 'Slow response time: 3780ms',
+    value: 3780,
+    threshold: 3000
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 87.3%',
+    value: 87.2701332884208,
+    threshold: 85
+  },
+  {
+    type: 'RESPONSE_TIME',
+    severity: 'WARNING',
+    message: 'Slow response time: 5317.75ms',
+    value: 5317.75,
+    threshold: 3000
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'RESPONSE_TIME',
+    severity: 'WARNING',
+    message: 'Slow response time: 3801.75ms',
+    value: 3801.75,
+    threshold: 3000
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'CPU',
+    severity: 'WARNING',
+    message: 'High CPU usage: 85%',
+    value: 85,
+    threshold: 80
+  },
+  {
+    type: 'RESPONSE_TIME',
+    severity: 'WARNING',
+    message: 'Slow response time: 3494.25ms',
+    value: 3494.25,
+    threshold: 3000
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'CPU',
+    severity: 'WARNING',
+    message: 'High CPU usage: 98%',
+    value: 98,
+    threshold: 80
+  },
+  {
+    type: 'MEMORY',
+    severity: 'WARNING',
+    message: 'High memory usage: 90.5%',
+    value: 90.45967467128327,
+    threshold: 85
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'RESPONSE_TIME',
+    severity: 'WARNING',
+    message: 'Slow response time: 3680.75ms',
+    value: 3680.75,
+    threshold: 3000
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'RESPONSE_TIME',
+    severity: 'WARNING',
+    message: 'Slow response time: 5217ms',
+    value: 5217,
+    threshold: 3000
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'RESPONSE_TIME',
+    severity: 'WARNING',
+    message: 'Slow response time: 4147.75ms',
+    value: 4147.75,
+    threshold: 3000
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'RESPONSE_TIME',
+    severity: 'WARNING',
+    message: 'Slow response time: 3305.25ms',
+    value: 3305.25,
+    threshold: 3000
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'RESPONSE_TIME',
+    severity: 'WARNING',
+    message: 'Slow response time: 8637.5ms',
+    value: 8637.5,
+    threshold: 3000
+  },
+  {
+    type: 'ERROR_RATE',
+    severity: 'CRITICAL',
+    message: 'High error rate: 50.0%',
+    value: 50,
+    threshold: 5
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'RESPONSE_TIME',
+    severity: 'WARNING',
+    message: 'Slow response time: 7053.25ms',
+    value: 7053.25,
+    threshold: 3000
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'RESPONSE_TIME',
+    severity: 'WARNING',
+    message: 'Slow response time: 9033.25ms',
+    value: 9033.25,
+    threshold: 3000
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'RESPONSE_TIME',
+    severity: 'WARNING',
+    message: 'Slow response time: 7767.5ms',
+    value: 7767.5,
+    threshold: 3000
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'RESPONSE_TIME',
+    severity: 'WARNING',
+    message: 'Slow response time: 6511ms',
+    value: 6511,
+    threshold: 3000
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'RESPONSE_TIME',
+    severity: 'WARNING',
+    message: 'Slow response time: 8277.75ms',
+    value: 8277.75,
+    threshold: 3000
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'RESPONSE_TIME',
+    severity: 'WARNING',
+    message: 'Slow response time: 9661ms',
+    value: 9661,
+    threshold: 3000
+  },
+  {
+    type: 'ERROR_RATE',
+    severity: 'CRITICAL',
+    message: 'High error rate: 75.0%',
+    value: 75,
+    threshold: 5
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'RESPONSE_TIME',
+    severity: 'WARNING',
+    message: 'Slow response time: 9427ms',
+    value: 9427,
+    threshold: 3000
+  },
+  {
+    type: 'ERROR_RATE',
+    severity: 'CRITICAL',
+    message: 'High error rate: 75.0%',
+    value: 75,
+    threshold: 5
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'RESPONSE_TIME',
+    severity: 'WARNING',
+    message: 'Slow response time: 6524.666666666667ms',
+    value: 6524.666666666667,
+    threshold: 3000
+  },
+  {
+    type: 'ERROR_RATE',
+    severity: 'CRITICAL',
+    message: 'High error rate: 25.0%',
+    value: 25,
+    threshold: 5
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'ERROR_RATE',
+    severity: 'CRITICAL',
+    message: 'High error rate: 100.0%',
+    value: 100,
+    threshold: 5
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'ERROR_RATE',
+    severity: 'CRITICAL',
+    message: 'High error rate: 100.0%',
+    value: 100,
+    threshold: 5
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'ERROR_RATE',
+    severity: 'CRITICAL',
+    message: 'High error rate: 100.0%',
+    value: 100,
+    threshold: 5
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'ERROR_RATE',
+    severity: 'CRITICAL',
+    message: 'High error rate: 100.0%',
+    value: 100,
+    threshold: 5
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'ERROR_RATE',
+    severity: 'CRITICAL',
+    message: 'High error rate: 100.0%',
+    value: 100,
+    threshold: 5
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'ERROR_RATE',
+    severity: 'CRITICAL',
+    message: 'High error rate: 100.0%',
+    value: 100,
+    threshold: 5
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'ERROR_RATE',
+    severity: 'CRITICAL',
+    message: 'High error rate: 100.0%',
+    value: 100,
+    threshold: 5
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'ERROR_RATE',
+    severity: 'CRITICAL',
+    message: 'High error rate: 100.0%',
+    value: 100,
+    threshold: 5
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'ERROR_RATE',
+    severity: 'CRITICAL',
+    message: 'High error rate: 100.0%',
+    value: 100,
+    threshold: 5
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'ERROR_RATE',
+    severity: 'CRITICAL',
+    message: 'High error rate: 100.0%',
+    value: 100,
+    threshold: 5
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'ERROR_RATE',
+    severity: 'CRITICAL',
+    message: 'High error rate: 100.0%',
+    value: 100,
+    threshold: 5
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'ERROR_RATE',
+    severity: 'CRITICAL',
+    message: 'High error rate: 100.0%',
+    value: 100,
+    threshold: 5
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'ERROR_RATE',
+    severity: 'CRITICAL',
+    message: 'High error rate: 100.0%',
+    value: 100,
+    threshold: 5
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'RESPONSE_TIME',
+    severity: 'WARNING',
+    message: 'Slow response time: 9057.75ms',
+    value: 9057.75,
+    threshold: 3000
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'ERROR_RATE',
+    severity: 'CRITICAL',
+    message: 'High error rate: 100.0%',
+    value: 100,
+    threshold: 5
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'ERROR_RATE',
+    severity: 'CRITICAL',
+    message: 'High error rate: 100.0%',
+    value: 100,
+    threshold: 5
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'ERROR_RATE',
+    severity: 'CRITICAL',
+    message: 'High error rate: 100.0%',
+    value: 100,
+    threshold: 5
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'ERROR_RATE',
+    severity: 'CRITICAL',
+    message: 'High error rate: 100.0%',
+    value: 100,
+    threshold: 5
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'RESPONSE_TIME',
+    severity: 'WARNING',
+    message: 'Slow response time: 8381.25ms',
+    value: 8381.25,
+    threshold: 3000
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'RESPONSE_TIME',
+    severity: 'WARNING',
+    message: 'Slow response time: 6836.5ms',
+    value: 6836.5,
+    threshold: 3000
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'RESPONSE_TIME',
+    severity: 'WARNING',
+    message: 'Slow response time: 8319ms',
+    value: 8319,
+    threshold: 3000
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'RESPONSE_TIME',
+    severity: 'WARNING',
+    message: 'Slow response time: 9630ms',
+    value: 9630,
+    threshold: 3000
+  },
+  {
+    type: 'ERROR_RATE',
+    severity: 'CRITICAL',
+    message: 'High error rate: 75.0%',
+    value: 75,
+    threshold: 5
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'ERROR_RATE',
+    severity: 'CRITICAL',
+    message: 'High error rate: 100.0%',
+    value: 100,
+    threshold: 5
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'RESPONSE_TIME',
+    severity: 'WARNING',
+    message: 'Slow response time: 7249ms',
+    value: 7249,
+    threshold: 3000
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'RESPONSE_TIME',
+    severity: 'WARNING',
+    message: 'Slow response time: 5959.5ms',
+    value: 5959.5,
+    threshold: 3000
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'RESPONSE_TIME',
+    severity: 'WARNING',
+    message: 'Slow response time: 4729.25ms',
+    value: 4729.25,
+    threshold: 3000
+  }
+]
+🚨 Alerts triggered: [
+  {
+    type: 'RESPONSE_TIME',
+    severity: 'WARNING',
+    message: 'Slow response time: 3518ms',
+    value: 3518,
+    threshold: 3000
+  }
+]

@@ -10,12 +10,15 @@ interface TutorialCardProps {
 // 根据教程分类生成渐变背景
 function getCategoryGradient(category: string): string {
   const gradients = {
-    'ai': 'from-purple-500/10 via-pink-500/10 to-red-500/10',
-    'development': 'from-blue-500/10 via-cyan-500/10 to-teal-500/10',
-    'design': 'from-pink-500/10 via-rose-500/10 to-orange-500/10',
-    'productivity': 'from-green-500/10 via-emerald-500/10 to-teal-500/10',
-    'business': 'from-amber-500/10 via-yellow-500/10 to-orange-500/10',
-    'marketing': 'from-red-500/10 via-pink-500/10 to-purple-500/10',
+    '新手入门': 'from-green-500/10 via-emerald-500/10 to-teal-500/10',
+    '网页开发': 'from-blue-500/10 via-cyan-500/10 to-teal-500/10',
+    'AI自动化': 'from-purple-500/10 via-violet-500/10 to-pink-500/10',
+    '设计体验': 'from-pink-500/10 via-rose-500/10 to-orange-500/10',
+    '商业增长': 'from-amber-500/10 via-yellow-500/10 to-orange-500/10',
+    '数据洞察': 'from-indigo-500/10 via-blue-500/10 to-cyan-500/10',
+    '效率精通': 'from-green-600/10 via-emerald-600/10 to-teal-600/10',
+    '职业发展': 'from-violet-500/10 via-purple-500/10 to-indigo-500/10',
+    '项目实战': 'from-red-500/10 via-pink-500/10 to-purple-500/10',
     'default': 'from-gray-500/10 via-slate-500/10 to-gray-600/10'
   };
   return gradients[category as keyof typeof gradients] || gradients.default;

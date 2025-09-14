@@ -5,7 +5,7 @@ import { useSearchParams } from 'next/navigation';
 import { Layout } from '@/components/Layout';
 import { TutorialCard } from '@/components/TutorialCard';
 import { tutorials } from '@/data/tutorials';
-import { CATEGORIES } from '@/lib/constants';
+import { TUTORIAL_CATEGORIES } from '@/lib/constants';
 
 function TutorialsContent() {
   const searchParams = useSearchParams();
@@ -118,7 +118,7 @@ function TutorialsContent() {
                     className="w-full px-4 py-4 rounded-xl border border-gray-200 bg-white/90 text-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:outline-none shadow-sm hover:border-gray-300 transition-all duration-200 backdrop-blur-sm"
                   >
                     <option value="">🗂️ 所有分类</option>
-                    {CATEGORIES.map((category) => (
+                    {TUTORIAL_CATEGORIES.map((category) => (
                       <option key={category.id} value={category.id}>
                         {category.name}
                       </option>
@@ -130,22 +130,22 @@ function TutorialsContent() {
                 <div className="flex items-center gap-2 lg:border-l lg:border-gray-200 lg:pl-4">
                   <div className="flex flex-wrap gap-2">
                     <button 
-                      onClick={() => setSelectedCategory('ai')}
+                      onClick={() => setSelectedCategory('AI自动化')}
                       className="px-3 py-1.5 text-xs font-medium bg-purple-100 text-purple-700 rounded-lg hover:bg-purple-200 transition-colors"
                     >
-                      🤖 AI工具
+                      🤖 AI自动化
                     </button>
                     <button 
-                      onClick={() => setSelectedCategory('development')}
+                      onClick={() => setSelectedCategory('网页开发')}
                       className="px-3 py-1.5 text-xs font-medium bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition-colors"
                     >
-                      💻 开发
+                      💻 网页开发
                     </button>
                     <button 
-                      onClick={() => setSelectedCategory('design')}
+                      onClick={() => setSelectedCategory('设计体验')}
                       className="px-3 py-1.5 text-xs font-medium bg-pink-100 text-pink-700 rounded-lg hover:bg-pink-200 transition-colors"
                     >
-                      🎨 设计
+                      🎨 设计体验
                     </button>
                   </div>
                 </div>

@@ -11,13 +11,16 @@ interface ToolCardProps {
 // 根据工具分类生成渐变背景
 function getCategoryGradient(category: string): string {
   const gradients = {
-    'development': 'from-blue-500/15 via-cyan-500/15 to-teal-500/15',
-    'design': 'from-pink-500/15 via-rose-500/15 to-orange-500/15',
-    'productivity': 'from-green-500/15 via-emerald-500/15 to-teal-500/15',
-    'ai': 'from-purple-500/15 via-violet-500/15 to-pink-500/15',
-    'business': 'from-amber-500/15 via-yellow-500/15 to-orange-500/15',
-    'marketing': 'from-red-500/15 via-pink-500/15 to-purple-500/15',
-    'analytics': 'from-indigo-500/15 via-blue-500/15 to-cyan-500/15',
+    '开发工具': 'from-blue-500/15 via-cyan-500/15 to-teal-500/15',
+    '设计工具': 'from-pink-500/15 via-rose-500/15 to-orange-500/15',
+    '效率工具': 'from-green-500/15 via-emerald-500/15 to-teal-500/15',
+    'AI工具': 'from-purple-500/15 via-violet-500/15 to-pink-500/15',
+    '商业财务': 'from-amber-500/15 via-yellow-500/15 to-orange-500/15',
+    '营销工具': 'from-red-500/15 via-pink-500/15 to-purple-500/15',
+    '数据分析': 'from-indigo-500/15 via-blue-500/15 to-cyan-500/15',
+    '媒体内容': 'from-violet-500/15 via-purple-500/15 to-indigo-500/15',
+    '安全隐私': 'from-red-600/15 via-rose-600/15 to-pink-600/15',
+    '系统工具': 'from-gray-500/15 via-slate-500/15 to-zinc-500/15',
     'default': 'from-gray-500/15 via-slate-500/15 to-gray-600/15'
   };
   return gradients[category as keyof typeof gradients] || gradients.default;

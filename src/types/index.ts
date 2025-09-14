@@ -1,8 +1,27 @@
-// 工具分类类型
-export type ToolCategory = 'ai' | 'development' | 'design' | 'productivity' | 'tools' | 'marketing' | 'analytics';
+// 工具分类类型 - 重构后的中文分类系统
+export type ToolCategory = 
+  | '开发工具'                 // development
+  | 'AI工具'                  // ai-ml
+  | '设计工具'                // design-creative
+  | '效率工具'                // productivity-workspace
+  | '营销工具'                // marketing-growth
+  | '数据分析'                // data-analytics
+  | '媒体内容'                // media-content
+  | '商业财务'                // business-finance
+  | '安全隐私'                // security-privacy
+  | '系统工具';               // utilities-system
 
-// 教程分类类型
-export type TutorialCategory = 'beginner' | 'intermediate' | 'advanced' | 'development' | 'ai' | 'tools' | 'general' | 'marketing' | 'design' | 'productivity' | 'analytics';
+// 教程分类类型 - 重构后的学习导向中文分类系统
+export type TutorialCategory = 
+  | '新手入门'                // getting-started
+  | '网页开发'                // web-development
+  | 'AI自动化'                // ai-automation
+  | '设计体验'                // design-ui-ux
+  | '商业增长'                // business-growth
+  | '数据洞察'                // data-insights
+  | '效率精通'                // productivity-mastery
+  | '职业发展'                // career-development
+  | '项目实战';               // project-showcase
 
 // 难度级别
 export type DifficultyLevel = 'beginner' | 'intermediate' | 'advanced';

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowLeft, Clock, User, Calendar, Tag, Star, BookOpen, Target } from 'lucide-react';
 import { Layout } from '@/components/Layout';
+import { HeroImage } from '@/components/HeroImage';
 import { InteractiveTodoList } from '@/components/InteractiveTodoList';
 import { LearningProgress } from '@/components/LearningProgress';
 import { CodeShowcase } from '@/components/CodeShowcase';
@@ -938,7 +939,7 @@ CMD ["node", "dist/index.js"]`,
       }
     },
     'vscode-essential-extensions-2024': {
-      type: 'development',
+      type: '网页开发',
       estimatedTime: 25,
       difficulty: 'beginner' as const,
       skills: ['VS Code插件', '开发效率', '代码编辑', '工具配置'],
@@ -1047,7 +1048,7 @@ Tabnine - AI智能提示`,
       hero: {
         title: 'Read Frog（陪读蛙）：让网页阅读变成语言学习体验',
         subtitle: '开源AI浏览器扩展，支持沉浸式翻译、文章分析、智能内容提取，革新你的语言学习方式',
-        image: 'https://raw.githubusercontent.com/mengxi-ream/read-frog/main/docs/images/hero-banner.png',
+        image: 'https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=1200&h=600&fit=crop&auto=format',
         gradient: 'from-green-500 to-blue-600'
       },
       todoItems: [
@@ -1188,7 +1189,7 @@ const customConfig = {
       }
     },
     'figma-beginner-complete-guide': {
-      type: 'design',
+      type: '设计体验',
       estimatedTime: 60,
       difficulty: 'beginner' as const,
       skills: ['UI设计', '原型制作', '协作设计', '设计系统'],
@@ -1210,7 +1211,7 @@ const customConfig = {
       ]
     },
     'notion-knowledge-management-system': {
-      type: 'productivity',
+      type: '效率精通',
       estimatedTime: 50,
       difficulty: 'intermediate' as const,
       skills: ['知识管理', '项目管理', 'GTD方法论', '数据库设计'],
@@ -1232,7 +1233,7 @@ const customConfig = {
       ]
     },
     'github-beginner-to-contributor': {
-      type: 'development',
+      type: '网页开发',
       estimatedTime: 75,
       difficulty: 'beginner' as const,
       skills: ['Git版本控制', '开源协作', '代码管理', '项目贡献'],
@@ -1331,11 +1332,9 @@ export default async function TutorialPage({ params }: TutorialPageProps) {
         {/* Hero Section */}
         <div className={`relative bg-gradient-to-r ${content.hero.gradient} text-white overflow-hidden`}>
           <div className="absolute inset-0">
-            <Image 
+            <HeroImage 
               src={content.hero.image} 
               alt={tutorial.title}
-              fill
-              className="object-cover opacity-20"
             />
           </div>
           <div className="relative container mx-auto px-4 py-16">

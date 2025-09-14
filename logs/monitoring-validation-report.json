@@ -1,0 +1,91 @@
+{
+  "timestamp": "2025-09-13T03:07:42.996Z",
+  "totalTests": 10,
+  "passed": 6,
+  "failed": 4,
+  "duration": 197,
+  "tests": [
+    {
+      "name": "System Requirements Check",
+      "status": "PASSED",
+      "duration": 97,
+      "timestamp": "2025-09-13T03:07:42.895Z"
+    },
+    {
+      "name": "Log Directory Creation",
+      "status": "PASSED",
+      "duration": 2,
+      "timestamp": "2025-09-13T03:07:42.897Z"
+    },
+    {
+      "name": "Health Monitor Script",
+      "status": "PASSED",
+      "duration": 11,
+      "timestamp": "2025-09-13T03:07:42.908Z"
+    },
+    {
+      "name": "Uptime Monitor Script",
+      "status": "FAILED",
+      "duration": 1,
+      "error": "ENOENT: no such file or directory, access '/home/zxw/projects/tools_ai/scripts/uptime-monitor.js'",
+      "timestamp": "2025-09-13T03:07:42.910Z"
+    },
+    {
+      "name": "Performance Dashboard",
+      "status": "FAILED",
+      "duration": 0,
+      "error": "ENOENT: no such file or directory, access '/home/zxw/projects/tools_ai/scripts/performance-dashboard.js'",
+      "timestamp": "2025-09-13T03:07:42.910Z"
+    },
+    {
+      "name": "Health Endpoint Accessibility",
+      "status": "PASSED",
+      "duration": 84,
+      "timestamp": "2025-09-13T03:07:42.994Z"
+    },
+    {
+      "name": "Alert Configuration",
+      "status": "PASSED",
+      "duration": 0,
+      "timestamp": "2025-09-13T03:07:42.994Z"
+    },
+    {
+      "name": "GitHub Workflow Configuration",
+      "status": "PASSED",
+      "duration": 1,
+      "timestamp": "2025-09-13T03:07:42.995Z"
+    },
+    {
+      "name": "Monitoring Integration",
+      "status": "FAILED",
+      "duration": 1,
+      "error": "Cannot find module '/home/zxw/projects/tools_ai/scripts/uptime-monitor.js'\nRequire stack:\n- /home/zxw/projects/tools_ai/tests/monitoring-validation.test.cjs",
+      "timestamp": "2025-09-13T03:07:42.996Z"
+    },
+    {
+      "name": "Error Handling",
+      "status": "FAILED",
+      "duration": 0,
+      "error": "Cannot find module '/home/zxw/projects/tools_ai/scripts/uptime-monitor.js'\nRequire stack:\n- /home/zxw/projects/tools_ai/tests/monitoring-validation.test.cjs",
+      "timestamp": "2025-09-13T03:07:42.996Z"
+    }
+  ],
+  "errors": [
+    {
+      "test": "Uptime Monitor Script",
+      "error": "ENOENT: no such file or directory, access '/home/zxw/projects/tools_ai/scripts/uptime-monitor.js'"
+    },
+    {
+      "test": "Performance Dashboard",
+      "error": "ENOENT: no such file or directory, access '/home/zxw/projects/tools_ai/scripts/performance-dashboard.js'"
+    },
+    {
+      "test": "Monitoring Integration",
+      "error": "Cannot find module '/home/zxw/projects/tools_ai/scripts/uptime-monitor.js'\nRequire stack:\n- /home/zxw/projects/tools_ai/tests/monitoring-validation.test.cjs"
+    },
+    {
+      "test": "Error Handling",
+      "error": "Cannot find module '/home/zxw/projects/tools_ai/scripts/uptime-monitor.js'\nRequire stack:\n- /home/zxw/projects/tools_ai/tests/monitoring-validation.test.cjs"
+    }
+  ]
+}

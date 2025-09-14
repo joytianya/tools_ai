@@ -1,0 +1,40 @@
+{
+  "default": [
+    {
+      "key": "tutorial-categories",
+      "value": "  // === 量子计算与先进物理学教程 (15) ===\n  // === 更多量子计算教程 ===\n  // === 先进AI与机器学习教程 (20) ===\n  // === WebXR与空间计算教程 (12) ===\n  // === 可持续技术与绿色计算教程 (10) ===\n  // === 文化智能与全球协作教程 (8) ===\n  // === 高级无障碍设计教程 (8) ===\n  // === 创作者经济与数字创新教程 (15) ===\n  // === 区块链与Web3基础教程 (12) ===\n  // === 无代码/低代码革命教程 (10) ===\n  // === 边缘AI与WebAssembly教程 (10) ===\n  // === 高级开发工具教程 (15) ===\n  // === 网络安全与隐私教程 (5) ===",
+      "namespace": "default",
+      "timestamp": 1756022616686
+    },
+    {
+      "key": "empty-content-analysis",
+      "value": "Found 21 tutorials with empty content fields that need completion",
+      "namespace": "default",
+      "timestamp": 1756022641566
+    },
+    {
+      "key": "tutorial-completion-status",
+      "value": "{\"total_tutorials\": 49, \"empty_content\": 21, \"title_only\": 12, \"complete_content\": 16, \"categories\": 13}",
+      "namespace": "default",
+      "timestamp": 1756022659843
+    },
+    {
+      "key": "tutorial-inventory-detailed",
+      "value": "{\n  \"analysis_date\": \"2025-08-24\",\n  \"file_path\": \"/home/zxw/projects/tools_ai/src/data/tutorials.ts\",\n  \"total_lines\": 8723,\n  \"total_tutorials\": 49,\n  \"content_status\": {\n    \"empty_content\": 21,\n    \"title_only_content\": 12,\n    \"partial_content\": 0,\n    \"complete_content\": 16\n  },\n  \"categories_found\": [\n    \"量子计算与先进物理学教程 (15)\",\n    \"先进AI与机器学习教程 (20)\",\n    \"WebXR与空间计算教程 (12)\",\n    \"可持续技术与绿色计算教程 (10)\",\n    \"文化智能与全球协作教程 (8)\",\n    \"高级无障碍设计教程 (8)\",\n    \"创作者经济与数字创新教程 (15)\",\n    \"区块链与Web3基础教程 (12)\",\n    \"无代码/低代码革命教程 (10)\",\n    \"边缘AI与WebAssembly教程 (10)\",\n    \"高级开发工具教程 (15)\",\n    \"网络安全与隐私教程 (5)\"\n  ],\n  \"issues_identified\": [\n    \"43% of tutorials lack complete content (21 empty + 12 title-only)\",\n    \"Many advanced categories have placeholder content only\",\n    \"Need systematic content completion strategy\",\n    \"Enhanced tutorial types not implemented for most content\"\n  ]\n}",
+      "namespace": "default",
+      "timestamp": 1756022686297
+    },
+    {
+      "key": "priority-tutorials-incomplete",
+      "value": "High Priority Empty Content: Trello项目管理最佳实践(featured:false), Google Analytics网站分析入门教程, Postman API测试完整教程, Midjourney AI绘画从入门到精通(featured:true), Stable Diffusion本地部署教程, Excel数据分析实战教程, Docker容器化应用部署教程. These represent core productivity and development skills.",
+      "namespace": "default",
+      "timestamp": 1756022710949
+    },
+    {
+      "key": "enhancement-opportunities",
+      "value": "12 tutorials have title-only content that could be enhanced with AI-Enhanced, Interactive-Series, or Multimedia-Interactive formats. Categories like 量子计算, WebXR, 创作者经济 are perfect candidates for enhanced learning experiences.",
+      "namespace": "default",
+      "timestamp": 1756022714338
+    }
+  ]
+}
