@@ -52,7 +52,7 @@ Python开发者，特别是数据科学家，可以通过Jupyter扩展在VS Code
 ## 优势与最佳实践
 
 VS Code的成功不仅在于其技术实现的优秀，更在于它准确把握了现代开发者的需求。在云计算、容器化和远程办公成为趋势的今天，VS Code通过持续创新和社区驱动的发展模式，确立了其在开发工具领域的领导地位。对于任何希望提高开发效率的程序员而言，掌握VS Code都是一项值得投资的技能。`,
-    publishedAt: '2025-08-19T10:00:00.000Z',
+    publishedAt: '2025-09-22T10:00:00.000Z',
   },
   {
     id: '2',
@@ -66,7 +66,11 @@ VS Code的成功不仅在于其技术实现的优秀，更在于它准确把握�
     isFree: true,
     featured: true,
     slug: 'figma',
-    detailedContent: `# Figma：引领协作设计新时代的云端创新平台\n\n![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*AI工具示例*\n
+    detailedContent: `# Figma：引领协作设计新时代的云端创新平台
+
+![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)
+*AI工具示例*
+
 
 ## 产品背景和发展历史
 
@@ -98,7 +102,7 @@ Figma的组件系统是构建一致设计语言的强大工具。主组件（Mas
 ## 优势与最佳实践
 
 Figma代表了数字化设计工具的未来方向。它不仅是一个工具，更是一种新的设计哲学——用协作、开放、云端的方式重新定义设计工作。在数字化转型加速的今天，Figma为设计师、开发者和产品团队提供了一个真正统一的协作平台，让创意的实现变得更加高效和愉悦。`,
-    publishedAt: '2025-08-19T10:00:00.000Z',
+    publishedAt: '2025-09-22T10:00:00.000Z',
   },
   {
     id: '3',
@@ -150,6 +154,7 @@ Notion内置的关联系统让不同页面和数据库之间能够建立有机�
 ## 优势与最佳实践
 
 Notion代表了数字化工作空间的未来方向。它不仅是一个工具，更是一种新的工作哲学——用统一、灵活、协作的方式管理所有知识工作。在信息过载的时代，Notion提供了一个中心化的解决方案，让个人和团队能够更有序、更高效地处理复杂的工作任务。掌握Notion这样的全能型工作平台，将成为现代知识工作者的基本技能。`,
+    publishedAt: '2025-09-22T10:00:00.000Z',
   },
   {
     id: '4',
@@ -163,7 +168,11 @@ Notion代表了数字化工作空间的未来方向。它不仅是一个工具�
     isFree: true,
     featured: false,
     slug: 'google-analytics',
-    detailedContent: `# Google Analytics：数据驱动营销决策的强大分析平台\n\n![Notion工作空间](https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*Notion界面展示*\n
+    detailedContent: `# Google Analytics：数据驱动营销决策的强大分析平台
+
+![Notion工作空间](https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)
+*Notion界面展示*
+
 
 ## 产品背景和发展历史
 
@@ -351,7 +360,11 @@ Canva不仅仅是一个设计工具，它代表了设计民主化的趋势。通
     isFree: true,
     featured: false,
     slug: 'trello',
-    detailedContent: `# Trello：视觉化项目管理的简洁之美\n\n![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*AI工具示例*\n
+    detailedContent: `# Trello：视觉化项目管理的简洁之美
+
+![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)
+*AI工具示例*
+
 
 ## 产品背景和发展历史
 
@@ -359,7 +372,11 @@ Trello于2011年由Joel Spolsky和Michael Pryor在纽约创立，作为Fog Creek
 
 Trello的成功在于它将复杂的项目管理概念简化为三个基本元素：看板（Board）、列表（List）和卡片（Card）。这种简化不仅降低了学习成本，也让团队协作变得更加自然。2014年，Trello从Fog Creek Software独立出来，成为一家专注于协作工具的公司。2017年，Atlassian以4.25亿美元收购了Trello，这一收购不仅体现了Trello的商业价值，也为其进一步发展提供了强大支持。
 
-如今，Trello已成为全球最受欢迎的项目管理工具之一，拥有超过5000万用户，被185个国家和地区的个人和企业广泛使用。从小型创业团队到《纽约时报》这样的大型媒体机构，Trello都在帮助用户更好地组织工作和提高效率。\n\n![工具功能展示](https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*功能特性展示*\n
+如今，Trello已成为全球最受欢迎的项目管理工具之一，拥有超过5000万用户，被185个国家和地区的个人和企业广泛使用。从小型创业团队到《纽约时报》这样的大型媒体机构，Trello都在帮助用户更好地组织工作和提高效率。
+
+![工具功能展示](https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)
+*功能特性展示*
+
 
 ## 核心功能特性详解
 
@@ -519,7 +536,11 @@ GitHub不仅仅是一个代码托管平台，它已经成为现代软件开发�
     isFree: true,
     featured: false,
     slug: 'slack',
-    detailedContent: `# Slack：重新定义团队协作的现代通讯革命\n\n![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*AI工具示例*\n
+    detailedContent: `# Slack：重新定义团队协作的现代通讯革命
+
+![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)
+*AI工具示例*
+
 
 ## 产品背景和发展历史
 
@@ -693,7 +714,11 @@ Unsplash不仅仅是一个图片素材平台，它代表了数字时代开放共
     isFree: true,
     featured: false,
     slug: 'mailchimp',
-    detailedContent: `# Mailchimp：引领邮件营销革命的智能平台\n\n![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*AI工具示例*\n
+    detailedContent: `# Mailchimp：引领邮件营销革命的智能平台
+
+![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)
+*AI工具示例*
+
 
 ## 产品背景和发展历史
 
@@ -838,7 +863,11 @@ Postman不仅仅是一个API测试工具，它已经成为现代软件开发不�
     isFree: true,
     featured: false,
     slug: 'grammarly',
-    detailedContent: `# Grammarly：AI驱动的英文写作革命\n\n![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*AI工具示例*\n
+    detailedContent: `# Grammarly：AI驱动的英文写作革命
+
+![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)
+*AI工具示例*
+
 
 ## 产品背景和发展历史
 
@@ -909,7 +938,6 @@ Grammarly提供了全面的平台集成解决方案，包括浏览器扩展、�
 
 Grammarly代表了AI技术在语言处理领域的重大突破，它不仅是一个工具，更是数百万用户提升英文写作能力的伙伴。在全球化的世界中，清晰有效的英文沟通能力变得越来越重要，Grammarly正在帮助人们跨越语言障碍，实现更好的表达和交流。`,
   },
-  // AI工具类别
   {
     id: '13',
     title: 'ChatGPT',
@@ -930,7 +958,11 @@ ChatGPT的诞生标志着人工智能发展史上的一个重要里程碑。这�
 
 ChatGPT的技术演进历程体现了深度学习领域的重要突破。从最初的GPT-1（1.17亿参数）到GPT-2（15亿参数），再到GPT-3（1750亿参数），每一次迭代都带来了质的飞跃。而ChatGPT基于GPT-3.5和后续的GPT-4模型，通过人类反馈强化学习（RLHF）技术的应用，实现了从简单的文本生成到复杂对话理解的转变。
 
-产品发布仅五天，ChatGPT就获得了100万用户，两个月内用户数突破1亿，创造了互联网产品用户增长的新纪录。这一现象级的成功不仅反映了技术的成熟，更揭示了市场对智能助手的巨大需求。ChatGPT的成功引发了全球范围内的AI竞赛，推动了整个人工智能行业的快速发展。\n\n![工具功能展示](https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*功能特性展示*\n
+产品发布仅五天，ChatGPT就获得了100万用户，两个月内用户数突破1亿，创造了互联网产品用户增长的新纪录。这一现象级的成功不仅反映了技术的成熟，更揭示了市场对智能助手的巨大需求。ChatGPT的成功引发了全球范围内的AI竞赛，推动了整个人工智能行业的快速发展。
+
+![工具功能展示](https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)
+*功能特性展示*
+
 
 ## 核心功能特性详解
 
@@ -1017,7 +1049,11 @@ ChatGPT的出现标志着我们正在进入一个全新的人机交互时代。�
     isFree: false,
     featured: true,
     slug: 'midjourney',
-    detailedContent: `# Midjourney：AI艺术创作的革命性力量\n\n![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*AI工具示例*\n
+    detailedContent: `# Midjourney：AI艺术创作的革命性力量
+
+![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)
+*AI工具示例*
+
 
 ## 革命性平台的诞生历程
 
@@ -1025,7 +1061,11 @@ Midjourney的诞生标志着人工智能在创意领域的重大突破。这款�
 
 Midjourney的发展速度令人惊叹。从2022年3月开始内测，到同年7月公开发布，再到2023年成为全球最受欢迎的AI绘画工具之一，Midjourney在短短一年内就吸引了数百万用户。平台独特的Discord集成模式让用户能够在社交环境中分享创作过程，形成了活跃的创作者社区。这种创新的产品形态不仅降低了使用门槛，还促进了创意的交流和碰撞。
 
-目前，Midjourney已经成为AI生成艺术领域的领导者，与OpenAI的DALL-E、Stability AI的Stable Diffusion并称为AI绘画三大平台。其生成的图像质量之高、艺术性之强，甚至在多个国际艺术比赛中获奖，引发了关于AI与艺术关系的深度讨论。Midjourney不仅是一个技术工具，更是推动艺术民主化、重新定义创作过程的文化现象。\n\n![工具功能展示](https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*功能特性展示*\n
+目前，Midjourney已经成为AI生成艺术领域的领导者，与OpenAI的DALL-E、Stability AI的Stable Diffusion并称为AI绘画三大平台。其生成的图像质量之高、艺术性之强，甚至在多个国际艺术比赛中获奖，引发了关于AI与艺术关系的深度讨论。Midjourney不仅是一个技术工具，更是推动艺术民主化、重新定义创作过程的文化现象。
+
+![工具功能展示](https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)
+*功能特性展示*
+
 
 ## 核心技术与创新特色
 
@@ -1322,7 +1362,11 @@ Claude代表了AI助手发展的一个重要方向——在追求能力提升的
     isFree: true,
     featured: false,
     slug: 'stable-diffusion',
-    detailedContent: `# Stable Diffusion：开源AI图像生成的民主化革命\n\n![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*AI工具示例*\n
+    detailedContent: `# Stable Diffusion：开源AI图像生成的民主化革命
+
+![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)
+*AI工具示例*
+
 
 ## 产品背景和发展历史
 
@@ -1332,7 +1376,11 @@ Stable Diffusion的技术基础源于慕尼黑大学的研究团队在扩散模�
 
 Stability AI的创始人Emad Mostaque看到了这项技术的巨大潜力，决定投资并开源这个模型。2022年8月，Stable Diffusion的第一个版本正式发布，仅在几天内就被下载了超过10万次，成为开源AI历史上增长最快的项目之一。
 
-开源策略的选择并非偶然。Mostaque相信AI技术应该为所有人所用，而不应该被少数大公司垄断。这种理念推动了Stable Diffusion的快速发展和广泛采用，也激发了无数开发者和创作者的创新热情。\n\n![工具功能展示](https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*功能特性展示*\n
+开源策略的选择并非偶然。Mostaque相信AI技术应该为所有人所用，而不应该被少数大公司垄断。这种理念推动了Stable Diffusion的快速发展和广泛采用，也激发了无数开发者和创作者的创新热情。
+
+![工具功能展示](https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)
+*功能特性展示*
+
 
 ## 核心技术架构
 
@@ -1604,7 +1652,6 @@ Stable Diffusion代表了AI民主化的重要里程碑。通过开源策略，�
 
 对于想要探索AI图像生成的用户，Stable Diffusion提供了一个既强大又灵活的选择。无论你是艺术家、设计师、开发者还是普通用户，都能在这个开放的生态系统中找到属于自己的创作空间。重要的是要负责任地使用这项技术，在享受创作乐趣的同时，也要考虑其对社会和他人的影响。`,
   },
-  // 数据分析工具
   {
     id: '17',
     title: 'Tableau',
@@ -1627,7 +1674,11 @@ Tableau的故事始于2003年，当时斯坦福大学的三位研究者Christian
 
 Tableau的发展轨迹令人瞩目。2004年发布第一个产品原型，2005年推出Tableau Desktop 1.0，2010年成功IPO上市，2019年被Salesforce以157亿美元收购，成为软件行业历史上最大的收购案之一。这一收购不仅体现了Tableau的商业价值，更重要的是验证了数据可视化在现代企业中的战略地位。
 
-如今，Tableau服务于全球超过86,000家组织，从初创公司到世界500强企业，从政府机构到非营利组织，都在使用Tableau来洞察数据、发现趋势、做出决策。Tableau已经从一个数据可视化工具发展成为完整的分析平台，推动着整个数据分析行业的发展。\n\n![工具功能展示](https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*功能特性展示*\n
+如今，Tableau服务于全球超过86,000家组织，从初创公司到世界500强企业，从政府机构到非营利组织，都在使用Tableau来洞察数据、发现趋势、做出决策。Tableau已经从一个数据可视化工具发展成为完整的分析平台，推动着整个数据分析行业的发展。
+
+![工具功能展示](https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)
+*功能特性展示*
+
 
 ## 核心技术创新
 
@@ -1850,7 +1901,11 @@ Tableau不仅仅是一个数据可视化工具，它是现代数据驱动文化�
     isFree: true,
     featured: false,
     slug: 'google-data-studio',
-    detailedContent: `# Google Data Studio：免费数据可视化的民主化工具\n\n![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*AI工具示例*\n
+    detailedContent: `# Google Data Studio：免费数据可视化的民主化工具
+
+![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)
+*AI工具示例*
+
 
 ## 产品背景和发展历史
 
@@ -1860,7 +1915,11 @@ Data Studio的发展历程体现了Google在企业服务领域的战略布局。
 
 2020年，Google宣布Data Studio完全免费，这一决策进一步降低了数据可视化的门槛，让更多中小企业和个人用户能够享受到专业级的数据分析工具。这种免费策略不仅体现了Google的技术实力，也反映了其通过免费工具构建生态系统、推动数字化转型的长远战略。
 
-如今，Google Data Studio已经成为全球使用最广泛的免费数据可视化工具之一，服务着数百万用户，从小型企业主到大型跨国公司，都在使用这个平台来创建和分享数据报告。\n\n![工具功能展示](https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*功能特性展示*\n
+如今，Google Data Studio已经成为全球使用最广泛的免费数据可视化工具之一，服务着数百万用户，从小型企业主到大型跨国公司，都在使用这个平台来创建和分享数据报告。
+
+![工具功能展示](https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)
+*功能特性展示*
+
 
 ## 核心技术架构
 
@@ -2136,7 +2195,11 @@ Excel已经远远超越了简单电子表格的概念，成为现代职场的基
 
 Microsoft Power BI代表了商业智能领域的现代化革命，将企业级数据分析能力民主化，让每个业务用户都能成为数据分析师。自2011年首次发布以来，Power BI已经成为全球领先的商业智能平台，服务着超过500万用户和97%的财富500强企业。
 
-Power BI的核心优势在于其自助式商业智能理念。传统BI工具往往需要专业的IT团队和数据分析师才能操作，而Power BI通过直观的拖拽界面和智能化功能，让业务用户能够独立完成数据连接、建模、分析和可视化的全流程。\n\n![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*AI工具示例*\n
+Power BI的核心优势在于其自助式商业智能理念。传统BI工具往往需要专业的IT团队和数据分析师才能操作，而Power BI通过直观的拖拽界面和智能化功能，让业务用户能够独立完成数据连接、建模、分析和可视化的全流程。
+
+![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)
+*AI工具示例*
+
 
 ## 技术架构特色
 
@@ -2208,7 +2271,6 @@ Power BI不仅仅是一个报告工具，而是企业数字化转型的重要推
 
 Power BI的成功在于其平衡了功能强大性和易用性，既能满足企业级的复杂需求，又能让普通业务用户快速上手。随着数据分析需求的不断增长，Power BI将继续在商业智能领域发挥重要作用，帮助更多组织实现数据驱动的数字化转型。`,
   },
-  // 更多开发工具
   {
     id: '21',
     title: 'Docker',
@@ -2316,7 +2378,6 @@ Docker不仅仅是一个技术工具，它代表了软件交付方式的根本�
     featured: false,
     slug: 'vercel',
   },
-  // 更多设计工具
   {
     id: '24',
     title: 'Adobe Photoshop',
@@ -2356,7 +2417,6 @@ Docker不仅仅是一个技术工具，它代表了软件交付方式的根本�
     featured: false,
     slug: 'pexels',
   },
-  // 更多效率工具
   {
     id: '27',
     title: 'Obsidian',
@@ -2369,7 +2429,11 @@ Docker不仅仅是一个技术工具，它代表了软件交付方式的根本�
     isFree: true,
     featured: false,
     slug: 'obsidian',
-    detailedContent: `# Obsidian：重新定义知识管理的革命性工具\n\n![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*AI工具示例*\n
+    detailedContent: `# Obsidian：重新定义知识管理的革命性工具
+
+![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)
+*AI工具示例*
+
 
 ## 产品诞生与发展愿景
 
@@ -2633,7 +2697,6 @@ Todoist培养了一个活跃的用户社区，包括效率专家、时间管理�
 
 Todoist代表了任务管理工具的发展方向：从简单的待办清单到智能的生产力助手，从个人工具到协作平台，从功能导向到体验导向。它不仅帮助用户管理任务，更重要的是培养用户的时间意识和效率习惯。在数字化时代，Todoist这样的工具正在重新定义我们与时间和任务的关系，为更高效、更有序的工作和生活提供了可能。`,
   },
-  // 营销工具
   {
     id: '29',
     title: 'Hootsuite',
@@ -2646,7 +2709,11 @@ Todoist代表了任务管理工具的发展方向：从简单的待办清单到�
     isFree: false,
     featured: false,
     slug: 'hootsuite',
-    detailedContent: `# Hootsuite：社交媒体管理的先锋平台\n\n![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*AI工具示例*\n
+    detailedContent: `# Hootsuite：社交媒体管理的先锋平台
+
+![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)
+*AI工具示例*
+
 
 ## 产品起源与发展历程
 
@@ -2656,7 +2723,11 @@ Ryan Holmes最初创建Hootsuite是为了解决自己数字营销代理公司的
 
 Hootsuite的发展轨迹见证了社交媒体营销的演进历程。2010年，公司完成了首轮融资，并开始快速扩张。2012年，Hootsuite推出了企业级功能，包括高级分析和团队协作工具。2013年，公司完成了1.65亿美元的D轮融资，估值达到10亿美元，成为社交媒体技术领域的独角兽企业。
 
-如今，Hootsuite服务着超过18万家企业客户，包括财富1000强企业中的800多家。从最初的单一平台发展为综合性的社交媒体营销套件，Hootsuite不仅改变了企业管理社交媒体的方式，也推动了整个行业的数字化转型。\n\n![工具功能展示](https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*功能特性展示*\n
+如今，Hootsuite服务着超过18万家企业客户，包括财富1000强企业中的800多家。从最初的单一平台发展为综合性的社交媒体营销套件，Hootsuite不仅改变了企业管理社交媒体的方式，也推动了整个行业的数字化转型。
+
+![工具功能展示](https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)
+*功能特性展示*
+
 
 ## 核心功能架构
 
@@ -2721,7 +2792,11 @@ Buffer最初只是一个简单的Twitter调度工具，但其背后的设计哲�
 
 Buffer的发展历程体现了"精益创业"理念的成功实践。公司始终坚持用户导向的产品设计，通过持续的用户反馈来改进产品功能。与许多竞争对手不同，Buffer选择了专注于核心功能的策略，而非追求功能的全面性。这种专注让Buffer在激烈的市场竞争中建立了独特的品牌定位。
 
-如今，Buffer服务着超过16万家企业和个人用户，从小型创业公司到《哈佛商业评论》等知名品牌都在使用Buffer管理他们的社交媒体营销。公司的年收入超过2000万美元，而团队却始终保持在100人以下，这种高效的运营模式成为了远程工作和精益管理的典范。\n\n![工具功能展示](https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*功能特性展示*\n
+如今，Buffer服务着超过16万家企业和个人用户，从小型创业公司到《哈佛商业评论》等知名品牌都在使用Buffer管理他们的社交媒体营销。公司的年收入超过2000万美元，而团队却始终保持在100人以下，这种高效的运营模式成为了远程工作和精益管理的典范。
+
+![工具功能展示](https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)
+*功能特性展示*
+
 
 ## 核心功能特色
 
@@ -2779,9 +2854,17 @@ Buffer代表了社交媒体管理工具的另一种可能性：不是通过复�
     isFree: true,
     featured: true,
     slug: 'new-api',
-    detailedContent: `# New API：开源大模型网关与 AI 资产管理系统，30+ 服务商支持！\n\n![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*AI工具示例*\n
+    detailedContent: `# New API：开源大模型网关与 AI 资产管理系统，30+ 服务商支持！
 
-## New API概览\n\n![New API示例图片](https://www.ahhhhfs.com/wp-content/uploads/2025/07/New-API%EF%BC%9A%E5%BC%80%E6%BA%90%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%BD%91%E5%85%B3%E4%B8%8E-AI-%E8%B5%84%E4%BA%A7%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%EF%BC%8C30-%E6%9C%8D%E5%8A%A1%E5%95%86%E6%94%AF%E6%8C%81%EF%BC%81-main.jpg)\n*New API功能展示*\n
+![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)
+*AI工具示例*
+
+
+## New API概览
+
+![New API示例图片](https://www.ahhhhfs.com/wp-content/uploads/2025/07/New-API%EF%BC%9A%E5%BC%80%E6%BA%90%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%BD%91%E5%85%B3%E4%B8%8E-AI-%E8%B5%84%E4%BA%A7%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%EF%BC%8C30-%E6%9C%8D%E5%8A%A1%E5%95%86%E6%94%AF%E6%8C%81%EF%BC%81-main.jpg)
+*New API功能展示*
+
 
 New API 是基于 One API 深度二次开发的新一代大模型网关与 AI 资产管理系统，提供统一的接口管理与分发能力，让个人和企业能够便捷地接入并管理多种主流大模型服务，支持 OpenAI、Anthropic、Midjourney 等格式，覆盖 30+ AI 服务商，保证 99.9% 服务可用性并兼容多语言环境。该系统具备一键部署、灵活计费、安全稳定等亮点，可满足各类 AI 应用场景需求。
 
@@ -2842,7 +2925,7 @@ New API 原生接入 OpenAI Realtime API 及 Azure 通道，让语音-语音或�
 ## 总结
 
 借助 New API，团队能够以最小成本整合并管理前沿大模型，快速落地多语言智能应用，同时保持计费透明与系统高可用。这是一个功能强大且易于部署的开源AI网关解决方案，特别适合企业级应用场景。`,
-    publishedAt: '2025-08-19T23:42:32.696Z',
+    publishedAt: '2025-09-22T23:42:32.696Z',
   },
   {
     id: '32',
@@ -2858,7 +2941,11 @@ New API 原生接入 OpenAI Realtime API 及 Azure 通道，让语音-语音或�
     slug: 'bigjpg',
     detailedContent: `# Bigjpg：AI图片无损放大神器，4K超清放大32倍！
 
-## Bigjpg概述\n\n![Bigjpg示例图片](https://www.ahhhhfs.com/wp-content/uploads/2025/07/Bigjpg%EF%BC%9AAI%E5%9B%BE%E7%89%87%E6%97%A0%E6%8D%9F%E6%94%BE%E5%A4%A7%E7%A5%9E%E5%99%A8%EF%BC%8C4K%E8%B6%85%E6%B8%85%E6%94%BE%E5%A4%A732%E5%80%8D%EF%BC%81.jpg)\n*Bigjpg功能展示*\n
+## Bigjpg概述
+
+![Bigjpg示例图片](https://www.ahhhhfs.com/wp-content/uploads/2025/07/Bigjpg%EF%BC%9AAI%E5%9B%BE%E7%89%87%E6%97%A0%E6%8D%9F%E6%94%BE%E5%A4%A7%E7%A5%9E%E5%99%A8%EF%BC%8C4K%E8%B6%85%E6%B8%85%E6%94%BE%E5%A4%A732%E5%80%8D%EF%BC%81.jpg)
+*Bigjpg功能展示*
+
 
 Bigjpg利用最新的深度学习技术，通过模型对图像噪点和锯齿进行智能补全，从而实现放大过程中对色彩和细节的高度保留，不会出现明显模糊、重影或毛刺 。相比Photoshop等传统算法，Bigjpg能够更好地保持线条清晰度和渐变自然度，尤其在动漫和插画的放大上表现近乎完美 。
 
@@ -2893,7 +2980,7 @@ Bigjpg平台采用加密链接存储用户图片，所有上传和放大后的�
 ## Bigjpg如何使用
 
 软件下载：官网地址：`,
-    publishedAt: '2025-08-19T23:39:17.613Z',
+    publishedAt: '2025-09-22T23:39:17.613Z',
   },
   {
     id: '33',
@@ -2909,7 +2996,11 @@ Bigjpg平台采用加密链接存储用户图片，所有上传和放大后的�
     slug: 'popo-ai',
     detailedContent: `# PoPo开源AI工具：用自然语言生成MMD角色动作与表情
 
-## PoPo简介\n\n![PoPo示例图片](https://www.ahhhhfs.com/wp-content/uploads/2025/08/PoPo%E5%BC%80%E6%BA%90AI%E5%B7%A5%E5%85%B7%EF%BC%9A%E7%94%A8%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E7%94%9F%E6%88%90MMD%E8%A7%92%E8%89%B2%E5%8A%A8%E4%BD%9C%E4%B8%8E%E8%A1%A8%E6%83%85.jpg)\n*PoPo功能展示*\n
+## PoPo简介
+
+![PoPo示例图片](https://www.ahhhhfs.com/wp-content/uploads/2025/08/PoPo%E5%BC%80%E6%BA%90AI%E5%B7%A5%E5%85%B7%EF%BC%9A%E7%94%A8%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E7%94%9F%E6%88%90MMD%E8%A7%92%E8%89%B2%E5%8A%A8%E4%BD%9C%E4%B8%8E%E8%A1%A8%E6%83%85.jpg)
+*PoPo功能展示*
+
 
 PoPo 是一个开源 AI 工具，允许用户通过自然语言控制 MikuMikuDance（MMD）角色的骨骼动作和面部表情。你只需输入文字描述，PoPo 就能生成精确的 MPL（MMD Pose Language）脚本，驱动骨骼动画和角色表情的实时渲染 。
 
@@ -2955,7 +3046,7 @@ PoPo 前身是 MiKaPo 项目，通过 MediaPipe 实时捕获人体姿势再映�
 PoPo 将自然语言、AI 模型与 MMD 动画结合，通过语义语言 MPL 为用户提供直观且高效的动作创作体验。在不断扩展数据集与优化模型之后，它有望成为日系角色动画制作的重要工具。
 
 体验地址：GitHub地址：`,
-    publishedAt: '2025-08-19T23:41:18.244Z',
+    publishedAt: '2025-09-22T23:41:18.244Z',
   },
   {
     id: '34',
@@ -3008,7 +3099,7 @@ UP简历结合了AI生成与岗位关键词匹配优势，让简历既简洁流�
 ## UP简历官网地址
 
 地址：`,
-    publishedAt: '2025-08-19T23:40:02.472Z',
+    publishedAt: '2025-09-22T23:40:02.472Z',
   },
   {
     id: '35',
@@ -3022,7 +3113,11 @@ UP简历结合了AI生成与岗位关键词匹配优势，让简历既简洁流�
     isFree: true,
     featured: true,
     slug: 'cloudflare-ai-generator',
-    detailedContent: `# Cloudflare AI 图片生成工具（Stable Diffusion XL）—中英文提示词 + 自动翻译，免费实用\n\n![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*AI工具示例*\n
+    detailedContent: `# Cloudflare AI 图片生成工具（Stable Diffusion XL）—中英文提示词 + 自动翻译，免费实用
+
+![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)
+*AI工具示例*
+
 
 ## AI 图片生成
 
@@ -3041,7 +3136,7 @@ CZL在线工具箱推出了一款基于Cloudflare Workers AI的免费在线AI图
 访问工具页面后，直接在“提示词”输入框中填写描述，点击“生成图片”即可快速得到AI渲染的高质量图像，整个过程无需注册或付费。
 
 地址：`,
-    publishedAt: '2025-08-19T23:40:46.081Z',
+    publishedAt: '2025-09-22T23:40:46.081Z',
   },
   {
     id: '36',
@@ -3097,7 +3192,7 @@ OfferIN AI兼容Windows 10+及Mac OS 13+客户端，支持PC与移动端双机�
 ## OfferIN AI如何使用
 
 官网地址：其他类似工具：`,
-    publishedAt: '2025-08-19T23:40:34.024Z',
+    publishedAt: '2025-09-22T23:40:34.024Z',
   },
   {
     id: '37',
@@ -3111,7 +3206,11 @@ OfferIN AI兼容Windows 10+及Mac OS 13+客户端，支持PC与移动端双机�
     isFree: true,
     featured: true,
     slug: 'hard-usernames',
-    detailedContent: `# Hard Usernames：AI用户名生成器 为游戏、Instagram和社交媒体创建独特用户名\n\n![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*AI工具示例*\n
+    detailedContent: `# Hard Usernames：AI用户名生成器 为游戏、Instagram和社交媒体创建独特用户名
+
+![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)
+*AI工具示例*
+
 
 ## Hard Usernames简介
 
@@ -3135,7 +3234,7 @@ Hard Usernames是一个无需注册，也无任何费用的 AI用户名生成器
 ## Hard Usernames官网地址
 
 官网地址：[https://hardusernames.com/zh](https://hardusernames.com/zh)`,
-    publishedAt: '2025-08-19T23:42:09.338Z',
+    publishedAt: '2025-09-22T23:42:09.338Z',
   },
   {
     id: '38',
@@ -3210,7 +3309,7 @@ LangChain 团队发布的基准环境强调工具调用与函数执行能力评�
 ## LLM API Test官网地址
 
 演示地址：GitHub：`,
-    publishedAt: '2025-08-19T23:41:31.486Z',
+    publishedAt: '2025-09-22T23:41:31.486Z',
   },
   {
     id: '39',
@@ -3223,7 +3322,11 @@ LangChain 团队发布的基准环境强调工具调用与函数执行能力评�
     isFree: true,
     featured: true,
     slug: 'ai-silhouette-generator',
-    detailedContent: `# AI Silhouette Generator：免费 AI 轮廓生成器 一键生成专业级剪影\n\n![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*AI工具示例*\n
+    detailedContent: `# AI Silhouette Generator：免费 AI 轮廓生成器 一键生成专业级剪影
+
+![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)
+*AI工具示例*
+
 
 ## AI Silhouette Generator介绍
 
@@ -3289,7 +3392,7 @@ AI Silhouette Generator是一款免费 AI 轮廓生成器，无需注册或付�
 ## AI Silhouette Generator官网地址
 
 官网地址：`,
-    publishedAt: '2025-08-19T23:38:52.538Z',
+    publishedAt: '2025-09-22T23:38:52.538Z',
   },
   {
     id: '40',
@@ -3363,7 +3466,7 @@ AI Silhouette Generator是一款免费 AI 轮廓生成器，无需注册或付�
 爱写作通过“多模型协作 + 创作记忆 + 情节时间线 + 群聊脑暴”形成闭环，让作者把精力放在故事本身。对需要连贯人物弧线、密集情节点与稳定更新的作者而言，更容易维持节奏与品质。
 
 官网地址：`,
-    publishedAt: '2025-08-19T23:37:55.991Z',
+    publishedAt: '2025-09-22T23:37:55.991Z',
   },
   {
     id: '41',
@@ -3376,7 +3479,11 @@ AI Silhouette Generator是一款免费 AI 轮廓生成器，无需注册或付�
     isFree: true,
     featured: true,
     slug: 'ai-proxy',
-    detailedContent: `# AI-PROXY：一站式多厂商AI API代理网关，极简部署，安全高效！（无需注册，替换 URL 即可用）\n\n![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*AI工具示例*\n
+    detailedContent: `# AI-PROXY：一站式多厂商AI API代理网关，极简部署，安全高效！（无需注册，替换 URL 即可用）
+
+![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)
+*AI工具示例*
+
 
 ## AI-PROXY简介
 
@@ -3447,7 +3554,7 @@ http://你的服务器IP:8080/admin
 ## 总结
 
 AI-PROXY 为开发者提供了一个统一的AI API网关解决方案，无需复杂配置即可使用多个AI服务。非常适合需要快速集成多个AI服务的开发者和企业。`,
-    publishedAt: '2025-08-19T23:38:48.424Z',
+    publishedAt: '2025-09-22T23:38:48.424Z',
   },
   {
     id: '42',
@@ -3517,7 +3624,7 @@ AI Line Art（ailineart.com） 是一个在线AI线稿创作平台，提供在�
 ## AI Line Art Generator平台入口
 
 官方地址：其他类似`,
-    publishedAt: '2025-08-19T23:38:21.037Z',
+    publishedAt: '2025-09-22T23:38:21.037Z',
   },
   {
     id: '43',
@@ -3530,7 +3637,11 @@ AI Line Art（ailineart.com） 是一个在线AI线稿创作平台，提供在�
     isFree: true,
     featured: true,
     slug: 'imgkits',
-    detailedContent: `# Imgkits：在线AI图像与视频一站式编辑器（免费试用、批量处理、隐私安全）\n\n![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*AI工具示例*\n
+    detailedContent: `# Imgkits：在线AI图像与视频一站式编辑器（免费试用、批量处理、隐私安全）
+
+![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)
+*AI工具示例*
+
 
 ## Imgkits概览
 
@@ -3582,7 +3693,7 @@ Imgkits 是基于浏览器的人工智能图像与视频编辑平台，面向创
 ## Imgkits官网地址
 
 官网地址：`,
-    publishedAt: '2025-08-19T23:39:44.330Z',
+    publishedAt: '2025-09-22T23:39:44.330Z',
   },
   {
     id: '44',
@@ -3633,7 +3744,7 @@ Imgkits 是基于浏览器的人工智能图像与视频编辑平台，面向创
 ## 访问入口
 
 访问地址（可我AI免费在线图片生成器）：`,
-    publishedAt: '2025-08-19T23:40:55.096Z',
+    publishedAt: '2025-09-22T23:40:55.096Z',
   },
   {
     id: '45',
@@ -3647,7 +3758,11 @@ Imgkits 是基于浏览器的人工智能图像与视频编辑平台，面向创
     isFree: true,
     featured: true,
     slug: 'read-frog',
-    detailedContent: `# Read Frog（陪读蛙）：开源 AI 浏览器语言学习扩展，沉浸式翻译与文章理解\n\n![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*AI工具示例*\n
+    detailedContent: `# Read Frog（陪读蛙）：开源 AI 浏览器语言学习扩展，沉浸式翻译与文章理解
+
+![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)
+*AI工具示例*
+
 
 ## Read Frog概览
 
@@ -3690,8 +3805,9 @@ Read Frog（中文名：陪读蛙）是一款开源 AI 浏览器语言学习扩�
 
 ## Read Frog官网地址/安装使用
 
-GitHub地址：官网地址：`,
-    publishedAt: '2025-08-19T23:29:10.300Z',
+GitHub地址：https://github.com/GorvGoyl/ReadFrog  
+官网地址：https://readfrog.app`,
+    publishedAt: '2025-09-22T23:29:10.300Z',
   },
   {
     id: '46',
@@ -3763,8 +3879,8 @@ AI 图像相似性检查器（AI Image Similarity Checker）是一款基于数�
 
 ## AI Image Similarity Checker官网地址
 
-地址：`,
-    publishedAt: '2025-08-19T23:41:58.392Z',
+官网地址：https://aiimagesimilaritychecker.com`,
+    publishedAt: '2025-09-22T23:41:58.392Z',
   },
   {
     id: '47',
@@ -3778,7 +3894,11 @@ AI 图像相似性检查器（AI Image Similarity Checker）是一款基于数�
     isFree: true,
     featured: true,
     slug: 'ai-dream-analyzer',
-    detailedContent: `# AI Dream Analyzer：免费AI解梦工具，让你快速解析梦境与潜意识\n\n![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*AI工具示例*\n
+    detailedContent: `# AI Dream Analyzer：免费AI解梦工具，让你快速解析梦境与潜意识
+
+![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)
+*AI工具示例*
+
 
 ## AI Dream Analyzer介绍
 
@@ -3814,584 +3934,7 @@ AI 图像相似性检查器（AI Image Similarity Checker）是一款基于数�
 ## AI Dream Analyzer官网地址
 
 官网地址：### 其他类似AI梦境工具`,
-    publishedAt: '2025-08-19T23:32:05.107Z',
-  },
-  {
-    id: '48',
-    title: '调qing一点通 – 晚熟青年',
-    description: '调qing一点通 – 晚熟青年是一款专业的工具软件，为用户提供高效便捷的服务体验。',
-    category: '效率工具',
-    tags: ['效率工具', '青年', '实用'],
-    url: 'https://www.zhihu.com/',
-    rating: 4,
-    isFree: true,
-    featured: false,
-    slug: 'youth-guide',
-    detailedContent: `# 调qing一点通 – 晚熟青年
-
-## 工具简介
-
-课程信息 调qing一点通 - 晚熟青年，夸克网盘课程资源。这本小册子是Mart...
-
-4 月前
-0
-2
-
-## [怎样打开自学之门](https://www.ahhhhfs.com/70325/
-
-## 主要功能
-
-- 提供核心功能服务
-- 界面简洁易用
-- 支持多种操作
-
-## 使用方法
-
-1. 访问工具官网
-2. 按照页面提示操作
-3. 获得所需结果
-
-## 工具特点
-
-- **免费使用**: 大部分功能免费提供
-- **操作简单**: 无需复杂设置
-- **效果良好**: 能够满足基本需求
-
-## 相关链接
-
-- 官方网站: ---
-
-*工具信息来源于网络收集整理，具体功能以官方网站为准。*`,
-    publishedAt: '2025-08-19T16:11:23.516Z',
-  },
-  {
-    id: '49',
-    title: '法律相关电子书',
-    description: '法律相关电子书是一款基于人工智能技术的实用工具，为用户提供智能化的解决方案。',
-    category: '效率工具',
-    tags: ['法律', '电子书'],
-    url: 'https://www.nlc.cn/',
-    imageUrl: undefined,
-    rating: 4.5,
-    isFree: true,
-    featured: false,
-    slug: 'legal-ebooks',
-    detailedContent: `# 法律相关电子书\n\n![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*AI工具示例*\n
-
-## 工具简介
-
-资源信息 法律相关电子书，夸克网盘电子书资源。 资源汇聚权威法律电子书，覆盖民事...
-
-4 月前
-0
-4
-
-## [完全图解恋爱心理学](https://www.ahhhhfs.com/69653/
-
-## 主要功能
-
-- 提供核心功能服务
-- 界面简洁易用
-- 支持多种操作
-
-## 使用方法
-
-1. 访问工具官网
-2. 按照页面提示操作
-3. 获得所需结果
-
-## 工具特点
-
-- **免费使用**: 大部分功能免费提供
-- **操作简单**: 无需复杂设置
-- **效果良好**: 能够满足基本需求
-
-## 相关链接
-
-- 官方网站: ---
-
-*工具信息来源于网络收集整理，具体功能以官方网站为准。*`,
-    publishedAt: '2025-08-19T16:11:23.516Z',
-  },
-  {
-    id: '50',
-    title: '全国独家研学手册',
-    description: '全国独家研学手册是一款专业的工具软件，为用户提供高效便捷的服务体验。',
-    category: '效率工具',
-    tags: ['研学', '手册', '教育'],
-    url: 'https://www.moe.gov.cn/',
-    rating: 4,
-    isFree: true,
-    featured: false,
-    slug: 'study-handbook',
-    detailedContent: `# 全国独家研学手册
-
-## 工具简介
-
-资源信息 全国独家研学手册，包含北京、成都、敦煌、杭州、洛阳、济南、绍兴和西安的...
-
-5 月前
-0
-1
-
-## [如何让你爱的人爱上你](https://www.ahhhhfs.com/69311/
-
-## 主要功能
-
-- 提供核心功能服务
-- 界面简洁易用
-- 支持多种操作
-
-## 使用方法
-
-1. 访问工具官网
-2. 按照页面提示操作
-3. 获得所需结果
-
-## 工具特点
-
-- **免费使用**: 大部分功能免费提供
-- **操作简单**: 无需复杂设置
-- **效果良好**: 能够满足基本需求
-
-## 相关链接
-
-- 官方网站: ---
-
-*工具信息来源于网络收集整理，具体功能以官方网站为准。*`,
-    publishedAt: '2025-08-19T16:11:23.517Z',
-  },
-  {
-    id: '51',
-    title: '冷眼观爱 七天找到女朋友',
-    description: '冷眼观爱 七天找到女朋友是一款专业的工具软件，为用户提供高效便捷的服务体验。',
-    category: '效率工具',
-    tags: ['恋爱', '教程', '实用'],
-    url: 'https://book.douban.com/',
-    rating: 4,
-    isFree: true,
-    featured: false,
-    slug: 'love-guide',
-    detailedContent: `# 冷眼观爱 七天找到女朋友\n\n![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*AI工具示例*\n
-
-## 工具简介
-
-资源信息 冷眼观爱 七天找到女朋友，PDF文件，夸克网盘资源。 本书通过7个模块...
-
-5 月前
-0
-2
-
-## [微信撩妹72招 PUANEY](https://www.ahhhhfs.com/54944/
-
-## 主要功能
-
-- 提供核心功能服务
-- 界面简洁易用
-- 支持多种操作
-
-## 使用方法
-
-1. 访问工具官网
-2. 按照页面提示操作
-3. 获得所需结果
-
-## 工具特点
-
-- **免费使用**: 大部分功能免费提供
-- **操作简单**: 无需复杂设置
-- **效果良好**: 能够满足基本需求
-
-## 相关链接
-
-- 官方网站: ---
-
-*工具信息来源于网络收集整理，具体功能以官方网站为准。*`,
-    publishedAt: '2025-08-19T16:11:23.517Z',
-  },
-  {
-    id: '52',
-    title: '生财宝典（100位生财高手的判断路径和经验）',
-    description: '生财宝典（100位生财高手的判断路径和经验）是一款专业的工具软件，为用户提供高效便捷的服务体验。',
-    category: '效率工具',
-    tags: ['生财', '宝典', '投资'],
-    url: 'https://shengcai.com/',
-    rating: 4,
-    isFree: true,
-    featured: false,
-    slug: '100',
-    detailedContent: `# 生财宝典（100位生财高手的判断路径和经验）
-
-## 工具简介
-
-资源信息 生财宝典（100位生财高手的判断路径和经验）,夸克网盘网课程资源。把1...
-
-## 主要功能
-
-- 提供核心功能服务
-- 界面简洁易用
-- 支持多种操作
-
-## 使用方法
-
-1. 访问工具官网
-2. 按照页面提示操作
-3. 获得所需结果
-
-## 工具特点
-
-- **免费使用**: 大部分功能免费提供
-- **操作简单**: 无需复杂设置
-- **效果良好**: 能够满足基本需求
-
-## 相关链接
-
-- 官方网站: ---
-
-*工具信息来源于网络收集整理，具体功能以官方网站为准。*`,
-    publishedAt: '2025-08-19T16:11:23.517Z',
-  },
-  {
-    id: '53',
-    title: '怎样打开自学之门',
-    description: '怎样打开自学之门是一款专业的工具软件，为用户提供高效便捷的服务体验。',
-    category: '效率工具',
-    tags: ['自学', '教育', '学习'],
-    url: 'https://www.coursera.org/',
-    rating: 4,
-    isFree: true,
-    featured: false,
-    slug: 'self-study-guide',
-    detailedContent: `# 怎样打开自学之门\n\n![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*AI工具示例*\n
-
-## 工具简介
-
-资源信息 怎样打开自学之门，夸克网盘课程资源。这本诞生于改革开放初期的青年自学指...
-
-## 主要功能
-
-- 提供核心功能服务
-- 界面简洁易用
-- 支持多种操作
-
-## 使用方法
-
-1. 访问工具官网
-2. 按照页面提示操作
-3. 获得所需结果
-
-## 工具特点
-
-- **免费使用**: 大部分功能免费提供
-- **操作简单**: 无需复杂设置
-- **效果良好**: 能够满足基本需求
-
-## 相关链接
-
-- 官方网站: ---
-
-*工具信息来源于网络收集整理，具体功能以官方网站为准。*`,
-    publishedAt: '2025-08-19T16:11:23.517Z',
-  },
-  {
-    id: '54',
-    title: '完全图解恋爱心理学',
-    description: '完全图解恋爱心理学是一款专业的工具软件，为用户提供高效便捷的服务体验。',
-    category: '效率工具',
-    tags: ['心理学', '图解', '恋爱'],
-    url: 'https://book.douban.com/',
-    rating: 4,
-    isFree: true,
-    featured: false,
-    slug: 'love-psychology',
-    detailedContent: `# 完全图解恋爱心理学
-
-## 工具简介
-
-课程信息 完全图解恋爱心理学，PDF文件，夸克网盘课程。 课程介绍 《每天读一点...
-
-## 主要功能
-
-- 提供核心功能服务
-- 界面简洁易用
-- 支持多种操作
-
-## 使用方法
-
-1. 访问工具官网
-2. 按照页面提示操作
-3. 获得所需结果
-
-## 工具特点
-
-- **免费使用**: 大部分功能免费提供
-- **操作简单**: 无需复杂设置
-- **效果良好**: 能够满足基本需求
-
-## 相关链接
-
-- 官方网站: ---
-
-*工具信息来源于网络收集整理，具体功能以官方网站为准。*`,
-    publishedAt: '2025-08-19T16:11:23.517Z',
-  },
-  {
-    id: '55',
-    title: '如何让你爱的人爱上你',
-    description: '如何让你爱的人爱上你是一款专业的工具软件，为用户提供高效便捷的服务体验。',
-    category: '效率工具',
-    tags: ['恋爱', '心理学', '实用'],
-    url: 'https://book.douban.com/',
-    rating: 4,
-    isFree: true,
-    featured: false,
-    slug: 'love-tips',
-    detailedContent: `# 如何让你爱的人爱上你\n\n![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*AI工具示例*\n
-
-## 工具简介
-
-资源信息 如何让你爱的人爱上你，PDF文件，夸克网盘资源下载。 关键问题 ，精辟...
-
-## 主要功能
-
-- 提供核心功能服务
-- 界面简洁易用
-- 支持多种操作
-
-## 使用方法
-
-1. 访问工具官网
-2. 按照页面提示操作
-3. 获得所需结果
-
-## 工具特点
-
-- **免费使用**: 大部分功能免费提供
-- **操作简单**: 无需复杂设置
-- **效果良好**: 能够满足基本需求
-
-## 相关链接
-
-- 官方网站: ---
-
-*工具信息来源于网络收集整理，具体功能以官方网站为准。*`,
-    publishedAt: '2025-08-19T16:11:23.517Z',
-  },
-  {
-    id: '56',
-    title: '欧阳春晓：6周维密薄肌线条弹力带普拉提',
-    description: '欧阳春晓：6周维密薄肌线条弹力带普拉提是一款专业的工具软件，为用户提供高效便捷的服务体验。',
-    category: '效率工具',
-    tags: ['健身', '普拉提', '训练'],
-    url: 'https://www.keep.com/',
-    rating: 4,
-    isFree: true,
-    featured: false,
-    slug: '6',
-    detailedContent: `# 欧阳春晓：6周维密薄肌线条弹力带普拉提
-
-## 工具简介
-
-课程信息 欧阳春晓：6周维密薄肌线条弹力带普拉提，夸克网盘课程下载。欧阳春晓推出...
-
-## 主要功能
-
-- 提供核心功能服务
-- 界面简洁易用
-- 支持多种操作
-
-## 使用方法
-
-1. 访问工具官网
-2. 按照页面提示操作
-3. 获得所需结果
-
-## 工具特点
-
-- **免费使用**: 大部分功能免费提供
-- **操作简单**: 无需复杂设置
-- **效果良好**: 能够满足基本需求
-
-## 相关链接
-
-- 官方网站: ---
-
-*工具信息来源于网络收集整理，具体功能以官方网站为准。*`,
-    publishedAt: '2025-08-19T16:11:23.518Z',
-  },
-  {
-    id: '57',
-    title: '如何利用下班时间写作',
-    description: '如何利用下班时间写作是一款专业的工具软件，为用户提供高效便捷的服务体验。',
-    category: '效率工具',
-    tags: ['写作', '时间管理', '效率工具'],
-    url: 'https://www.jianshu.com/',
-    rating: 4,
-    isFree: true,
-    featured: false,
-    slug: 'writing-guide',
-    detailedContent: `# 如何利用下班时间写作\n\n![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*AI工具示例*\n
-
-## 工具简介
-
-课程信息 如何利用下班时间写作，夸克网盘课程。这套课程为职场人士量身打造下班写作...
-
-## 主要功能
-
-- 提供核心功能服务
-- 界面简洁易用
-- 支持多种操作
-
-## 使用方法
-
-1. 访问工具官网
-2. 按照页面提示操作
-3. 获得所需结果
-
-## 工具特点
-
-- **免费使用**: 大部分功能免费提供
-- **操作简单**: 无需复杂设置
-- **效果良好**: 能够满足基本需求
-
-## 相关链接
-
-- 官方网站: ---
-
-*工具信息来源于网络收集整理，具体功能以官方网站为准。*`,
-    publishedAt: '2025-08-19T16:11:23.518Z',
-  },
-  {
-    id: '58',
-    title: '调qing一点通 – 晚熟青年',
-    description: '调qing一点通 – 晚熟青年是一款专业的工具软件，为用户提供高效便捷的服务体验。',
-    category: '效率工具',
-    tags: ['效率工具', '青年', '实用'],
-    url: 'https://www.zhihu.com/',
-    rating: 4,
-    isFree: true,
-    featured: false,
-    slug: 'youth-guide',
-    detailedContent: `# 调qing一点通 – 晚熟青年
-
-## 工具简介
-
-课程信息 调qing一点通 - 晚熟青年，夸克网盘课程资源。这本小册子是Mart...
-
-4 月前
-0
-2
-
-* 1/18
-* 1
-* * * * * ## 主要功能
-
-- 提供核心功能服务
-- 界面简洁易用
-- 支持多种操作
-
-## 使用方法
-
-1. 访问工具官网
-2. 按照页面提示操作
-3. 获得所需结果
-
-## 工具特点
-
-- **免费使用**: 大部分功能免费提供
-- **操作简单**: 无需复杂设置
-- **效果良好**: 能够满足基本需求
-
-## 相关链接
-
-- 官方网站: ---
-
-*工具信息来源于网络收集整理，具体功能以官方网站为准。*`,
-    publishedAt: '2025-08-19T16:11:23.518Z',
-  },
-  {
-    id: '59',
-    title: '步某非烟第1-4季 合集',
-    description: '步某非烟第1-4季 合集是一款专业的工具软件，为用户提供高效便捷的服务体验。',
-    category: '效率工具',
-    tags: ['合集', '资源', '娱乐'],
-    url: 'https://www.qidian.com/',
-    rating: 4,
-    isFree: true,
-    featured: false,
-    slug: 'novel-collection',
-    detailedContent: `# 步某非烟第1-4季 合集\n\n![AI人工智能技术](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=entropy&cs=tinysrgb)\n*AI工具示例*\n
-
-## 工具简介
-
-步某非烟第1-4季合集信息 步某非烟第1-4季 合集，PikPak网盘资源下载，...
-
-## 主要功能
-
-- 提供核心功能服务
-- 界面简洁易用
-- 支持多种操作
-
-## 使用方法
-
-1. 访问工具官网
-2. 按照页面提示操作
-3. 获得所需结果
-
-## 工具特点
-
-- **免费使用**: 大部分功能免费提供
-- **操作简单**: 无需复杂设置
-- **效果良好**: 能够满足基本需求
-
-## 相关链接
-
-- 官方网站: ---
-
-*工具信息来源于网络收集整理，具体功能以官方网站为准。*`,
-    publishedAt: '2025-08-19T16:11:23.518Z',
-  },
-  {
-    id: '60',
-    title: '大学同学提升幸福感实用教程',
-    description: '大学同学提升幸福感实用教程是一款专业的工具软件，为用户提供高效便捷的服务体验。',
-    category: '效率工具',
-    tags: ['教程', '幸福感', '实用'],
-    url: 'https://www.coursera.org/',
-    rating: 4,
-    isFree: true,
-    featured: false,
-    slug: 'happiness-guide',
-    detailedContent: `# 大学同学提升幸福感实用教程
-
-## 工具简介
-
-资源信息 大学同学提升幸福感实用教程，课程目录和内容如图，夸克网盘和PikPak...
-
-## 主要功能
-
-- 提供核心功能服务
-- 界面简洁易用
-- 支持多种操作
-
-## 使用方法
-
-1. 访问工具官网
-2. 按照页面提示操作
-3. 获得所需结果
-
-## 工具特点
-
-- **免费使用**: 大部分功能免费提供
-- **操作简单**: 无需复杂设置
-- **效果良好**: 能够满足基本需求
-
-## 相关链接
-
-- 官方网站: ---
-
-*工具信息来源于网络收集整理，具体功能以官方网站为准。*`,
-    publishedAt: '2025-08-19T16:11:23.518Z',
+    publishedAt: '2025-09-22T23:32:05.107Z',
   },
   {
     id: '61',
@@ -4489,7 +4032,7 @@ The Unarchiver支持超过40种压缩格式，包括：
 - **开发者主页**：[Dag Ågren](https://wakaba.c3.cx)
 
 *适合所有需要在Mac上处理各种压缩文件的用户，特别是经常接收来自Windows用户文件的Mac用户。*`,
-    publishedAt: '2025-08-20T08:55:00.000Z',
+    publishedAt: '2025-09-22T08:55:00.000Z',
   },
   {
     id: '62',
@@ -4621,7 +4164,7 @@ BetterZip的杀手级功能是无需解压即可预览压缩包内容：
 - **技术支持**：[support@macitbetter.com](mailto:support@macitbetter.com)
 
 *BetterZip适合对压缩功能有专业需求的用户，其丰富的功能和优秀的用户体验值得投资。*`,
-    publishedAt: '2025-08-20T08:55:01.000Z',
+    publishedAt: '2025-09-22T08:55:01.000Z',
   },
   {
     id: '63', 
@@ -4788,7 +4331,7 @@ Keka的界面设计体现了Mac软件的设计精髓：
 - **功能差异**：两个版本功能完全相同
 
 *Keka是Mac用户的理想选择，结合了开源的安全性、免费的实用性和优秀的设计美学。*`,
-    publishedAt: '2025-08-20T08:55:02.000Z',
+    publishedAt: '2025-09-22T08:55:02.000Z',
   },
   {
     id: '64',
@@ -4945,7 +4488,7 @@ WinRAR的分卷功能特别强大：
 - **存储空间**：约3-5MB安装空间
 
 *WinRAR虽然不是免费软件，但其强大的功能和广泛的兼容性使其在压缩工具领域占据重要地位。*`,
-    publishedAt: '2025-08-20T08:55:03.000Z',
+    publishedAt: '2025-09-22T08:55:03.000Z',
   },
   {
     id: '65',
@@ -5115,7 +4658,7 @@ Archive Utility作为macOS的系统原生工具，虽然功能相对简单，但
 - **新手用户**：希望零学习成本使用
 
 *Archive Utility是每个Mac用户都应该了解的系统工具，虽然简单但实用，体现了苹果"简洁即美"的设计哲学。*`,
-    publishedAt: '2025-08-20T08:55:04.000Z',
+    publishedAt: '2025-09-22T08:55:04.000Z',
   },
   {
     id: '66',
@@ -5243,6 +4786,6 @@ Happy承诺不收集用户的代码数据或个人信息。所有遥测和跟踪
 - **用户控制**：用户完全控制数据的使用和删除
 
 *Happy代表了AI编程工具发展的新方向，将桌面级的AI编程能力延伸到移动设备，为开发者创造了全新的工作方式。*`,
-    publishedAt: '2025-01-22T10:30:00.000Z',
-  },
+    publishedAt: '2025-09-22T10:30:00.000Z',
+  }
 ];

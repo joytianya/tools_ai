@@ -93,10 +93,41 @@ html, body, #__next, [data-nextjs-scroll-focus-boundary] {
 }
 
 /* 强制所有元素不超出视窗 */
-div, section, article, main, aside, header, footer, nav, 
+div, section, article, main, aside, header, footer, nav,
 pre, code, table, img, video, iframe, canvas {
   max-width: 100%;
   box-sizing: border-box;
+}
+
+/* 标题元素滚动偏移 - 作为 JavaScript 的备用方案 */
+h1[id], h2[id], h3[id], h4[id], h5[id], h6[id] {
+  scroll-margin-top: 120px; /* 基础偏移量，适应大部分页面 */
+}
+
+/* 教程页面标题需要更大的偏移量 */
+[data-tutorial-page] h1[id],
+[data-tutorial-page] h2[id],
+[data-tutorial-page] h3[id],
+[data-tutorial-page] h4[id],
+[data-tutorial-page] h5[id],
+[data-tutorial-page] h6[id] {
+  scroll-margin-top: 160px;
+}
+
+/* 移动端标题偏移 */
+@media (max-width: 767px) {
+  h1[id], h2[id], h3[id], h4[id], h5[id], h6[id] {
+    scroll-margin-top: 100px;
+  }
+
+  [data-tutorial-page] h1[id],
+  [data-tutorial-page] h2[id],
+  [data-tutorial-page] h3[id],
+  [data-tutorial-page] h4[id],
+  [data-tutorial-page] h5[id],
+  [data-tutorial-page] h6[id] {
+    scroll-margin-top: 140px;
+  }
 }
 
 /* 长文本处理 */

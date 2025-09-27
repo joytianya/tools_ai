@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 interface ToolImageProps {
   src?: string;
@@ -47,11 +48,13 @@ export function ToolImage({ src, alt, title, className = '' }: ToolImageProps) {
   }
 
   return (
-    <img 
-      src={src} 
+    <Image
+      src={src}
       alt={alt}
-      className={`w-full h-full object-cover ${className}`}
+      fill
+      className={`object-cover ${className}`}
       onError={() => setHasError(true)}
+      sizes="(max-width: 768px) 100vw, 300px"
     />
   );
 }

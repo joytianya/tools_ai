@@ -1,18 +1,17 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import Image from 'next/image';
-import { ArrowLeft, Clock, User, Calendar, Tag, Star, BookOpen, Target } from 'lucide-react';
+import { ArrowLeft, Clock, User, Calendar, Tag, Star, BookOpen } from 'lucide-react';
 import { Layout } from '@/components/Layout';
 import { HeroImage } from '@/components/HeroImage';
-import { InteractiveTodoList } from '@/components/InteractiveTodoList';
-import { LearningProgress } from '@/components/LearningProgress';
 import { CodeShowcase } from '@/components/CodeShowcase';
 import { InteractiveQuiz } from '@/components/InteractiveQuiz';
 import { MarkdownRenderer } from '@/components/MarkdownRenderer';
-import { TableOfContents } from '@/components/TableOfContents';
+import { FloatingTableOfContents } from '@/components/FloatingTableOfContents';
 import { tutorials } from '@/data/tutorials';
+import { Tutorial } from '@/types';
 import { formatDate } from '@/lib/utils';
 import { generateSEO, generateStructuredData } from '@/lib/seo';
+import { loadTutorialContent } from '@/lib/content-loader';
 
 interface TutorialPageProps {
   params: Promise<{ slug: string; }>;
@@ -49,7 +48,7 @@ interface TutorialContent {
   };
 }
 
-const getTutorialContent = (slug: string): TutorialContent => {
+const getTutorialContent = (slug: string, tutorial?: Tutorial): TutorialContent => {
   const contentMap: { [key: string]: TutorialContent } = {
     'chatgpt-prompt-engineering-guide': {
       type: 'ai-interactive',
@@ -1262,8 +1261,8 @@ const customConfig = {
     difficulty: 'beginner' as const,
     skills: ['基础知识'],
     hero: {
-      title: '学习新技能',
-      subtitle: '掌握实用工具和方法',
+      title: tutorial?.title || '实用技能学习指南',
+      subtitle: tutorial?.description || '掌握实用工具和方法',
       image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&h=600&fit=crop&auto=format',
       gradient: 'from-blue-500 to-purple-600'
     },
@@ -1299,12 +1298,16 @@ export async function generateMetadata({ params }: TutorialPageProps) {
 export default async function TutorialPage({ params }: TutorialPageProps) {
   const resolvedParams = await params;
   const tutorial = tutorials.find(t => t.slug === resolvedParams.slug);
-  
+
   if (!tutorial) {
     notFound();
   }
 
-  const content = getTutorialContent(tutorial.slug);
+  // 尝试从外部文件加载内容，如果没有则使用原有的内联内容
+  const externalContent = await loadTutorialContent(tutorial.slug);
+  const finalContent = externalContent || tutorial.content;
+
+  const content = getTutorialContent(tutorial.slug, tutorial);
 
   // 生成结构化数据
   const structuredData = generateStructuredData({
@@ -1328,7 +1331,7 @@ export default async function TutorialPage({ params }: TutorialPageProps) {
       />
       
       <Layout>
-        <div className="min-h-screen bg-gray-50 overflow-x-hidden max-w-full">
+        <div className="min-h-screen bg-gray-50 overflow-x-hidden max-w-full" data-tutorial-page>
         {/* Hero Section */}
         <div className={`relative bg-gradient-to-r ${content.hero.gradient} text-white overflow-hidden`}>
           <div className="absolute inset-0">
@@ -1357,10 +1360,6 @@ export default async function TutorialPage({ params }: TutorialPageProps) {
               {/* Meta信息 */}
               <div className="flex flex-wrap gap-6 text-white/80">
                 <div className="flex items-center">
-                  <Clock className="w-5 h-5 mr-2" />
-                  <span>{tutorial.readTime} 分钟阅读</span>
-                </div>
-                <div className="flex items-center">
                   <User className="w-5 h-5 mr-2" />
                   <span>{tutorial.author}</span>
                 </div>
@@ -1379,25 +1378,9 @@ export default async function TutorialPage({ params }: TutorialPageProps) {
 
         {/* 主要内容区域 */}
         <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12 overflow-x-hidden">
-          {/* 移动端目录 */}
-          {tutorial.content && (
-            <div className="lg:hidden mb-8">
-              <TableOfContents 
-                content={tutorial.content}
-                defaultExpanded={true}
-              />
-            </div>
-          )}
-          
           <div className="grid lg:grid-cols-3 gap-4 sm:gap-8">
             {/* 左侧主要内容 */}
             <div className="lg:col-span-2 space-y-6 sm:space-y-8 min-w-0">
-              {/* 学习进度 */}
-              <LearningProgress 
-                estimatedTime={content.estimatedTime}
-                difficulty={content.difficulty}
-                skills={content.skills}
-              />
 
               {/* 教程简介 */}
               <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-4 sm:p-6 overflow-hidden">
@@ -1424,7 +1407,7 @@ export default async function TutorialPage({ params }: TutorialPageProps) {
               </div>
 
               {/* 教程详细内容 */}
-              {tutorial.content && (
+              {finalContent && (
                 <div className="bg-white/80 backdrop-blur-sm rounded-2xl border border-white/30 shadow-lg p-4 sm:p-8 overflow-hidden">
                   <div className="mb-8">
                     <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl mb-4 shadow-lg">
@@ -1438,8 +1421,8 @@ export default async function TutorialPage({ params }: TutorialPageProps) {
                     </p>
                   </div>
                   <div className="bg-white/50 backdrop-blur-sm rounded-xl border border-white/20 p-3 sm:p-6 overflow-hidden">
-                    <MarkdownRenderer 
-                      content={tutorial.content}
+                    <MarkdownRenderer
+                      content={finalContent}
                       className="markdown-content"
                     />
                   </div>
@@ -1520,76 +1503,17 @@ export default async function TutorialPage({ params }: TutorialPageProps) {
 
             {/* 右侧边栏 */}
             <div className="space-y-4 sm:space-y-6 min-w-0">
-              {/* 桌面端目录 */}
-              {tutorial.content && (
-                <div className="hidden lg:block">
-                  <TableOfContents 
-                    content={tutorial.content}
-                    className="sticky top-4"
-                  />
-                </div>
-              )}
 
-              {/* 学习清单 */}
-              <InteractiveTodoList 
-                title="学习清单"
-                items={content.todoItems}
-              />
 
-              {/* 学习目标 */}
-              <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-4 sm:p-6 overflow-hidden">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
-                  <Target className="w-5 h-5 mr-2 text-green-600" />
-                  学习目标
-                </h3>
-                <ul className="space-y-3">
-                  {content.skills.map((skill, index) => (
-                    <li key={index} className="flex items-start">
-                      <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0" />
-                      <span className="text-gray-700">{skill}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* 难度指标 */}
-              <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-4 sm:p-6 overflow-hidden">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">📊 教程信息</h3>
-                <div className="space-y-4">
-                  <div>
-                    <div className="flex justify-between items-center text-sm mb-2">
-                      <span className="text-gray-700 font-medium">预计学习时间</span>
-                      <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-semibold">
-                        ⏱️ {content.estimatedTime}分钟
-                      </span>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="flex justify-between items-center text-sm mb-2">
-                      <span className="text-gray-700 font-medium">难度等级</span>
-                      <span className={`px-3 py-1 rounded-full font-semibold ${
-                        content.difficulty === 'beginner' ? 'bg-green-100 text-green-800' :
-                        content.difficulty === 'intermediate' ? 'bg-yellow-100 text-yellow-800' : 'bg-red-100 text-red-800'
-                      }`}>
-                        {content.difficulty === 'beginner' ? '🟢 入门级' :
-                         content.difficulty === 'intermediate' ? '🟡 进阶级' : '🔴 高级'}
-                      </span>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="flex justify-between items-center text-sm mb-2">
-                      <span className="text-gray-700 font-medium">技能点数</span>
-                      <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full font-semibold">
-                        🎯 {content.skills.length}个技能
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
+
+      {/* 悬浮目录 */}
+      {finalContent && (
+        <FloatingTableOfContents content={finalContent} />
+      )}
     </Layout>
     </>
   );

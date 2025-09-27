@@ -1,0 +1,22 @@
+[Unit]
+Description=MatrixTools Web Application
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=zxw
+Group=zxw
+WorkingDirectory=/home/zxw/projects/dev/tools_ai
+ExecStart=/usr/bin/npm start
+ExecReload=/bin/kill -HUP $MAINPID
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=matrixtools
+Environment=NODE_ENV=production
+Environment=PORT=3000
+
+[Install]
+WantedBy=multi-user.target

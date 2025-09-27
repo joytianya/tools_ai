@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { ExternalLink, Star, ArrowLeft, Tag } from 'lucide-react';
 import { Layout } from '@/components/Layout';
-import { TableOfContents } from '@/components/TableOfContents';
+import { FloatingTableOfContents } from '@/components/FloatingTableOfContents';
 import { MarkdownRenderer } from '@/components/MarkdownRenderer';
 import { TagList } from '@/components/TagList';
 import { ToolImage } from '@/components/ToolImage';
@@ -78,17 +78,6 @@ export default async function ToolDetailPage({ params }: ToolDetailPageProps) {
             </Link>
 
             <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12 overflow-x-hidden">
-              {/* 移动端目录 */}
-              {tool.detailedContent && tool.detailedContent.length > 500 && (
-                <div className="lg:hidden mb-8 overflow-hidden" style={{ width: '100%', maxWidth: 'calc(100vw - 2rem)' }}>
-                  <TableOfContents 
-                    content={tool.detailedContent}
-                    defaultExpanded={false}
-                    className=""
-                  />
-                </div>
-              )}
-              
               <div className="grid lg:grid-cols-3 gap-4 sm:gap-8">
                 {/* 主要内容 */}
                 <div className="lg:col-span-2 space-y-6 sm:space-y-8 min-w-0">
@@ -214,17 +203,6 @@ export default async function ToolDetailPage({ params }: ToolDetailPageProps) {
 
                 {/* 右侧边栏 */}
                 <div className="space-y-4 sm:space-y-6 min-w-0">
-                  {/* 桌面端目录导航 */}
-                  {tool.detailedContent && tool.detailedContent.length > 500 && (
-                    <div className="hidden lg:block">
-                      <TableOfContents 
-                        content={tool.detailedContent} 
-                        className="sticky top-4"
-                        defaultExpanded={true}
-                      />
-                    </div>
-                  )}
-                  
                   {/* 相关工具 */}
                   {relatedTools.length > 0 && (
                     <div className="bg-white rounded-lg shadow-md p-6">
@@ -290,6 +268,11 @@ export default async function ToolDetailPage({ params }: ToolDetailPageProps) {
             </div>
           </div>
         </div>
+
+        {/* 悬浮目录 */}
+        {tool.detailedContent && tool.detailedContent.length > 500 && (
+          <FloatingTableOfContents content={tool.detailedContent} />
+        )}
       </Layout>
     </>
   );

@@ -4017,7 +4017,7 @@ docker run -v /host/path:/container/path nginx
     title: '远程工作工具栈完整配置',
     description: '构建高效的远程工作环境，整合沟通、协作、项目管理等核心工具',
     content: '',
-    category: '职业发展',
+    category: '效率精通',
     tags: ['远程工作', '工具栈', '团队协作', '效率优化'],
     author: 'MatrixTools',
     publishedAt: '2024-07-06',

@@ -10,8 +10,22 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { generateStructuredData } from '@/lib/seo';
 
 export default function Home() {
-  const featuredTools = tools.filter(tool => tool.featured);
-  const featuredTutorials = tutorials.filter(tutorial => tutorial.featured);
+  const featuredTools = tools
+    .filter(tool => tool.featured)
+    .sort((a, b) => {
+      // 按时间排序，最新的在前
+      const dateA = new Date(a.publishedAt || '1970-01-01');
+      const dateB = new Date(b.publishedAt || '1970-01-01');
+      return dateB.getTime() - dateA.getTime();
+    });
+  const featuredTutorials = tutorials
+    .filter(tutorial => tutorial.featured)
+    .sort((a, b) => {
+      // 按时间排序，最新的在前
+      const dateA = new Date(a.publishedAt || '1970-01-01');
+      const dateB = new Date(b.publishedAt || '1970-01-01');
+      return dateB.getTime() - dateA.getTime();
+    });
 
   const websiteStructuredData = generateStructuredData({
     type: 'WebSite',

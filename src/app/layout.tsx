@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import { generateSEO } from '@/lib/seo';
 import Script from 'next/script';
+import { PageTracker } from '@/components/PageTracker';
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -51,7 +52,10 @@ export default function RootLayout({
           }`}
         </Script>
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <PageTracker />
+        {children}
+      </body>
     </html>
   );
 }

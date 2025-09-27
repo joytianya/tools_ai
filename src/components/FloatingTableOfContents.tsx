@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState, useRef } from 'react';
-import { List, ChevronRight, X, ChevronUp } from 'lucide-react';
+import { List, ChevronUp } from 'lucide-react';
 
 interface TocItem {
   id: string;
@@ -20,59 +20,105 @@ export function FloatingTableOfContents({ content, className = '' }: FloatingTab
   const [isVisible, setIsVisible] = useState(false);
   const [isMinimized, setIsMinimized] = useState(true);
   const tocRef = useRef<HTMLDivElement>(null);
+  const isScrollingFromClickRef = useRef(false);
 
-  // 从markdown内容中提取标题
+  // 从DOM中提取标题和ID
   useEffect(() => {
-    const headingRegex = /^(#{1,6})\s+(.+)$/gm;
-    const items: TocItem[] = [];
-    let match;
+    const timer = setTimeout(() => {
+      const headings = document.querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]');
+      const items: TocItem[] = [];
 
-    while ((match = headingRegex.exec(content)) !== null) {
-      const level = match[1].length;
-      const text = match[2].trim();
-      // 使用与rehype-slug相同的ID生成算法
-      const id = text
-        .toLowerCase()
-        .trim()
-        .replace(/\s+/g, '-')
-        .replace(/[^\w\-\u4e00-\u9fff]/g, ''); // 保留中文、英文、数字和连字符
+      headings.forEach((heading) => {
+        const tagName = heading.tagName.toLowerCase();
+        const level = parseInt(tagName.charAt(1));
+        const text = heading.textContent?.trim() || '';
+        const id = heading.id;
 
-      items.push({ id, text, level });
+        if (id && text) {
+          items.push({ id, text, level });
+        }
+      });
+
+      setTocItems(items);
+      setIsVisible(items.length > 0);
+    }, 100); // 延迟执行，确保DOM已渲染
+
+    return () => clearTimeout(timer);
+  }, [content]);
+
+  // 动态计算滚动偏移量
+  const getScrollOffset = (): number => {
+    // 查找导航栏元素
+    const header = document.querySelector('header');
+    const headerHeight = header ? header.getBoundingClientRect().height : 0;
+
+    // 基础偏移量：导航栏高度 + 额外边距
+    const baseOffset = headerHeight + 20;
+
+    // 移动端和教程页面的额外偏移
+    const isMobile = window.innerWidth < 768;
+    const isTutorialPage = window.location.pathname.startsWith('/tutorials/');
+
+    let extraOffset = 0;
+    if (isTutorialPage) {
+      extraOffset = isMobile ? 40 : 30; // 教程页面额外偏移
     }
 
-    setTocItems(items);
-    setIsVisible(items.length > 0);
-  }, [content]);
+    return baseOffset + extraOffset;
+  };
 
   // 监听滚动，更新当前活跃的标题
   useEffect(() => {
+    let rafId: number;
+
     const handleScroll = () => {
-      const headings = tocItems.map(item => {
-        const element = document.getElementById(item.id);
-        return {
-          id: item.id,
-          element,
-          offsetTop: element?.offsetTop || 0
-        };
-      }).filter(item => item.element);
+      // 如果是点击导致的滚动，不重新计算
+      if (isScrollingFromClickRef.current) return;
 
-      const scrollTop = window.scrollY + 100;
+      rafId = requestAnimationFrame(() => {
+        const headings = tocItems.map(item => {
+          const element = document.getElementById(item.id);
+          if (!element) return null;
 
-      let currentActiveId = '';
-      for (let i = headings.length - 1; i >= 0; i--) {
-        if (scrollTop >= headings[i].offsetTop) {
-          currentActiveId = headings[i].id;
-          break;
+          // 使用 getBoundingClientRect 获取准确位置
+          const rect = element.getBoundingClientRect();
+          const absoluteTop = rect.top + window.scrollY;
+
+          return {
+            id: item.id,
+            element,
+            absoluteTop
+          };
+        }).filter(Boolean) as Array<{id: string; element: Element; absoluteTop: number}>;
+
+        const scrollOffset = getScrollOffset();
+        const scrollTop = window.scrollY;
+
+        let currentActiveId = '';
+
+        // 正确的判断逻辑：找到在视口偏移位置处或之上的最后一个标题
+        for (let i = headings.length - 1; i >= 0; i--) {
+          // 标题顶部位置 <= 当前滚动位置 + 偏移量
+          // 加一个小的容错范围
+          if (headings[i].absoluteTop <= scrollTop + scrollOffset + 1) {
+            currentActiveId = headings[i].id;
+            break;
+          }
         }
-      }
 
-      setActiveId(currentActiveId);
+        setActiveId(currentActiveId);
+      });
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll(); // 初始调用
 
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (rafId) {
+        cancelAnimationFrame(rafId);
+      }
+    };
   }, [tocItems]);
 
   // 监听点击外部区域，自动收缩目录
@@ -91,11 +137,33 @@ export function FloatingTableOfContents({ content, className = '' }: FloatingTab
   const scrollToHeading = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      const offsetTop = element.offsetTop - 80;
+      // 使用 getBoundingClientRect 获取准确位置
+      const rect = element.getBoundingClientRect();
+      const absoluteTop = rect.top + window.scrollY;
+      const scrollOffset = getScrollOffset();
+
+      const targetTop = Math.max(0, absoluteTop - scrollOffset);
+
+      // 立即设置为活跃状态
+      setActiveId(id);
+
+      // 设置标志，防止滚动事件覆盖
+      isScrollingFromClickRef.current = true;
+
       window.scrollTo({
-        top: offsetTop,
+        top: targetTop,
         behavior: 'smooth'
       });
+
+      // 1秒后恢复滚动监听
+      setTimeout(() => {
+        isScrollingFromClickRef.current = false;
+      }, 1000);
+
+      // 更新 URL hash
+      if (history.replaceState) {
+        history.replaceState(null, '', `#${id}`);
+      }
     }
   };
 
@@ -104,30 +172,30 @@ export function FloatingTableOfContents({ content, className = '' }: FloatingTab
   }
 
   return (
-    <div ref={tocRef} className={`fixed bottom-6 right-6 z-50 ${className}`}>
+    <div ref={tocRef} className={`fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 ${className}`}>
       {/* 悬浮按钮 - 最小化状态 */}
       {isMinimized && (
         <button
           onClick={() => setIsMinimized(false)}
-          className="bg-white hover:bg-gray-50 border border-gray-200 rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-200 group"
+          className="bg-white hover:bg-gray-50 active:bg-gray-100 border border-gray-200 rounded-full p-3 md:p-3 shadow-lg hover:shadow-xl active:shadow-md transition-all duration-200 group touch-manipulation"
           title="打开目录"
         >
-          <List className="w-6 h-6 text-gray-700 group-hover:text-blue-600 transition-colors" />
+          <List className="w-5 h-5 md:w-6 md:h-6 text-gray-700 group-hover:text-blue-600 transition-colors" />
         </button>
       )}
 
       {/* 展开的目录面板 */}
       {!isMinimized && (
-        <div className="bg-white border border-gray-200 rounded-2xl shadow-2xl w-80 max-h-96 overflow-hidden">
+        <div className="bg-white border border-gray-200 rounded-2xl shadow-2xl w-72 md:w-80 max-h-80 md:max-h-96 overflow-hidden">
           {/* 头部 */}
-          <div className="flex items-center justify-between p-4 border-b border-gray-100 bg-gray-50">
+          <div className="flex items-center justify-between p-3 md:p-4 border-b border-gray-100 bg-gray-50">
             <h3 className="text-sm font-semibold text-gray-900 flex items-center">
               <List className="w-4 h-4 mr-2 text-blue-600" />
               目录
             </h3>
             <button
               onClick={() => setIsMinimized(true)}
-              className="p-1 rounded-full hover:bg-gray-200 transition-colors"
+              className="p-2 md:p-1 rounded-full hover:bg-gray-200 active:bg-gray-300 transition-colors touch-manipulation"
               title="最小化"
             >
               <ChevronUp className="w-4 h-4 text-gray-500" />
@@ -135,22 +203,22 @@ export function FloatingTableOfContents({ content, className = '' }: FloatingTab
           </div>
 
           {/* 目录内容 */}
-          <div className="p-3 max-h-80 overflow-y-auto">
-            <nav className="space-y-1">
+          <div className="p-2 md:p-3 max-h-64 md:max-h-80 overflow-y-auto">
+            <nav className="space-y-0.5 md:space-y-1">
               {tocItems.map((item) => (
                 <button
                   key={item.id}
                   onClick={() => scrollToHeading(item.id)}
-                  className={`block w-full text-left py-2 px-3 rounded-lg text-sm transition-all hover:bg-gray-50 ${
+                  className={`block w-full text-left py-3 md:py-2 px-3 rounded-lg text-sm transition-all hover:bg-gray-50 active:bg-gray-100 touch-manipulation ${
                     activeId === item.id
                       ? 'bg-blue-50 text-blue-700 border-l-2 border-blue-500 font-medium'
                       : 'text-gray-600 hover:text-gray-900'
                   }`}
                   style={{
-                    paddingLeft: `${Math.min((item.level - 1) * 12 + 12, 48)}px`
+                    paddingLeft: `${Math.min((item.level - 1) * 10 + 12, 40)}px`
                   }}
                 >
-                  <span className="line-clamp-2 break-words">
+                  <span className="line-clamp-2 break-words leading-relaxed">
                     {item.text}
                   </span>
                 </button>

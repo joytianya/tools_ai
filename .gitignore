@@ -44,3 +44,32 @@ yarn-error.log*
 next-env.d.ts
 
 claude-flow*
+
+# AI Tools System Files & Temporary Data
+.claude/
+.claude-flow/
+.hive-mind/
+.roo/
+.swarm/
+.roomodes
+
+# Legacy Data & Cache Files
+extra_info/
+logs/
+memory/
+tests/
+docs/
+tool_introductions.json
+
+# MCP Configuration
+.mcp.json
+
+# Database Files
+*.db
+*.db-shm
+*.db-wal
+
+# System Cache
+.cache/
+temp/
+tmp/

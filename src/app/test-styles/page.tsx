@@ -1,5 +1,8 @@
+import { Layout } from '@/components/Layout';
+
 export default function TestStylesPage() {
   return (
+    <Layout>
     <div className="bg-gray-100 min-h-screen">
       <div className="container mx-auto p-8">
         <h1 className="text-4xl font-bold text-blue-600 mb-6">样式测试页面</h1>
@@ -44,5 +47,6 @@ export default function TestStylesPage() {
         </div>
       </div>
     </div>
+    </Layout>
   )
 }

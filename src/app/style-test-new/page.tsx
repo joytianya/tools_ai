@@ -1,5 +1,8 @@
+import { Layout } from '@/components/Layout';
+
 export default function StyleTestNewPage() {
   return (
+    <Layout>
     <div className="bg-gray-100 min-h-screen">
       <div className="container mx-auto p-8">
         <h1 className="text-4xl font-bold text-green-600 mb-6">🎨 新样式测试页面</h1>
@@ -32,5 +35,6 @@ export default function StyleTestNewPage() {
         </div>
       </div>
     </div>
+    </Layout>
   )
 }

@@ -1,10 +1,23 @@
+'use client';
+
 import Link from 'next/link';
-import { Clock, User, Calendar, BookOpen, Star, TrendingUp } from 'lucide-react';
+import { Clock, User, Calendar, BookOpen, Star, TrendingUp, Bookmark, Eye } from 'lucide-react';
 import { Tutorial } from '@/types';
 import { formatDate } from '@/lib/utils';
+import { useState, useEffect } from 'react';
+import {
+  safeLocalStorageGet,
+  safeLocalStorageSet,
+} from '@/lib/utils';
 
 interface TutorialCardProps {
   tutorial: Tutorial;
+  viewCount?: number;
+  onView?: () => void;
+}
+
+interface BookmarkedTutorials {
+  [tutorialId: string]: boolean;
 }
 
 // 根据教程分类生成渐变背景
@@ -31,9 +44,34 @@ function getDifficultyColor(readTime: number): string {
   return 'bg-red-100 text-red-700 border-red-200';
 }
 
-export function TutorialCard({ tutorial }: TutorialCardProps) {
+export function TutorialCard({ tutorial, viewCount = 0, onView }: TutorialCardProps) {
   const gradientClass = getCategoryGradient(tutorial.category);
   const difficultyClass = getDifficultyColor(tutorial.readTime);
+  const [isBookmarked, setIsBookmarked] = useState(false);
+
+  // 从localStorage加载书签状态
+  useEffect(() => {
+    const bookmarks = safeLocalStorageGet<BookmarkedTutorials>('tutorial-bookmarks', {});
+    if (bookmarks) {
+      setIsBookmarked(!!bookmarks[tutorial.id]);
+    }
+  }, [tutorial.id]);
+
+  // 切换书签状态
+  const toggleBookmark = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const parsed = safeLocalStorageGet<BookmarkedTutorials>('tutorial-bookmarks', {}) || {};
+
+    if (isBookmarked) {
+      delete parsed[tutorial.id];
+    } else {
+      parsed[tutorial.id] = true;
+    }
+
+    safeLocalStorageSet('tutorial-bookmarks', parsed);
+    setIsBookmarked(!isBookmarked);
+  };
 
   return (
     <article className="group relative">
@@ -57,12 +95,19 @@ export function TutorialCard({ tutorial }: TutorialCardProps) {
                 {tutorial.readTime <= 5 ? '快速阅读' : tutorial.readTime <= 15 ? '中等长度' : '深度阅读'}
               </div>
             </div>
-            
-            {/* 阅读时间指示器 */}
-            <div className="flex items-center gap-1 text-gray-500 text-sm">
-              <Clock className="w-4 h-4" />
-              <span>{tutorial.readTime}分钟</span>
-            </div>
+
+            {/* 书签按钮 */}
+            <button
+              onClick={toggleBookmark}
+              className="p-2 rounded-lg hover:bg-gray-100 transition-colors"
+              aria-label={isBookmarked ? '取消收藏' : '收藏教程'}
+            >
+              <Bookmark
+                className={`w-5 h-5 transition-colors ${
+                  isBookmarked ? 'fill-blue-600 text-blue-600' : 'text-gray-400'
+                }`}
+              />
+            </button>
           </div>
 
           {/* 标题区域 */}
@@ -113,9 +158,19 @@ export function TutorialCard({ tutorial }: TutorialCardProps) {
                 <span>{tutorial.author}</span>
               </div>
               <div className="flex items-center gap-1">
-                <Calendar className="w-4 h-4" />
-                <span>发布: {formatDate(tutorial.publishedAt)}</span>
+                <Clock className="w-4 h-4" />
+                <span>{tutorial.readTime}分钟</span>
               </div>
+              {viewCount > 0 && (
+                <div className="flex items-center gap-1">
+                  <Eye className="w-4 h-4" />
+                  <span>{viewCount}</span>
+                </div>
+              )}
+            </div>
+            <div className="flex items-center gap-1 text-xs text-gray-400">
+              <Calendar className="w-3 h-3" />
+              <span>发布: {formatDate(tutorial.publishedAt)}</span>
             </div>
             {tutorial.updatedAt && (
               <div className="flex items-center gap-1 text-xs text-gray-400">
@@ -129,6 +184,7 @@ export function TutorialCard({ tutorial }: TutorialCardProps) {
           <div className="flex items-center justify-between mt-auto">
             <Link
               href={`/tutorials/${tutorial.slug}`}
+              onClick={onView}
               className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg font-medium text-sm hover:from-blue-600 hover:to-blue-700 transform hover:scale-105 transition-all duration-200 shadow-md hover:shadow-lg"
             >
               <BookOpen className="w-4 h-4" />

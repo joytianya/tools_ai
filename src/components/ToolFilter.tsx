@@ -40,7 +40,7 @@ export function ToolFilter({
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-md p-6">
+    <div className="bg-white rounded-lg shadow-md p-6 w-full max-w-full overflow-hidden">
       <div className="flex items-center justify-between mb-4">
         <h3 className="text-lg font-semibold text-gray-900">筛选工具</h3>
         <button
@@ -122,12 +122,12 @@ export function ToolFilter({
         {/* 标签筛选 */}
         <div>
           <h4 className="text-sm font-medium text-gray-900 mb-3">标签</h4>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 max-w-full overflow-hidden">
             {availableTags.map((tag) => (
               <button
                 key={tag}
                 onClick={() => toggleTag(tag)}
-                className={`px-3 py-2 rounded-full text-sm font-medium transition-colors touch-manipulation min-h-[36px] ${
+                className={`px-3 py-2 rounded-full text-sm font-medium transition-colors touch-manipulation min-h-[36px] flex-shrink-0 max-w-full truncate ${
                   selectedTags.includes(tag)
                     ? 'bg-blue-600 text-white shadow-sm'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'

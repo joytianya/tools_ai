@@ -1,27 +1,67 @@
 'use client';
 
-import { useState, useMemo, useEffect, Suspense } from 'react';
+import { useState, useMemo, useEffect, Suspense, useCallback } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { Layout } from '@/components/Layout';
 import { TutorialCard } from '@/components/TutorialCard';
+import { EnhancedSearch } from '@/components/EnhancedSearch';
 import { tutorials } from '@/data/tutorials';
 import { TUTORIAL_CATEGORIES } from '@/lib/constants';
+import {
+  safeLocalStorageGet,
+  safeLocalStorageSet,
+} from '@/lib/utils';
+import type { Tutorial } from '@/types';
+
+type SortOption = 'latest' | 'popular' | 'readTime';
+
+interface ViewCounts {
+  [tutorialId: string]: number;
+}
+
+const ITEMS_PER_PAGE = 12;
 
 function TutorialsContent() {
   const searchParams = useSearchParams();
   const [selectedCategory, setSelectedCategory] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
+  const [sortBy, setSortBy] = useState<SortOption>('latest');
+  const [currentPage, setCurrentPage] = useState(1);
+  const [viewCounts, setViewCounts] = useState<ViewCounts>({});
+
+  // 从localStorage加载浏览量
+  useEffect(() => {
+    const stored = safeLocalStorageGet<ViewCounts>('tutorial-view-counts', {});
+    if (stored) {
+      setViewCounts(stored);
+    }
+  }, []);
+
   // 从URL参数中获取初始值
   useEffect(() => {
     const categoryParam = searchParams.get('category');
-    
+
     if (categoryParam) {
       setSelectedCategory(categoryParam);
     }
   }, [searchParams]);
 
-  const filteredTutorials = useMemo(() => {
-    return tutorials.filter((tutorial) => {
+  // 重置页码当筛选条件改变时
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedCategory, searchTerm, sortBy]);
+
+  // 增加浏览量
+  const incrementViewCount = useCallback((tutorialId: string) => {
+    setViewCounts((prev) => {
+      const newCounts = { ...prev, [tutorialId]: (prev[tutorialId] || 0) + 1 };
+      safeLocalStorageSet('tutorial-view-counts', newCounts);
+      return newCounts;
+    });
+  }, []);
+
+  const filteredAndSortedTutorials = useMemo(() => {
+    let filtered = tutorials.filter((tutorial) => {
       // 分类筛选
       if (selectedCategory && tutorial.category !== selectedCategory) {
         return false;
@@ -32,30 +72,64 @@ function TutorialsContent() {
         const searchLower = searchTerm.toLowerCase();
         const matchesTitle = tutorial.title.toLowerCase().includes(searchLower);
         const matchesDescription = tutorial.description.toLowerCase().includes(searchLower);
-        const matchesTags = tutorial.tags.some(tag => 
+        const matchesTags = tutorial.tags.some(tag =>
           tag.toLowerCase().includes(searchLower)
         );
-        
+
         if (!matchesTitle && !matchesDescription && !matchesTags) {
           return false;
         }
       }
 
       return true;
-    }).sort((a, b) => {
-      // 按时间排序，最新的在前
+    });
+
+    // 应用排序
+    filtered.sort((a, b) => {
+      switch (sortBy) {
+        case 'latest':
+          const dateA = new Date(a.publishedAt || '1970-01-01');
+          const dateB = new Date(b.publishedAt || '1970-01-01');
+          return dateB.getTime() - dateA.getTime();
+
+        case 'popular':
+          const viewsA = viewCounts[a.id] || 0;
+          const viewsB = viewCounts[b.id] || 0;
+          return viewsB - viewsA;
+
+        case 'readTime':
+          return a.readTime - b.readTime;
+
+        default:
+          return 0;
+      }
+    });
+
+    return filtered;
+  }, [selectedCategory, searchTerm, sortBy, viewCounts]);
+
+  // 分页处理
+  const paginatedTutorials = useMemo(() => {
+    const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+    const endIndex = startIndex + ITEMS_PER_PAGE;
+    return filteredAndSortedTutorials.slice(startIndex, endIndex);
+  }, [filteredAndSortedTutorials, currentPage]);
+
+  const totalPages = Math.ceil(filteredAndSortedTutorials.length / ITEMS_PER_PAGE);
+
+  const featuredTutorials = useMemo(() => {
+    return tutorials.filter(t => t.featured).sort((a, b) => {
+      // 推荐教程按热度排序
+      const viewsA = viewCounts[a.id] || 0;
+      const viewsB = viewCounts[b.id] || 0;
+      if (viewsB !== viewsA) return viewsB - viewsA;
+
+      // 如果浏览量相同，按时间排序
       const dateA = new Date(a.publishedAt || '1970-01-01');
       const dateB = new Date(b.publishedAt || '1970-01-01');
       return dateB.getTime() - dateA.getTime();
-    });
-  }, [selectedCategory, searchTerm]);
-
-  const featuredTutorials = tutorials.filter(t => t.featured).sort((a, b) => {
-    // 推荐教程也按时间排序，最新的在前
-    const dateA = new Date(a.publishedAt || '1970-01-01');
-    const dateB = new Date(b.publishedAt || '1970-01-01');
-    return dateB.getTime() - dateA.getTime();
-  });
+    }).slice(0, 4); // 限制显示4个推荐教程
+  }, [viewCounts]);
 
   return (
     <Layout>
@@ -95,20 +169,11 @@ function TutorialsContent() {
             <div className="bg-white/70 backdrop-blur-sm rounded-2xl border border-white/30 shadow-lg p-6">
               <div className="flex flex-col lg:flex-row gap-4">
                 {/* 搜索框 */}
-                <div className="flex-1 relative">
-                  <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                    <svg className="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-                  </div>
-                  <input
-                    type="text"
-                    placeholder="搜索教程标题、描述或标签..."
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                    className="w-full pl-12 pr-4 py-4 rounded-xl border border-gray-200 bg-white/90 text-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:outline-none placeholder:text-gray-500 shadow-sm hover:border-gray-300 transition-all duration-200 backdrop-blur-sm"
-                  />
-                </div>
+                <EnhancedSearch
+                  value={searchTerm}
+                  onChange={setSearchTerm}
+                  placeholder="搜索教程标题、描述或标签..."
+                />
                 
                 {/* 分类筛选 */}
                 <div className="lg:w-56">
@@ -167,7 +232,12 @@ function TutorialsContent() {
               </div>
               <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 {featuredTutorials.map((tutorial) => (
-                  <TutorialCard key={tutorial.id} tutorial={tutorial} />
+                  <TutorialCard
+                    key={tutorial.id}
+                    tutorial={tutorial}
+                    viewCount={viewCounts[tutorial.id] || 0}
+                    onView={() => incrementViewCount(tutorial.id)}
+                  />
                 ))}
               </div>
             </div>
@@ -184,7 +254,7 @@ function TutorialsContent() {
                   {searchTerm || selectedCategory ? '搜索结果' : '全部教程'}
                 </h2>
                 <div className="flex items-center gap-1 px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
-                  <span>{filteredTutorials.length}</span>
+                  <span>{filteredAndSortedTutorials.length}</span>
                   <span>篇教程</span>
                 </div>
               </div>
@@ -192,19 +262,105 @@ function TutorialsContent() {
               {/* 排序选项 */}
               <div className="hidden md:flex items-center gap-2 text-sm">
                 <span className="text-gray-500">排序：</span>
-                <button className="px-3 py-1 bg-blue-100 text-blue-700 rounded-lg font-medium">最新</button>
-                <button className="px-3 py-1 text-gray-600 hover:bg-gray-100 rounded-lg transition-colors">热门</button>
-                <button className="px-3 py-1 text-gray-600 hover:bg-gray-100 rounded-lg transition-colors">时长</button>
+                <button
+                  onClick={() => setSortBy('latest')}
+                  className={`px-3 py-1 rounded-lg font-medium transition-colors ${
+                    sortBy === 'latest'
+                      ? 'bg-blue-100 text-blue-700'
+                      : 'text-gray-600 hover:bg-gray-100'
+                  }`}
+                >
+                  最新
+                </button>
+                <button
+                  onClick={() => setSortBy('popular')}
+                  className={`px-3 py-1 rounded-lg font-medium transition-colors ${
+                    sortBy === 'popular'
+                      ? 'bg-blue-100 text-blue-700'
+                      : 'text-gray-600 hover:bg-gray-100'
+                  }`}
+                >
+                  热门
+                </button>
+                <button
+                  onClick={() => setSortBy('readTime')}
+                  className={`px-3 py-1 rounded-lg font-medium transition-colors ${
+                    sortBy === 'readTime'
+                      ? 'bg-blue-100 text-blue-700'
+                      : 'text-gray-600 hover:bg-gray-100'
+                  }`}
+                >
+                  时长
+                </button>
               </div>
             </div>
             
             <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-              {filteredTutorials.map((tutorial) => (
-                <TutorialCard key={tutorial.id} tutorial={tutorial} />
+              {paginatedTutorials.map((tutorial) => (
+                <TutorialCard
+                  key={tutorial.id}
+                  tutorial={tutorial}
+                  viewCount={viewCounts[tutorial.id] || 0}
+                  onView={() => incrementViewCount(tutorial.id)}
+                />
               ))}
             </div>
 
-            {filteredTutorials.length === 0 && (
+            {/* 分页控件 */}
+            {totalPages > 1 && (
+              <div className="mt-12 flex items-center justify-center gap-2">
+                <button
+                  onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
+                  disabled={currentPage === 1}
+                  className="px-4 py-2 rounded-lg border border-gray-300 bg-white text-gray-700 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors"
+                >
+                  ← 上一页
+                </button>
+
+                <div className="flex items-center gap-1">
+                  {Array.from({ length: totalPages }, (_, i) => i + 1)
+                    .filter(page => {
+                      // 显示第一页、最后一页、当前页及其前后各1页
+                      return page === 1 ||
+                             page === totalPages ||
+                             Math.abs(page - currentPage) <= 1;
+                    })
+                    .map((page, index, array) => {
+                      const prevPage = array[index - 1];
+                      const showEllipsis = prevPage && page - prevPage > 1;
+
+                      return (
+                        <div key={page} className="flex items-center gap-1">
+                          {showEllipsis && (
+                            <span className="px-2 text-gray-400">...</span>
+                          )}
+                          <button
+                            onClick={() => setCurrentPage(page)}
+                            className={`px-3 py-1 rounded-lg font-medium transition-colors ${
+                              page === currentPage
+                                ? 'bg-blue-600 text-white'
+                                : 'text-gray-700 hover:bg-gray-100'
+                            }`}
+                          >
+                            {page}
+                          </button>
+                        </div>
+                      );
+                    })
+                  }
+                </div>
+
+                <button
+                  onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
+                  disabled={currentPage === totalPages}
+                  className="px-4 py-2 rounded-lg border border-gray-300 bg-white text-gray-700 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors"
+                >
+                  下一页 →
+                </button>
+              </div>
+            )}
+
+            {filteredAndSortedTutorials.length === 0 && (
               <div className="text-center py-16">
                 <div className="w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-4xl">🔍</span>

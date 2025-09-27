@@ -1,5 +1,5 @@
 // 工具分类类型 - 重构后的中文分类系统
-export type ToolCategory = 
+export type ToolCategory =
   | '开发工具'                 // development
   | 'AI工具'                  // ai-ml
   | '设计工具'                // design-creative
@@ -9,19 +9,23 @@ export type ToolCategory =
   | '媒体内容'                // media-content
   | '商业财务'                // business-finance
   | '安全隐私'                // security-privacy
-  | '系统工具';               // utilities-system
+  | '系统工具'                // utilities-system
+  | '网络工具';               // network-tools
 
-// 教程分类类型 - 重构后的学习导向中文分类系统
-export type TutorialCategory = 
-  | '新手入门'                // getting-started
-  | '网页开发'                // web-development
-  | 'AI自动化'                // ai-automation
-  | '设计体验'                // design-ui-ux
-  | '商业增长'                // business-growth
-  | '数据洞察'                // data-insights
-  | '效率精通'                // productivity-mastery
-  | '职业发展'                // career-development
-  | '项目实战';               // project-showcase
+// 教程分类类型 - 优化后的12分类系统
+export type TutorialCategory =
+  | '新手入门'                // getting-started - 基础教程、快速上手
+  | '网页开发'                // web-development - 前端、后端、全栈技术
+  | 'AI自动化'                // ai-automation - AI工具使用、自动化流程
+  | '设计体验'                // design-ui-ux - UI/UX设计、视觉设计
+  | '商业增长'                // business-growth - 创业、营销、商业策略
+  | '数据洞察'                // data-insights - 数据分析、可视化、BI
+  | '效率精通'                // productivity-mastery - 生产力工具、工作流程
+  | '职业发展'                // career-development - 职场技能、求职面试
+  | '个人成长'                // personal-growth - 心理、情感、人际关系
+  | '学习方法'                // learning-methods - 学习技巧、知识管理
+  | '生活技能'                // life-skills - 健康、健身、生活品质
+  | '知识资源';               // knowledge-resources - 电子书、资料集、参考手册
 
 // 难度级别
 export type DifficultyLevel = 'beginner' | 'intermediate' | 'advanced';

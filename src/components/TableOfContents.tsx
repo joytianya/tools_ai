@@ -54,16 +54,21 @@ export function TableOfContents({ content, className = '', defaultExpanded = fal
         };
       }).filter(item => item.element);
 
-      const scrollTop = window.scrollY + 100;
-      
+      const scrollTop = window.scrollY;
+      const scrollOffset = 80; // 与 scrollToHeading 中使用的偏移量一致
+
       let currentActiveId = '';
+
+      // 正确的逻辑：找到最后一个已经滚动过的标题
+      // 从后往前遍历，找到第一个位置小于等于当前滚动位置的标题
       for (let i = headings.length - 1; i >= 0; i--) {
-        if (scrollTop >= headings[i].offsetTop) {
+        // 如果标题的位置已经被滚动过（加上偏移量）
+        if (scrollTop + scrollOffset >= headings[i].offsetTop) {
           currentActiveId = headings[i].id;
           break;
         }
       }
-      
+
       setActiveId(currentActiveId);
     };
 
@@ -78,6 +83,10 @@ export function TableOfContents({ content, className = '', defaultExpanded = fal
     const element = document.getElementById(id);
     if (element) {
       const offsetTop = element.offsetTop - 80;
+
+      // 立即设置为活跃状态
+      setActiveId(id);
+
       window.scrollTo({
         top: offsetTop,
         behavior: 'smooth'

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>测试统计功能</title>
+</head>
+<body>
+    <h1>测试统计功能</h1>
+    <button id="testTrack">测试追踪</button>
+    <button id="checkStats">查看统计</button>
+    <div id="result"></div>
+
+    <script>
+        document.getElementById('testTrack').onclick = async function() {
+            try {
+                const response = await fetch('/api/track', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({
+                        url: '/test-page',
+                        userAgent: navigator.userAgent,
+                        referer: document.referrer
+                    })
+                });
+                const result = await response.json();
+                document.getElementById('result').innerHTML = '追踪结果: ' + JSON.stringify(result);
+            } catch (error) {
+                document.getElementById('result').innerHTML = '追踪失败: ' + error.message;
+            }
+        };
+
+        document.getElementById('checkStats').onclick = async function() {
+            try {
+                const response = await fetch('/api/stats');
+                const stats = await response.json();
+                document.getElementById('result').innerHTML = '统计数据: ' + JSON.stringify(stats, null, 2);
+            } catch (error) {
+                document.getElementById('result').innerHTML = '获取统计失败: ' + error.message;
+            }
+        };
+    </script>
+</body>
+</html>

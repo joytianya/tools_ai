@@ -78,7 +78,7 @@ export function ToolCard({ tool }: ToolCardProps) {
   const avatarStyle = generateAvatarStyle(tool.title);
 
   return (
-    <article className="group relative w-full max-w-full">
+    <article className="group relative w-full max-w-full overflow-hidden">
       {/* 玻璃态背景容器 */}
       <div className="relative overflow-hidden rounded-2xl bg-white/80 backdrop-blur-md border border-white/40 shadow-lg hover:shadow-2xl transition-all duration-300 md:hover:scale-[1.02] hover:bg-white/90 min-h-[400px] sm:h-[420px] flex flex-col w-full max-w-full">
         {/* 渐变背景装饰 */}
@@ -147,24 +147,24 @@ export function ToolCard({ tool }: ToolCardProps) {
           </div>
 
           {/* 底部操作区域 */}
-          <div className="flex items-center gap-3 mt-auto w-full">
+          <div className="flex items-center gap-2 sm:gap-3 mt-auto w-full min-w-0">
             <Link
               href={`/tools/${tool.slug}`}
-              className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-xl font-medium text-sm transition-all duration-200 md:hover:scale-105 touch-manipulation"
+              className="flex-1 inline-flex items-center justify-center gap-1 sm:gap-2 px-2 sm:px-4 py-3 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-xl font-medium text-xs sm:text-sm transition-all duration-200 md:hover:scale-105 touch-manipulation min-w-0"
             >
-              <Shield className="w-4 h-4" />
-              <span className="truncate">查看详情</span>
+              <Shield className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
+              <span className="truncate min-w-0">查看详情</span>
             </Link>
-            
+
             <a
               href={tool.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl font-medium text-sm hover:from-blue-600 hover:to-blue-700 transform md:hover:scale-105 transition-all duration-200 shadow-md hover:shadow-lg touch-manipulation"
+              className="flex-1 inline-flex items-center justify-center gap-1 sm:gap-2 px-2 sm:px-4 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl font-medium text-xs sm:text-sm hover:from-blue-600 hover:to-blue-700 transform md:hover:scale-105 transition-all duration-200 shadow-md hover:shadow-lg touch-manipulation min-w-0"
             >
-              <Globe className="w-4 h-4" />
-              <span className="truncate">立即使用</span>
-              <ExternalLink className="w-3 h-3" />
+              <Globe className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
+              <span className="truncate min-w-0">立即使用</span>
+              <ExternalLink className="w-2 h-2 sm:w-3 sm:h-3 flex-shrink-0" />
             </a>
           </div>
         </div>

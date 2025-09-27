@@ -5,6 +5,39 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
+export function safeLocalStorageGet<T = unknown>(key: string, fallback: T | null = null): T | null {
+  if (typeof window === 'undefined') return fallback;
+
+  try {
+    const raw = window.localStorage.getItem(key);
+    if (raw == null) return fallback;
+    return JSON.parse(raw) as T;
+  } catch (error) {
+    console.warn(`[localStorage] Failed to read key "${key}":`, error);
+    return fallback;
+  }
+}
+
+export function safeLocalStorageSet<T>(key: string, value: T): void {
+  if (typeof window === 'undefined') return;
+
+  try {
+    window.localStorage.setItem(key, JSON.stringify(value));
+  } catch (error) {
+    console.warn(`[localStorage] Failed to write key "${key}":`, error);
+  }
+}
+
+export function safeLocalStorageRemove(key: string): void {
+  if (typeof window === 'undefined') return;
+
+  try {
+    window.localStorage.removeItem(key);
+  } catch (error) {
+    console.warn(`[localStorage] Failed to remove key "${key}":`, error);
+  }
+}
+
 export function formatDate(date: string | Date): string {
   return new Date(date).toLocaleDateString('zh-CN', {
     year: 'numeric',

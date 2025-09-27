@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOC Sync Test</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: #333;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 100;
+        }
+        .container {
+            margin-top: 80px;
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 20px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .toc {
+            position: fixed;
+            top: 100px;
+            right: 50px;
+            width: 250px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .toc-item {
+            padding: 8px 12px;
+            margin: 2px 0;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+        .toc-item:hover {
+            background: #f5f5f5;
+        }
+        .toc-item.active {
+            background: #e3f2fd;
+            color: #1976d2;
+            font-weight: 600;
+            border-left: 3px solid #1976d2;
+        }
+        h2, h3 {
+            margin: 30px 0 15px 0;
+            padding-top: 80px;
+            margin-top: -80px;
+        }
+        .section {
+            min-height: 400px;
+            padding: 20px;
+            margin: 20px 0;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+        .test-results {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: white;
+            padding: 15px;
+            border: 2px solid #4caf50;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            max-width: 300px;
+        }
+        .test-pass {
+            color: #4caf50;
+            font-weight: bold;
+        }
+        .test-fail {
+            color: #f44336;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>TOC Highlighting Sync Test Page</h1>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <h2 id="section1">1. 介绍部分</h2>
+            <div class="section">
+                <p>这是第一个部分的内容。当点击目录中的"介绍部分"时，这个标题应该被高亮。</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <h2 id="section2">2. 功能特性</h2>
+            <div class="section">
+                <p>这是第二个部分的内容。当滚动到这里或点击目录时，对应的目录项应该高亮。</p>
+                <h3 id="section2-1">2.1 子功能一</h3>
+                <p>子功能的详细描述。</p>
+                <h3 id="section2-2">2.2 子功能二</h3>
+                <p>另一个子功能的描述。</p>
+            </div>
+
+            <h2 id="section3">3. 使用方法</h2>
+            <div class="section">
+                <p>这是第三个部分的内容。测试滚动和点击是否正确同步。</p>
+                <p>更多内容...</p>
+            </div>
+
+            <h2 id="section4">4. 高级配置</h2>
+            <div class="section">
+                <p>第四个部分的内容。</p>
+                <h3 id="section4-1">4.1 配置选项</h3>
+                <p>配置选项的详细说明。</p>
+            </div>
+
+            <h2 id="section5">5. 常见问题</h2>
+            <div class="section">
+                <p>最后一个部分的内容。测试边界情况。</p>
+                <p>更多FAQ内容...</p>
+            </div>
+        </div>
+
+        <div class="toc">
+            <h3 style="margin-top: 0;">目录</h3>
+            <div class="toc-item" data-id="section1">1. 介绍部分</div>
+            <div class="toc-item" data-id="section2">2. 功能特性</div>
+            <div class="toc-item" data-id="section2-1" style="padding-left: 24px;">2.1 子功能一</div>
+            <div class="toc-item" data-id="section2-2" style="padding-left: 24px;">2.2 子功能二</div>
+            <div class="toc-item" data-id="section3">3. 使用方法</div>
+            <div class="toc-item" data-id="section4">4. 高级配置</div>
+            <div class="toc-item" data-id="section4-1" style="padding-left: 24px;">4.1 配置选项</div>
+            <div class="toc-item" data-id="section5">5. 常见问题</div>
+        </div>
+    </div>
+
+    <div class="test-results">
+        <h4>测试结果</h4>
+        <div id="test-output">
+            <p>点击目录项或滚动页面来测试...</p>
+        </div>
+    </div>
+
+    <script>
+        const SCROLL_OFFSET = 80; // 与修复后的代码保持一致
+        const tocItems = document.querySelectorAll('.toc-item');
+        const testOutput = document.getElementById('test-output');
+        let testResults = [];
+
+        // 更新活跃状态
+        function updateActiveItem(activeId) {
+            tocItems.forEach(item => {
+                if (item.dataset.id === activeId) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+        }
+
+        // 滚动到标题
+        function scrollToHeading(id) {
+            const element = document.getElementById(id);
+            if (element) {
+                const rect = element.getBoundingClientRect();
+                const absoluteTop = rect.top + window.scrollY;
+                const targetTop = Math.max(0, absoluteTop - SCROLL_OFFSET);
+
+                window.scrollTo({
+                    top: targetTop,
+                    behavior: 'smooth'
+                });
+
+                // 立即更新活跃状态（修复后的行为）
+                updateActiveItem(id);
+
+                // 记录测试结果
+                testResults.push({
+                    action: 'click',
+                    targetId: id,
+                    expectedActive: id,
+                    actualActive: document.querySelector('.toc-item.active')?.dataset.id
+                });
+                updateTestDisplay();
+            }
+        }
+
+        // 监听滚动
+        function handleScroll() {
+            const scrollTop = window.scrollY;
+
+            let currentActiveId = '';
+            const headings = Array.from(document.querySelectorAll('h2[id], h3[id]'));
+
+            for (let i = headings.length - 1; i >= 0; i--) {
+                const element = headings[i];
+                const rect = element.getBoundingClientRect();
+                const absoluteTop = rect.top + window.scrollY;
+
+                // 使用修复后的逻辑
+                if (scrollTop >= absoluteTop - SCROLL_OFFSET - 10) {
+                    currentActiveId = element.id;
+                    break;
+                }
+            }
+
+            updateActiveItem(currentActiveId);
+        }
+
+        // 添加点击事件
+        tocItems.forEach(item => {
+            item.addEventListener('click', () => {
+                scrollToHeading(item.dataset.id);
+            });
+        });
+
+        // 添加滚动事件
+        let scrollTimer;
+        window.addEventListener('scroll', () => {
+            clearTimeout(scrollTimer);
+            scrollTimer = setTimeout(handleScroll, 50);
+        });
+
+        // 更新测试显示
+        function updateTestDisplay() {
+            if (testResults.length > 0) {
+                const lastTest = testResults[testResults.length - 1];
+                const isPass = lastTest.expectedActive === lastTest.actualActive;
+
+                testOutput.innerHTML = `
+                    <p><strong>最后操作:</strong> ${lastTest.action}</p>
+                    <p><strong>目标:</strong> ${lastTest.targetId}</p>
+                    <p><strong>预期高亮:</strong> ${lastTest.expectedActive}</p>
+                    <p><strong>实际高亮:</strong> ${lastTest.actualActive}</p>
+                    <p class="${isPass ? 'test-pass' : 'test-fail'}">
+                        ${isPass ? '✓ 测试通过' : '✗ 测试失败'}
+                    </p>
+                    <p><small>测试次数: ${testResults.length}</small></p>
+                `;
+            }
+        }
+
+        // 自动测试
+        function runAutomatedTest() {
+            console.log('开始自动测试TOC同步...');
+
+            // 测试序列
+            const testSequence = [
+                { id: 'section2', delay: 1000 },
+                { id: 'section4', delay: 2000 },
+                { id: 'section1', delay: 3000 },
+                { id: 'section5', delay: 4000 }
+            ];
+
+            testSequence.forEach(test => {
+                setTimeout(() => {
+                    console.log(`测试点击: ${test.id}`);
+                    scrollToHeading(test.id);
+                }, test.delay);
+            });
+
+            // 5秒后显示总结
+            setTimeout(() => {
+                const passCount = testResults.filter(r =>
+                    r.expectedActive === r.actualActive
+                ).length;
+                console.log(`测试完成: ${passCount}/${testResults.length} 通过`);
+            }, 5000);
+        }
+
+        // 初始化
+        handleScroll();
+
+        // 页面加载后1秒开始自动测试
+        setTimeout(runAutomatedTest, 1000);
+    </script>
+</body>
+</html>
