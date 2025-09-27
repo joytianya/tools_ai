@@ -4,7 +4,7 @@ module.exports = {
       name: 'matrixtools-web',
       script: 'npm',
       args: 'start',
-      cwd: '/home/zxw/projects/tools_ai',
+      cwd: '/Users/matrix/projects/dev/tools_ai',
       instances: 1,
       exec_mode: 'fork',
       
@@ -42,13 +42,13 @@ module.exports = {
   // 部署配置
   deploy: {
     production: {
-      user: 'zxw',
+      user: 'matrix',
       host: 'localhost',
       ref: 'origin/main',
       repo: 'https://github.com/your-username/matrixtools.git',
-      path: '/home/zxw/projects/tools_ai',
+      path: '/Users/matrix/projects/dev/tools_ai',
       'post-deploy': 'npm install && npm run build && pm2 reload ecosystem.config.js --env production',
-      'pre-setup': 'mkdir -p /home/zxw/projects/tools_ai/logs'
+      'pre-setup': 'mkdir -p /Users/matrix/projects/dev/tools_ai/logs'
     }
   }
 };

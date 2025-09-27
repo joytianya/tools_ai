@@ -7,8 +7,20 @@
     "build": "next build",
     "start": "next start -p 3000",
     "lint": "next lint",
+    "lint:fix": "next lint --fix",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf .next out node_modules/.cache",
+    "manage": "./scripts/manage.sh",
+    "dev:start": "./scripts/manage.sh dev start",
+    "dev:stop": "./scripts/manage.sh dev stop",
+    "dev:clean": "./scripts/manage.sh dev clean",
+    "prod:build": "./scripts/manage.sh prod build",
+    "prod:start": "./scripts/manage.sh prod start",
+    "prod:deploy": "./scripts/manage.sh prod deploy",
+    "prod:status": "./scripts/manage.sh prod status",
+    "system:status": "./scripts/manage.sh status"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.0",
